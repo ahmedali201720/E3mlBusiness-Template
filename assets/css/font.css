@@ -320,7 +320,7 @@
 
 @font-face {
     font-family: 'FF Shamel Family Sans One';
-    src: url('FFShamelFamily-SansOneBold.woff2') format('woff2');
+    src: url('../fonts/FFShamelFamily-SansOne/FFShamelFamily-SansOne-Bold.ttf') format('woff2');
     font-weight: bold;
     font-style: normal;
     font-display: swap;
