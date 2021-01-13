@@ -1,0 +1,52 @@
+@media only screen and (max-width: 600px) {
+    .main-header-img-container img {
+        width: 45px;
+        height: auto;
+    }
+    .action-link {
+        width: 70px !important;
+        height: 35px !important;
+        line-height: 35px;
+        font-size: 0.6rem;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .action-link {
+        width: 90px !important;
+    }
+    .search-form-container input {
+        font-size: 0.6rem !important;
+        padding: 10px !important;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .action-link {
+        width: 120px !important;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    #main-header .explore-container {
+        font-size: 12px;
+    }
+    .not-member-link {
+        font-size: 13px;
+    }
+    .action-link {
+        width: 130px !important;
+    }
+}
+
+@media only screen and (min-width: 1300px) {
+    #main-header .explore-container {
+        font-size: 14px;
+    }
+    .not-member-link {
+        font-size: 14px;
+    }
+    .action-link {
+        width: 150px !important;
+    }
+}

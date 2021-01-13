@@ -9,4 +9,60 @@
     /* ******************************************************************* */
     /* color variables */
     /* ******************************************************************* */
+    --borderColor: #efefef;
+    --inputBackColor: #f9f9f9;
+    --actionBackColor: #00d66c;
+    --actionHoverBackColor: #28e084;
+    --blackTextHoverColor: rgb(66, 66, 66);
+}
+
+* {
+    direction: ltr;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+.action-link {
+    width: 150px !important;
+    height: 50px !important;
+    line-height: 50px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 14px;
+    font-weight: 700;
+    background-color: var(--actionBackColor);
+    color: white;
+    border-radius: 4px;
+}
+
+.action-link:hover {
+    text-decoration: none;
+    background-color: var(--actionHoverBackColor);
+    color: white;
+}
+
+.thin-vertical-line {
+    width: 1px;
+    height: 30px;
+    background-color: var(--borderColor);
+}
+
+.medium-vertical-line {
+    width: 2px;
+    height: 30px;
+    background-color: var(--borderColor);
+}
+
+.bold-vertical-line {
+    width: 3px;
+    height: 30px;
+    background-color: var(--borderColor);
+}
+
+.bg-action {
+    background-color: var(--actionBackColor);
 }

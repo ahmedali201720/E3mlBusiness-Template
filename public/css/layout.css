@@ -1,0 +1,57 @@
+/* Start of header styles */
+
+#main-header {
+    font-family: var(--aileron);
+    border-bottom: 1px solid var(--borderColor);
+}
+
+.main-header-img-container img {
+    width: 62px;
+    height: 52px;
+}
+
+#main-header .explore-container {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+#main-header .explore-container:hover {
+    cursor: pointer;
+    color: var(--blackTextHoverColor);
+}
+
+.search-form-container {
+    width: 100%;
+}
+
+.search-form-container input {
+    font-family: 'FontAwesome', var(--aileron);
+    font-size: 0.7rem !important;
+    padding: 12px !important;
+    background-color: var(--inputBackColor);
+}
+
+.not-member-link {
+    font-size: 14px;
+    font-weight: 600;
+    color: black;
+    text-align: center;
+}
+
+.not-member-link:hover {
+    text-decoration: none;
+    color: var(--blackTextHoverColor);
+}
+
+.sidebar-toggler {
+    font-size: 26px;
+    color: var(--actionBackColor);
+}
+
+.sidebar-toggler:hover {
+    cursor: pointer;
+    font-size: 25px;
+    color: var(--blackTextHoverColor);
+}
+
+/* End of header styles */
