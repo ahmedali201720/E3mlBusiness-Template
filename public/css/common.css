@@ -77,3 +77,15 @@ body {
     width: fit-content;
     display: inline;
 }
+
+.dynamic-align:lang(en) {
+    text-align: left;
+}
+
+.dynamic-align:lang(ar) {
+    text-align: right;
+}
+
+.dynamic-align-center {
+    text-align: center;
+}
