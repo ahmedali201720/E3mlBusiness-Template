@@ -14,6 +14,8 @@
     --actionBackColor: #00d66c;
     --actionHoverBackColor: #28e084;
     --blackTextHoverColor: rgb(66, 66, 66);
+    --footerBackColor: #00150b;
+    --whiteHoverColor: rgb(209, 202, 202);
 }
 
 * {
@@ -65,4 +67,13 @@ body {
 
 .bg-action {
     background-color: var(--actionBackColor);
+}
+
+.block-wrap-container {
+    width: fit-content;
+}
+
+.inline-wrap-container {
+    width: fit-content;
+    display: inline;
 }

@@ -55,3 +55,71 @@
 }
 
 /* End of header styles */
+
+/* Start of footer styles */
+
+#footer {
+    background-color: var(--footerBackColor);
+    color: white;
+}
+
+.footer-section-title {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.footer-section-text {
+    font-size: 18px;
+    font-weight: 500;
+    padding: 10px 0;
+}
+
+.footer-section-subtitle {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.footer-icon-link {
+    font-size: 16px;
+    color: white;
+}
+
+.footer-icon-link:hover {
+    font-size: 17px;
+    color: var(--whiteHoverColor);
+    text-decoration: none;
+}
+
+.footer-section-links {
+    padding: 10px 0;
+}
+
+.footer-link {
+    font-size: 18px;
+    font-weight: 500;
+    display: block;
+    color: white;
+    padding: 2px 0;
+}
+
+.footer-link:hover {
+    color: var(--whiteHoverColor);
+    text-decoration: none;
+}
+
+.footer-language-link:hover {
+    cursor: pointer;
+    color: var(--whiteHoverColor);
+}
+
+.footer-container {
+    width: fit-content;
+    margin: auto;
+}
+
+.footer-section-images img {
+    width: 80px;
+    height: auto;
+}
+
+/* End of footer styles */
