@@ -19,10 +19,6 @@
         font-size: 0.6rem !important;
         padding: 10px !important;
     }
-    .main-header-img-container img {
-        width: 50px;
-        height: auto;
-    }
 }
 
 @media only screen and (min-width: 768px) {
