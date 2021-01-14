@@ -1,8 +1,14 @@
 /* Start of header styles */
 
 #main-header {
+    background-color: white;
+    box-shadow: 5px 2px 8px grey;
     font-family: var(--aileron);
     border-bottom: 1px solid var(--borderColor);
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 .main-header-img-container img {
