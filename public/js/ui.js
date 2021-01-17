@@ -5,7 +5,7 @@ $(document).ready(() => {
     truncateCourseCardTitle();
 
     function truncateCourseCardTitle() {
-        var cardTitles = $(".course-card-title a");
+        var cardTitles = $(".card-title a");
         $.each(cardTitles, function (key, value) {
             var titleText = value.text;
             if (titleText.length > 120) {
