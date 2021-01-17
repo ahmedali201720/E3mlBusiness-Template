@@ -2,8 +2,8 @@
     /* Start of course card styles */
     .course-card {
         width: 100%;
-        height: 380px;
-        max-height: 380px;
+        height: 390px;
+        max-height: 390px;
     }
     .course-card .course-card-text {
         height: 80px;
@@ -17,8 +17,8 @@
     /* Start of course card styles */
     .course-card {
         width: 100%;
-        height: 370px;
-        max-height: 370px;
+        height: 380px;
+        max-height: 380px;
     }
     .course-card .course-card-text {
         height: 95px;
@@ -32,13 +32,17 @@
     /* Start of course card styles */
     .course-card {
         width: 100%;
-        height: 370px;
-        max-height: 370px;
+        height: 385px;
+        max-height: 385px;
     }
     .course-card .course-card-text {
         height: 90px;
         max-height: 90px;
         overflow: auto;
+    }
+    .course-card .course-card-title {
+        height: 45px;
+        max-height: 45px;
     }
     /* End of course card styles */
 }
@@ -55,6 +59,10 @@
         max-height: 75px;
         overflow: auto;
     }
+    .course-card .course-card-title {
+        height: 30px;
+        max-height: 30px;
+    }
     /* End of course card styles */
 }
 
@@ -64,6 +72,15 @@
         width: 100%;
         height: 370px;
         max-height: 370px;
+    }
+    .course-card .course-card-title {
+        height: 45px;
+        max-height: 45px;
+    }
+    .course-card .course-card-text {
+        height: 90px;
+        max-height: 90px;
+        overflow: auto;
     }
     /* End of course card styles */
 }
