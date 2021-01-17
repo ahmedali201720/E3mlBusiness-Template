@@ -30,7 +30,7 @@
     line-height: 15px;
     height: 40px;
     max-height: 40px;
-    overflow: auto;
+    overflow: hidden;
 }
 
 .course-card .course-card-title a {
