@@ -19,12 +19,8 @@
     margin: 0 3px;
 }
 
-.owl-dot:hover {
-    background-color: var(--mainPink) !important;
-}
-
 .owl-dot:active {
-    background-color: var(--mainPink) !important;
+    background-color: green !important;
 }
 
 .owl-prev {
