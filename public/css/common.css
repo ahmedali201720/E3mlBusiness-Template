@@ -10,12 +10,15 @@
     /* color variables */
     /* ******************************************************************* */
     --borderColor: #efefef;
+    --cardBorderColor: #e6e8e7;
     --inputBackColor: #f9f9f9;
     --actionBackColor: #00d66c;
     --actionHoverBackColor: #28e084;
     --blackTextHoverColor: rgb(66, 66, 66);
     --footerBackColor: #00150b;
     --whiteHoverColor: rgb(209, 202, 202);
+    --cardTitleColor: #00d66c;
+    --starFillColor: #FFD800;
 }
 
 * {
