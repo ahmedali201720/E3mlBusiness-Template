@@ -1,7 +1,16 @@
+function getLang() {
+    var lang = $('html').attr('lang');
+    if (lang == 'ar') {
+        return true;
+    }
+    else {
+        return false;
+    }
+}
+
 $(document).ready(() => {
 
     // Truncate text of course card title
-
     truncateCourseCardTitle();
     truncateCourseCardText();
 

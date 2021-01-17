@@ -1,6 +1,6 @@
 $(document).ready(function () {
 
-    $(".section-carousel").owlCarousel({
+    $(".courses-carousel").owlCarousel({
         margin: 10,
         loop: true,
         mouseDrag: true,
@@ -9,42 +9,42 @@ $(document).ready(function () {
         navText: ['<i class="fa fa-angle-left" aria-hidden="true"></i>', '<i class="fa fa-angle-right" aria-hidden="true"></i>'],
         autoplay: false,
         autoplayTimeout: 7000,
-        rtl: true,
+        rtl: getLang(),
         responsive: {
             0: {
-                items: 1.5
+                items: 1.1
             },
 
             370: {
-                items: 2
+                items: 1.1
             },
 
             400: {
-                items: 2.2
+                items: 1.3
             },
 
             500: {
-                items: 2.6
+                items: 1.6
             },
 
             600: {
-                items: 3.2
+                items: 1.7
             },
 
             768: {
-                items: 4.2
+                items: 2.2
             },
             992: {
-                items: 5
+                items: 3.1
             },
             1200: {
-                items: 6.2
+                items: 4.2
             },
             1300: {
-                items: 6.75
+                items: 4.3
             },
             1500: {
-                items: 7.75
+                items: 4.5
             }
         }
     });
