@@ -52,3 +52,12 @@
 .owl-prev i, .owl-next i {
     color: white;
 }
+
+@media only screen and (max-width:600px) {
+    .owl-prev {
+        left: 3%;
+    }
+    .owl-next {
+        right: 3%;
+    }
+}
