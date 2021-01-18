@@ -18,12 +18,12 @@
         max-height: 395px;
     }
     .slider-course-card .course-card-title {
-        height: 60px;
-        max-height: 60px;
+        height: 65px;
+        max-height: 65px;
     }
     .slider-course-card .course-card-text {
-        height: 80px;
-        max-height: 80px;
+        height: 90px;
+        max-height: 90px;
         overflow: auto;
     }
     /* End of slider course card styles */
