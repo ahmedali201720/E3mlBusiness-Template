@@ -54,8 +54,8 @@ $(document).ready(() => {
         $.each(categories, function (key, value) {
             if (value.checked) {
                 $(this).next().css({
-                    'color': 'black',
-                    'font-weight': 600
+                    'color': 'red',
+                    'font-weight': 500
                 })
                 $(this).parent().next().fadeIn();
             }
@@ -103,8 +103,8 @@ function handleHiddenInputLabel(input) {
     var formCheckToggler = $(".form-check-toggler", input.parent().parent());
     if (inputChecked) {
         formCheckLabel.css({
-            'color': 'black',
-            'font-weight': 600
+            'color': 'red',
+            'font-weight': 500
         });
         formCheckToggler.fadeIn(200);
     }

@@ -118,7 +118,7 @@
 
         <div class="row">
 
-            <div class="col-3">
+            <div class="col-2">
 
                 <form id="main-filter">
 
@@ -232,7 +232,13 @@
                         <div class="filter-group-content rating-group">
 
                             <div class="form-check">
-                                <input class="form-check-input category-input" type="radio" id="rate_4.5">
+                                <input class="form-check-input category-input" type="radio" id="all-rating"
+                                    name="rating">
+                                <label class="form-check-label" for="all-rating">All Ratings</label>
+                            </div>
+
+                            <div class="form-check">
+                                <input class="form-check-input category-input" type="radio" id="rate_4.5" name="rating">
                                 <label class="form-check-label" for="rate_4.5">
                                     <i class="fa fa-star text-gold"></i>
                                     <i class="fa fa-star text-gold"></i>
@@ -244,7 +250,7 @@
                             </div>
 
                             <div class="form-check">
-                                <input class="form-check-input category-input" type="radio" id="rate_4">
+                                <input class="form-check-input category-input" type="radio" id="rate_4" name="rating">
                                 <label class="form-check-label" for="rate_4">
                                     <i class="fa fa-star text-gold"></i>
                                     <i class="fa fa-star text-gold"></i>
@@ -256,7 +262,7 @@
                             </div>
 
                             <div class="form-check">
-                                <input class="form-check-input category-input" type="radio" id="rate_3.5">
+                                <input class="form-check-input category-input" type="radio" id="rate_3.5" name="rating">
                                 <label class="form-check-label" for="rate_3.5">
                                     <i class="fa fa-star text-gold"></i>
                                     <i class="fa fa-star text-gold"></i>
@@ -268,7 +274,7 @@
                             </div>
 
                             <div class="form-check">
-                                <input class="form-check-input category-input" type="radio" id="rate_3">
+                                <input class="form-check-input category-input" type="radio" id="rate_3" name="rating">
                                 <label class="form-check-label" for="rate_3">
                                     <i class="fa fa-star text-gold"></i>
                                     <i class="fa fa-star text-gold"></i>
@@ -285,11 +291,107 @@
 
                     <!-- End of rating Part -->
 
+                    <!-- Levels part -->
+
+                    <div class="filter-group">
+
+                        <div class="filter-group-label">
+                            Course Level
+                        </div>
+
+                        <div class="filter-group-content levels-group">
+
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="beginner">
+                                <label class="form-check-label" for="beginner">
+                                    Beginner
+                                </label>
+                            </div>
+
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="intermediate">
+                                <label class="form-check-label" for="intermediate">
+                                    Intermediate
+                                </label>
+                            </div>
+
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="advanced">
+                                <label class="form-check-label" for="advanced">
+                                    High Level
+                                </label>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- End of Levels Part -->
+
+                    <!-- Time part -->
+
+                    <div class="filter-group">
+
+                        <div class="filter-group-label">
+                            Course Time
+                        </div>
+
+                        <div class="filter-group-content levels-group">
+
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="less_4_hrs">
+                                <label class="form-check-label" for="less_4_hrs">
+                                    Less Than 4 Hours
+                                </label>
+                            </div>
+
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="less_8_hrs">
+                                <label class="form-check-label" for="less_8_hrs">
+                                    Less Than 8 Hours
+                                </label>
+                            </div>
+
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="more_8_hrs">
+                                <label class="form-check-label" for="more_8_hrs">
+                                    More Than 4 Hours
+                                </label>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- End of Time Part -->
+
                 </form>
 
             </div>
 
-            <div class="col-9">
+            <div class="col-10">
+
+                <div class="row">
+
+                    <div class="col-4">
+
+
+
+                    </div>
+
+                    <div class="col-4">
+
+
+
+                    </div>
+
+                    <div class="col-4">
+
+
+
+                    </div>
+
+                </div>
 
             </div>
 
