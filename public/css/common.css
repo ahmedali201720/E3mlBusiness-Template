@@ -19,6 +19,8 @@
     --whiteHoverColor: rgb(209, 202, 202);
     --cardTitleColor: #00d66c;
     --starFillColor: #FFD800;
+    --goldColor: #FFD700;
+    --blueColor: #08206b;
 }
 
 * {
@@ -72,6 +74,18 @@ body {
     background-color: var(--actionBackColor);
 }
 
+.text-gold {
+    color: var(--goldColor) !important;
+}
+
+.text-blue {
+    color: var(--blueColor) !important;
+}
+
+.text-transparent {
+    color: transparent !important;
+}
+
 .block-wrap-container {
     width: fit-content;
 }
@@ -92,3 +106,15 @@ body {
 .dynamic-align-center {
     text-align: center;
 }
+
+/* Styles for bootstrap forms */
+
+.form-check-input {
+    margin-top: 0.4em;
+}
+
+.form-check-label:lang(ar) {
+    margin-right: 20px !important;
+}
+
+/* End of bootstrap forms styles */

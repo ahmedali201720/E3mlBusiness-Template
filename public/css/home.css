@@ -181,3 +181,73 @@
 }
 
 /* End of course slider card styles */
+
+/* Start of main filter Styles */
+
+.filter-group-label {
+    font-size: 16px;
+    font-weight: 600;
+    padding: 0.4rem 0;
+    border-bottom: 2px solid var(--borderColor);
+}
+
+.filter-group-content {
+    font-size: 15px;
+    font-weight: 400;
+    padding: 0.5rem 0;
+    color: #808a85;
+}
+
+.filter-group-content .form-check {
+    padding-top: 0.125rem;
+    padding-bottom: 0.125rem;
+}
+
+.form-check-toggler {
+    position: relative;
+    display: none;
+    width: 20px;
+    height: 20px;
+    font-size: 10px;
+    border-radius: 50%;
+    background-color: red;
+    text-align: center;
+    color: white;
+}
+
+.form-check-toggler:hover {
+    background-color: rgb(245, 61, 61);
+    cursor: pointer;
+}
+
+.form-check-toggler i {
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    vertical-align: middle;
+}
+
+.form-check-tooltip {
+    position: absolute;
+    top: 0;
+    background-color: black;
+    color: white;
+    padding: 2px 3px;
+    border-radius: 5px;
+    z-index: 500;
+    display: none;
+}
+
+.form-check-tooltip:lang(en) {
+    right: 120%
+}
+
+.form-check-tooltip:lang(ar) {
+    left: 120%;
+}
+
+.hidden-input-label:hover {
+    cursor: pointer;
+}
+
+/* End of main filter Styles */

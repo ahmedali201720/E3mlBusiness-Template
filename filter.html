@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses | Filter courses</title>
+    <link rel="stylesheet" type="text/css" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" type="text/css" href="./assets/css/font.css">
+    <link rel="stylesheet" type="text/css" href="./assets/icons/css/all.css">
+    <link rel="stylesheet" type="text/css" href="./public/css/common.css">
+    <link rel="stylesheet" type="text/css" href="./public/css/common.responsive.css">
+    <link rel="stylesheet" type="text/css" href="./public/css/layout.css">
+    <link rel="stylesheet" type="text/css" href="./public/css/layout.responsive.css">
+    <link rel="stylesheet" type="text/css" href="./public/css/home.css">
+    <link rel="stylesheet" type="text/css" href="./public/css/home.responsive.css">
+    <link rel="stylesheet" href="./assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./assets/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="./public/css/owl.custom.css">
+    <link rel="icon" href="./assets/img/logo.png">
+</head>
+
+<body>
+
+    <!-- Header appears on mid and small screens -->
+
+    <header id="top-header" class="d-lg-none d-block bg-action">
+
+        <div class="container-fluid">
+
+            <div class="row px-3 py-1">
+
+                <div class="col-12 d-flex justify-content-center">
+
+                    <a class="not-member-link" href="#">Are you an Instructor ? <span class="text-white">Join us
+                            now</span></a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <!-- End of top header -->
+
+    <!-- Main Header -->
+
+    <header id="main-header">
+
+        <div class="container-fluid">
+
+            <div class="row top-header-container px-sm-3 px-1 py-2">
+
+                <div id="sidebar-toggler"
+                    class="col-sm-1 col-2 d-lg-none d-flex justify-content-center align-items-center px-1 sidebar-toggler">
+                    <i class="fa fa-bars"></i>
+                </div>
+
+                <div class="col-lg-1 col-md-2 col-sm-2 col-1 px-sm-2 px-0 d-flex justify-content-center">
+
+                    <a href="#" class="main-header-img-container">
+                        <img src="./assets/img/logo.png" alt="logo">
+                    </a>
+
+                </div>
+
+                <div class="col-2 d-sm-none d-flex justify-content-center align-items-center">
+                    <i class="fa fa-search"></i>
+                </div>
+
+                <div
+                    class="col-xl-1 col-lg-2 d-lg-flex d-none justify-content-xl-start justify-content-lg-end align-items-center">
+
+                    <div href="#" class="explore-container d-flex justify-content-center align-items-center">
+                        <a>Explore <span class="fa fa-caret-down mx-1"></span></a>
+                    </div>
+
+                </div>
+
+                <div class="col-xl-6 col-lg-4 col-md-5 col-sm-5 d-sm-flex d-none align-items-center">
+
+                    <form action="" class="search-form-container">
+
+                        <div class="form-row d-flex align-items-center">
+                            <div class="col-12">
+                                <input type="text" id="main-search-input" class="form-control"
+                                    placeholder="&#xF002;   Search by Name / Category">
+                            </div>
+                        </div>
+
+                    </form>
+
+                </div>
+
+                <div
+                    class="col-xl-4 col-lg-5 col-md-4 col-sm-4 col-7 profile-data-container d-flex justify-content-sm-around justify-content-end align-items-center">
+
+                    <a class="not-member-link d-lg-flex d-none" href="#">Join As Instructor</a>
+                    <div class="medium-vertical-line d-lg-flex d-none"></div>
+                    <a class="not-member-link mx-sm-0 mx-2" href="#">Login</a>
+                    <a href="#" class="action-link">Sign Up</a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <!-- End of main header -->
+
+    <!-- Filter Section -->
+
+    <div class="container-fluid px-5 py-5">
+
+        <div class="row">
+
+            <div class="col-3">
+
+                <form id="main-filter">
+
+                    <!-- Categories part -->
+
+                    <div class="filter-group">
+
+                        <div class="filter-group-label">
+                            Categories
+                        </div>
+
+                        <div class="filter-group-content categories-group">
+
+                            <div class="form-check d-flex justify-content-between px-0">
+                                <div class="form-check-wrapper">
+                                    <input class="form-check-input category-input d-none" type="checkbox"
+                                        id="digitalMarketing">
+                                    <label class="form-check-label hidden-input-label" for="digitalMarketing">
+                                        Digital Marketing
+                                    </label>
+                                </div>
+                                <div class="form-check-toggler">
+                                    <div class="form-check-tooltip">Remove</div>
+                                    <i class="fa fa-close"></i>
+                                </div>
+                            </div>
+
+                            <div class="form-check d-flex justify-content-between px-0">
+                                <div class="form-check-wrapper">
+                                    <input class="form-check-input category-input d-none" type="checkbox"
+                                        id="humanResources">
+                                    <label class="form-check-label hidden-input-label" for="humanResources">
+                                        Human Resources
+                                    </label>
+                                </div>
+                                <div class="form-check-toggler">
+                                    <div class="form-check-tooltip">Remove</div>
+                                    <i class="fa fa-close"></i>
+                                </div>
+                            </div>
+
+                            <div class="form-check d-flex justify-content-between px-0">
+                                <div class="form-check-wrapper">
+                                    <input class="form-check-input category-input d-none" type="checkbox"
+                                        id="entrepreneurship">
+                                    <label class="form-check-label hidden-input-label" for="entrepreneurship">
+                                        Entrepreneurship
+                                    </label>
+                                </div>
+                                <div class="form-check-toggler">
+                                    <div class="form-check-tooltip">Remove</div>
+                                    <i class="fa fa-close"></i>
+                                </div>
+                            </div>
+
+                            <div class="form-check d-flex justify-content-between px-0">
+                                <div class="form-check-wrapper">
+                                    <input class="form-check-input category-input d-none" type="checkbox"
+                                        id="management">
+                                    <label class="form-check-label hidden-input-label" for="management">
+                                        Management
+                                    </label>
+                                </div>
+                                <div class="form-check-toggler">
+                                    <div class="form-check-tooltip">Remove</div>
+                                    <i class="fa fa-close"></i>
+                                </div>
+                            </div>
+
+                            <div class="form-check d-flex justify-content-between px-0">
+                                <div class="form-check-wrapper">
+                                    <input class="form-check-input category-input d-none" type="checkbox" id="sales">
+                                    <label class="form-check-label hidden-input-label" for="sales">
+                                        Sales
+                                    </label>
+                                </div>
+                                <div class="form-check-toggler">
+                                    <div class="form-check-tooltip">Remove</div>
+                                    <i class="fa fa-close"></i>
+                                </div>
+                            </div>
+
+                            <div class="form-check d-flex justify-content-between px-0">
+                                <div class="form-check-wrapper">
+                                    <input class="form-check-input category-input d-none" type="checkbox"
+                                        id="marketing">
+                                    <label class="form-check-label hidden-input-label" for="marketing">
+                                        Marketing
+                                    </label>
+                                </div>
+                                <div class="form-check-toggler">
+                                    <div class="form-check-tooltip">Remove</div>
+                                    <i class="fa fa-close"></i>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- End of categories Part -->
+
+                    <!-- Rating part -->
+
+                    <div class="filter-group">
+
+                        <div class="filter-group-label">
+                            Courses Rating
+                        </div>
+
+                        <div class="filter-group-content rating-group">
+
+                            <div class="form-check">
+                                <input class="form-check-input category-input" type="radio" id="rate_4.5">
+                                <label class="form-check-label" for="rate_4.5">
+                                    <i class="fa fa-star text-gold"></i>
+                                    <i class="fa fa-star text-gold"></i>
+                                    <i class="fa fa-star text-gold"></i>
+                                    <i class="fa fa-star text-gold"></i>
+                                    <i class="fa fa-star-half-alt text-gold"></i>
+                                    <span class="text-blue font-weight-bold mx-2">(4.5)</span>
+                                </label>
+                            </div>
+
+                            <div class="form-check">
+                                <input class="form-check-input category-input" type="radio" id="rate_4">
+                                <label class="form-check-label" for="rate_4">
+                                    <i class="fa fa-star text-gold"></i>
+                                    <i class="fa fa-star text-gold"></i>
+                                    <i class="fa fa-star text-gold"></i>
+                                    <i class="fa fa-star text-gold"></i>
+                                    <i class="far fa-star"></i>
+                                    <span class="text-blue font-weight-bold mx-2">( 4 )</span>
+                                </label>
+                            </div>
+
+                            <div class="form-check">
+                                <input class="form-check-input category-input" type="radio" id="rate_3.5">
+                                <label class="form-check-label" for="rate_3.5">
+                                    <i class="fa fa-star text-gold"></i>
+                                    <i class="fa fa-star text-gold"></i>
+                                    <i class="fa fa-star text-gold"></i>
+                                    <i class="fa fa-star-half-alt text-gold"></i>
+                                    <i class="far fa-star"></i>
+                                    <span class="text-blue font-weight-bold mx-2">(3.5)</span>
+                                </label>
+                            </div>
+
+                            <div class="form-check">
+                                <input class="form-check-input category-input" type="radio" id="rate_3">
+                                <label class="form-check-label" for="rate_3">
+                                    <i class="fa fa-star text-gold"></i>
+                                    <i class="fa fa-star text-gold"></i>
+                                    <i class="fa fa-star text-gold"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <span class="text-blue font-weight-bold mx-2">( 3 )</span>
+                                </label>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- End of rating Part -->
+
+                </form>
+
+            </div>
+
+            <div class="col-9">
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!--  End of Filter section  -->
+
+    <!-- Start of footer section -->
+
+    <footer id="footer">
+
+        <div class="container-fluid">
+
+            <div class="row px-lg-5 px-md-3 px-2 py-4">
+
+                <div
+                    class="col-md-4 col-12 footer-section dynamic-align-xs-center dynamic-align-sm-center dynamic-md-align dynamic-lg-align dynamic-xl-align mb-md-0 mb-5 px-lg-2 px-1">
+
+                    <div class="footer-section-title">
+                        About the Academy
+                    </div>
+
+                    <div class="footer-section-text">
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
+                        ut labore et dolore
+                        magna.
+                    </div>
+
+                    <div class="footer-section-subtitle mt-2 mb-1">
+                        Join Us on Social
+                    </div>
+
+                    <div class="footer-section-icons">
+                        <a href="#" class="footer-icon-link fab fa-linkedin-in"></a>
+                        <a href="#" class="px-2"></a>
+                        <a href="#" class="footer-icon-link fab fa-twitter"></a>
+                        <a href="#" class="px-2"></a>
+                        <a href="#" class="footer-icon-link fab fa-youtube"></a>
+                        <a href="#" class="px-2"></a>
+                        <a href="#" class="footer-icon-link fab fa-instagram"></a>
+                        <a href="#" class="px-2"></a>
+                        <a href="#" class="footer-icon-link fab fa-facebook-f"></a>
+                    </div>
+
+                </div>
+
+                <div
+                    class="col-md-4 col-12 footer-section dynamic-align-xs-center dynamic-align-sm-center dynamic-md-align dynamic-lg-align dynamic-xl-align mb-md-0 mb-5 px-lg-2 px-1">
+
+                    <div class="footer-container">
+
+                        <div class="footer-section-title">
+                            Quick Access
+                        </div>
+
+                        <div class="footer-section-links">
+                            <a href="#" class="footer-link">Terms & Condition</a>
+                            <a href="#" class="footer-link">Join As Instructor</a>
+                            <a href="#" class="footer-link">Client Talks</a>
+                            <a href="#" class="footer-link">Call Us</a>
+                            <p href="#" class="footer-language-link mb-0">Language : <span
+                                    class="language-toggler">EN</span>
+                                <i class="fa fa-caret-down mx-1"></i>
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div
+                    class="col-md-4 col-12 footer-section dynamic-align-xs-center dynamic-align-sm-center dynamic-md-align dynamic-lg-align dynamic-xl-align mb-md-0 mb-2 px-lg-2 px-1">
+
+                    <div class="footer-container">
+
+                        <div class="footer-section-title">
+                            Pay With
+                        </div>
+
+                        <div class="footer-section-images py-2">
+
+                            <div>
+                                <img src="./assets/img/visa.png" alt="visa">
+                                <img src="./assets/img/master-card.png" alt="visa">
+                            </div>
+                            <div class="">
+                                <div class="inline-wrap-container bg-white py-2 rounded">
+                                    <img src="./assets/img/mada.png" alt="visa">
+                                </div>
+                                <img src="./assets/img/fawry.png" alt="visa">
+                                <img src="./assets/img/vodafone-cash.png" alt="cash">
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <!--  End of footer section  -->
+
+    <script src="./assets/js/popper/popper.min.js"></script>
+    <script src="./assets/js/jquery/jquery-3.5.1.js"></script>
+    <script src="./assets/js/bootstrap/bootstrap.min.js"></script>
+    <script src="./assets/icons/js/font-kit.js"></script>
+    <script src="./assets/js/owl/owl.carousel.min.js"></script>
+    <script src="./public/js/ui.js"></script>
+    <script src="./public/js/home.js"></script>
+    <script src="./public/js/owl.custom.js"></script>
+</body>
+
+</html>
