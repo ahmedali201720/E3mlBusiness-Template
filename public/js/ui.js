@@ -5,7 +5,7 @@
 $('body').click(function () {
     $(".content-dropdown-container").hide();
     $(".down-icon").show();
-    handleSidebarWidth();
+    handleSidebarWidth($("#sidebar"));
 });
 
 // ***************************************************************************************
