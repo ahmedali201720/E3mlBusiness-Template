@@ -5,6 +5,7 @@
 $('body').click(function () {
     $(".content-dropdown-container").hide();
     $(".down-icon").show();
+    handleSidebarWidth();
 });
 
 // ***************************************************************************************
@@ -209,12 +210,14 @@ function handleSidebarWidth(sidebar) {
     }
 }
 
-$(".in-sidebar-toggler").click(function () {
+$(".in-sidebar-toggler").click(function (e) {
+    e.stopPropagation();
     const sidebar = $('#sidebar');
     handleSidebarWidth(sidebar);
 });
 
-$("#sidebar-toggler").click(function () {
+$("#sidebar-toggler").click(function (e) {
+    e.stopPropagation();
     const sidebar = $('#sidebar');
     handleSidebarWidth(sidebar);
 });
