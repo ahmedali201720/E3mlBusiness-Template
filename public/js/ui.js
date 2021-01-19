@@ -189,7 +189,7 @@ function handleSidebarWidth(sidebar) {
             }, 500);
             setTimeout(() => {
                 $("*", sidebar).fadeIn(150);
-            }, 500);
+            }, 300);
         }
         else if (getWindowSize() >= 600 && getWindowSize() < 768) {
             sidebar.animate({
@@ -197,7 +197,7 @@ function handleSidebarWidth(sidebar) {
             }, 500);
             setTimeout(() => {
                 $("*", sidebar).fadeIn(150);
-            }, 500);
+            }, 300);
         }
         else if (getWindowSize() <= 400) {
             sidebar.animate({
@@ -205,7 +205,7 @@ function handleSidebarWidth(sidebar) {
             }, 500);
             setTimeout(() => {
                 $("*", sidebar).fadeIn(150);
-            }, 500);
+            }, 300);
         }
     }
 }
