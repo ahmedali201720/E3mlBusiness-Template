@@ -29,8 +29,8 @@ $(document).ready(() => {
         var cardTitles = $(".card-title a");
         $.each(cardTitles, function (key, value) {
             var titleText = value.text;
-            if (titleText.length > 90) {
-                newTitle = titleText.substring(0, 90).concat("..");
+            if (titleText.length > 60) {
+                newTitle = titleText.substring(0, 60).concat("..");
                 $(this).text(newTitle);
             }
         });
@@ -119,3 +119,19 @@ function handleHiddenInputLabel(input) {
 
 // ******************************************************************************
 // ******************************************************************************
+
+// ******************************************************************************
+// Load More and Load Less Click
+// ******************************************************************************
+
+$(".load-more-link").click(function (e) {
+    e.preventDefault();
+    $(this).hide();
+    $(".load-less-link").show();
+});
+
+$(".load-less-link").click(function (e) {
+    e.preventDefault();
+    $(this).hide();
+    $(".load-more-link").show();
+});

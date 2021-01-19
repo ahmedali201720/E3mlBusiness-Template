@@ -203,6 +203,10 @@
     padding-bottom: 0.125rem;
 }
 
+.form-check-label:hover {
+    cursor: pointer;
+}
+
 .form-check-toggler {
     position: relative;
     display: none;
@@ -250,4 +254,36 @@
     cursor: pointer;
 }
 
+.load-less-link {
+    display: none;
+}
+
 /* End of main filter Styles */
+
+/* Headers and labels styles */
+
+.section-header {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--blueColor);
+}
+
+.section-sub-header {
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--sectionSubHeaderColor);
+}
+
+.section-header-filter a {
+    font-size: 14px;
+    font-weight: 400;
+    color: black;
+}
+
+.section-header-filter a:hover {
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--blackTextHoverColor);
+}
+
+/* End of headers and labels styles */
