@@ -1,4 +1,13 @@
 // ***************************************************************************************
+// Body Click Event
+// ***************************************************************************************
+
+$('body').click(function () {
+    $(".content-dropdown-container").hide();
+    $(".down-icon").show();
+});
+
+// ***************************************************************************************
 // Function to get language
 // ***************************************************************************************
 function getLang() {
@@ -9,6 +18,14 @@ function getLang() {
     else {
         return false;
     }
+}
+
+// ***************************************************************************************
+// Function to window size
+// ***************************************************************************************
+function getWindowSize() {
+    const window_size = $(window).width();
+    return window_size;
 }
 
 // ***************************************************************************************
@@ -134,4 +151,70 @@ $(".load-less-link").click(function (e) {
     e.preventDefault();
     $(this).hide();
     $(".load-more-link").show();
+});
+
+// ***************************************************************************************
+// Layout Scripts
+// ***************************************************************************************
+
+$(".explore-container-toggler").click(function (e) {
+    e.stopPropagation();
+    $(".content-dropdown-container").toggle();
+    if ($(".content-dropdown-container").css('display') == "none") {
+        $(".down-icon", this).css('visibility', 'visible');
+    }
+    else {
+        $(".down-icon", this).css('visibility', 'hidden');
+    }
+});
+
+// ****************************************************************************************
+// Sidebar Scripts
+// ****************************************************************************************
+
+function handleSidebarWidth(sidebar) {
+    if (sidebar.width() > 0) {
+        $("*", sidebar).fadeOut(50);
+        setTimeout(() => {
+            sidebar.animate({
+                width: 0
+            }, 500);
+        }, 50);
+    }
+    else {
+        if (getWindowSize() >= 768 && getWindowSize() < 992) {
+            sidebar.animate({
+                width: '40%'
+            }, 500);
+            setTimeout(() => {
+                $("*", sidebar).fadeIn(150);
+            }, 500);
+        }
+        else if (getWindowSize() >= 600 && getWindowSize() < 768) {
+            sidebar.animate({
+                width: '50%'
+            }, 500);
+            setTimeout(() => {
+                $("*", sidebar).fadeIn(150);
+            }, 500);
+        }
+        else if (getWindowSize() <= 400) {
+            sidebar.animate({
+                width: '100%'
+            }, 500);
+            setTimeout(() => {
+                $("*", sidebar).fadeIn(150);
+            }, 500);
+        }
+    }
+}
+
+$(".in-sidebar-toggler").click(function () {
+    const sidebar = $('#sidebar');
+    handleSidebarWidth(sidebar);
+});
+
+$("#sidebar-toggler").click(function () {
+    const sidebar = $('#sidebar');
+    handleSidebarWidth(sidebar);
 });
