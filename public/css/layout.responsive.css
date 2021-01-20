@@ -13,6 +13,9 @@
         width: 35px;
         height: 35px;
     }
+    #user-data-container .far {
+        font-size: 17px;
+    }
 }
 
 @media only screen and (min-width: 600px) {

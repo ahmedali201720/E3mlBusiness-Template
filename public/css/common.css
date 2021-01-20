@@ -83,6 +83,10 @@ body {
     color: var(--blueColor) !important;
 }
 
+.text-action {
+    color: var(--blackTextHoverColor) !important;
+}
+
 .text-transparent {
     color: transparent !important;
 }

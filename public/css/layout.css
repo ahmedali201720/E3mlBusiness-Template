@@ -131,6 +131,7 @@
 
 #user-data-container .far {
     font-size: 20px;
+    position: relative;
 }
 
 #user-data-container a {
@@ -143,6 +144,16 @@
 
 .user-profile-img img {
     border-radius: 50%;
+}
+
+.alert-dot {
+    position: absolute;
+    top: -20%;
+    left: 60%;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: red;
 }
 
 /* End of header styles */
