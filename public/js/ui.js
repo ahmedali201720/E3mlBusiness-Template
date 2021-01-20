@@ -249,3 +249,29 @@ $("#sidebar-toggler").click(function (e) {
     const sidebar = $('#sidebar');
     handleSidebarWidth(sidebar);
 });
+
+// *************************************************************************************
+// User Profile control dropdown scripts
+// *************************************************************************************
+
+$(".user-profile-control").mouseenter(function () {
+    const userContentDropDown = $(".profile-control-dropdown");
+    showUserControlDropdown(userContentDropDown);
+});
+
+$(".user-profile-control").mouseleave(function () {
+    const userContentDropDown = $(".profile-control-dropdown");
+    hideUserControlDropdown(userContentDropDown);
+});
+
+$(".profile-control-dropdown").mouseleave(function () {
+    hideUserControlDropdown($(this));
+});
+
+function showUserControlDropdown(userContentDropDown) {
+    userContentDropDown.fadeIn();
+}
+
+function hideUserControlDropdown(userContentDropDown) {
+    userContentDropDown.fadeOut();
+}
