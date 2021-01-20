@@ -9,6 +9,12 @@
     position: sticky;
     top: 0;
     z-index: 1000;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 .main-header-img-container img {
@@ -116,6 +122,27 @@
     cursor: pointer;
     font-size: 25px;
     color: var(--blackTextHoverColor);
+}
+
+#user-data-container {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+#user-data-container .far {
+    font-size: 20px;
+}
+
+#user-data-container a {
+    color: black;
+}
+
+#user-data-container a:hover {
+    text-decoration: none;
+}
+
+.user-profile-img img {
+    border-radius: 50%;
 }
 
 /* End of header styles */

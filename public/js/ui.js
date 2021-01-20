@@ -3,9 +3,16 @@
 // ***************************************************************************************
 
 $('body').click(function () {
-    $(".content-dropdown-container").hide();
-    $(".down-icon").show();
+    // handle content dropdown container
+    const exploreContainer = $(".explore-container-toggler");
+    const dropdownContainer = $(".content-dropdown-container");
+    if (dropdownContainer.css('display') != 'none') {
+        dropdownContainer.hide();
+        $(".down-icon", exploreContainer).css('visibility', 'visible');
+    }
+    // Handle Sidebar
     closeSideBar($("#sidebar"));
+    // for debugging body propagation
     console.log("Body Clicked");
 });
 
@@ -163,12 +170,20 @@ $(".explore-container-toggler").click(function (e) {
     e.stopPropagation();
     $(".content-dropdown-container").toggle();
     if ($(".content-dropdown-container").css('display') == "none") {
-        $(".down-icon", this).css('visibility', 'visible');
+        contentContainerHidden($(this));
     }
     else {
-        $(".down-icon", this).css('visibility', 'hidden');
+        contentContainerShown($(this))
     }
 });
+
+function contentContainerShown(container) {
+    $(".down-icon", container).css('visibility', 'hidden');
+}
+
+function contentContainerHidden(container) {
+    $(".down-icon", container).css('visibility', 'visible');
+}
 
 // ****************************************************************************************
 // Sidebar Scripts
