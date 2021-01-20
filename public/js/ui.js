@@ -5,7 +5,8 @@
 $('body').click(function () {
     $(".content-dropdown-container").hide();
     $(".down-icon").show();
-    handleSidebarWidth($("#sidebar"));
+    closeSideBar($("#sidebar"));
+    console.log("Body Clicked");
 });
 
 // ***************************************************************************************
@@ -175,40 +176,52 @@ $(".explore-container-toggler").click(function (e) {
 
 function handleSidebarWidth(sidebar) {
     if (sidebar.width() > 0) {
-        $("*", sidebar).fadeOut(50);
-        setTimeout(() => {
-            sidebar.animate({
-                width: 0
-            }, 500);
-        }, 50);
+        closeSideBar(sidebar);
     }
     else {
-        if (getWindowSize() >= 768 && getWindowSize() < 992) {
-            sidebar.animate({
-                width: '40%'
-            }, 500);
-            setTimeout(() => {
-                $("*", sidebar).fadeIn(150);
-            }, 300);
-        }
-        else if (getWindowSize() >= 600 && getWindowSize() < 768) {
-            sidebar.animate({
-                width: '50%'
-            }, 500);
-            setTimeout(() => {
-                $("*", sidebar).fadeIn(150);
-            }, 300);
-        }
-        else if (getWindowSize() <= 400) {
-            sidebar.animate({
-                width: '100%'
-            }, 500);
-            setTimeout(() => {
-                $("*", sidebar).fadeIn(150);
-            }, 300);
-        }
+        openSideBar(sidebar);
     }
 }
+
+function openSideBar(sidebar) {
+    if (getWindowSize() >= 768 && getWindowSize() < 992) {
+        sidebar.animate({
+            width: '40%'
+        }, 500);
+        setTimeout(() => {
+            $("*", sidebar).fadeIn(150);
+        }, 300);
+    }
+    else if (getWindowSize() >= 600 && getWindowSize() < 768) {
+        sidebar.animate({
+            width: '50%'
+        }, 500);
+        setTimeout(() => {
+            $("*", sidebar).fadeIn(150);
+        }, 300);
+    }
+    else if (getWindowSize() <= 400) {
+        sidebar.animate({
+            width: '100%'
+        }, 500);
+        setTimeout(() => {
+            $("*", sidebar).fadeIn(150);
+        }, 300);
+    }
+}
+
+function closeSideBar(sidebar) {
+    $("*", sidebar).fadeOut(50);
+    setTimeout(() => {
+        sidebar.animate({
+            width: 0
+        }, 500);
+    }, 50);
+}
+
+$("#sidebar").click(function (e) {
+    e.stopPropagation();
+});
 
 $(".in-sidebar-toggler").click(function (e) {
     e.stopPropagation();
