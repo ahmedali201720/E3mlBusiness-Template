@@ -63,7 +63,7 @@
     position: absolute;
     display: none;
     width: 230px;
-    top: 130%;
+    top: 123%;
     background-color: white;
     border-radius: 5px;
     box-shadow: 0px 0px 4px gray;
@@ -103,7 +103,7 @@
 
 .content-dropdown-link {
     padding: 12px 20px !important;
-    border-bottom: 1px solid var(--borderColor);
+    border-top: 1px solid var(--borderColor);
 }
 
 .content-dropdown-link a {
@@ -200,6 +200,18 @@
 
 .alert-dot:lang(ar) {
     right: 60%;
+}
+
+.dropdown-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.dropdown-email {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: wrap;
 }
 
 /* End of header styles */
