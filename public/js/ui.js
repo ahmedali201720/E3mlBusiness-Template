@@ -315,11 +315,17 @@ $(".notification-dropdown-controller").click(
 $(".notification-dropdown-controller").hover(
     function () {
         const notificationDropDown = $(".notfication-control-dropdown");
-        showElement(notificationDropDown);
+        if (getWindowSize() < 600)
+            notificationDropDown.slideDown();
+        else
+            showElement(notificationDropDown);
     },
     function () {
         const notificationDropDown = $(".notfication-control-dropdown");
-        hideElement(notificationDropDown);
+        if (getWindowSize() < 600)
+            notificationDropDown.slideUp();
+        else
+            hideElement(notificationDropDown);
     }
 );
 
@@ -331,3 +337,8 @@ $(".notfication-control-dropdown").hover(
         hideElement($(this));
     }
 );
+
+$(".notification-sidebar-toggler").click(function () {
+    const notificationDropDown = $(".notfication-control-dropdown");
+    notificationDropDown.slideUp();
+});
