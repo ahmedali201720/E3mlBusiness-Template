@@ -47,6 +47,19 @@ function getWindowSize() {
 }
 
 // ***************************************************************************************
+// Function to show and hide element
+// ***************************************************************************************
+function showElement(element, duration = 0) {
+    element.show(duration);
+}
+
+function hideElement(element, duration = 0) {
+    element.hide(duration);
+}
+
+
+
+// ***************************************************************************************
 // Something to do when document is ready
 // ***************************************************************************************
 
@@ -263,14 +276,6 @@ $("#sidebar-toggler").click(function (e) {
 // User Profile control dropdown scripts
 // *************************************************************************************
 
-function showUserControlDropdown(userContentDropDown) {
-    userContentDropDown.show();
-}
-
-function hideUserControlDropdown(userContentDropDown) {
-    userContentDropDown.hide();
-}
-
 $(".user-profile-control").click(
     (event) => {
         event.preventDefault();
@@ -280,19 +285,49 @@ $(".user-profile-control").click(
 $(".user-profile-control").hover(
     function () {
         const userContentDropDown = $(".profile-control-dropdown");
-        showUserControlDropdown(userContentDropDown);
+        showElement(userContentDropDown);
     },
     function () {
         const userContentDropDown = $(".profile-control-dropdown");
-        hideUserControlDropdown(userContentDropDown);
+        hideElement(userContentDropDown);
     }
 );
 
 $(".profile-control-dropdown").hover(
     function () {
-        showUserControlDropdown($(this));
+        showElement($(this));
     },
     function () {
-        hideUserControlDropdown($(this));
+        hideElement($(this));
+    }
+);
+
+// ****************************************************************************
+// notfication control dropdown scripts
+// *****************************************************************************
+
+$(".notification-dropdown-controller").click(
+    function (event) {
+        event.preventDefault();
+    }
+);
+
+$(".notification-dropdown-controller").hover(
+    function () {
+        const notificationDropDown = $(".notfication-control-dropdown");
+        showElement(notificationDropDown);
+    },
+    function () {
+        const notificationDropDown = $(".notfication-control-dropdown");
+        hideElement(notificationDropDown);
+    }
+);
+
+$(".notfication-control-dropdown").hover(
+    function () {
+        showElement($(this));
+    },
+    function () {
+        hideElement($(this));
     }
 );
