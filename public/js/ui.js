@@ -30,6 +30,15 @@ function getLang() {
 }
 
 // ***************************************************************************************
+// Check element display property
+// ***************************************************************************************
+
+function elementDisplayed(element) {
+    const elementDisplayValue = element.css('display');
+    return (elementDisplayValue != 'none' ? true : false);
+}
+
+// ***************************************************************************************
 // Function to window size
 // ***************************************************************************************
 function getWindowSize() {
@@ -254,24 +263,36 @@ $("#sidebar-toggler").click(function (e) {
 // User Profile control dropdown scripts
 // *************************************************************************************
 
-$(".user-profile-control").mouseenter(function () {
-    const userContentDropDown = $(".profile-control-dropdown");
-    showUserControlDropdown(userContentDropDown);
-});
-
-$(".user-profile-control").mouseleave(function () {
-    const userContentDropDown = $(".profile-control-dropdown");
-    hideUserControlDropdown(userContentDropDown);
-});
-
-$(".profile-control-dropdown").mouseleave(function () {
-    hideUserControlDropdown($(this));
-});
-
 function showUserControlDropdown(userContentDropDown) {
-    userContentDropDown.fadeIn();
+    userContentDropDown.show();
 }
 
 function hideUserControlDropdown(userContentDropDown) {
-    userContentDropDown.fadeOut();
+    userContentDropDown.hide();
 }
+
+$(".user-profile-control").click(
+    (event) => {
+        event.preventDefault();
+    }
+);
+
+$(".user-profile-control").hover(
+    function () {
+        const userContentDropDown = $(".profile-control-dropdown");
+        showUserControlDropdown(userContentDropDown);
+    },
+    function () {
+        const userContentDropDown = $(".profile-control-dropdown");
+        hideUserControlDropdown(userContentDropDown);
+    }
+);
+
+$(".profile-control-dropdown").hover(
+    function () {
+        showUserControlDropdown($(this));
+    },
+    function () {
+        hideUserControlDropdown($(this));
+    }
+);

@@ -28,13 +28,16 @@
     font-weight: 700;
 }
 
-.triangle-up {
+.triangle {
     position: absolute;
-    top: 80%;
     border-right: 15px solid transparent;
     border-left: 15px solid transparent;
     border-bottom: 30px solid black;
     z-index: 1900;
+}
+
+.triangle-up {
+    top: 80%;
 }
 
 .triangle-up:lang(en) {
@@ -63,12 +66,21 @@
     position: absolute;
     display: none;
     width: 230px;
-    top: 123%;
+    top: 130%;
     background-color: white;
     border-radius: 5px;
     box-shadow: 0px 0px 4px gray;
     font-size: 14px;
     z-index: 2000;
+}
+
+#main-header .user-content-dropdown::before {
+    content: '';
+    position: absolute;
+    bottom: 100%;
+    width: 100%;
+    height: 20px;
+    background-color: transparent;
 }
 
 #main-header .content-dropdown:lang(en) {
@@ -211,7 +223,7 @@
 .dropdown-email {
     overflow: hidden;
     text-overflow: ellipsis;
-    white-space: wrap;
+    white-space: nowrap;
 }
 
 /* End of header styles */
