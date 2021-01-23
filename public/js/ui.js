@@ -3,17 +3,14 @@
 // ***************************************************************************************
 
 $('body').click(function () {
-    // handle content dropdown container
-    const exploreContainer = $(".explore-container-toggler");
-    const dropdownContainer = $(".content-dropdown-container");
-    if (dropdownContainer.css('display') != 'none') {
-        dropdownContainer.hide();
-        $(".down-icon", exploreContainer).css('visibility', 'visible');
-    }
-    // Handle Sidebar
-    closeSideBar($("#sidebar"));
+    closeAnyDropDown();
     // for debugging body propagation
     console.log("Body Clicked");
+});
+
+$(window).scroll(function () {
+    closeAnyDropDown();
+    // for debugging body propagation
 });
 
 // ***************************************************************************************
@@ -57,7 +54,12 @@ function hideElement(element, duration = 0) {
     element.hide(duration);
 }
 
-
+function closeAnyDropDown(targetDropdown) {
+    const dropdowns = $(".custom-dropdown").not(targetDropdown);
+    $.each(dropdowns, function (key, value) {
+        $(value).hide();
+    });
+}
 
 // ***************************************************************************************
 // Something to do when document is ready
@@ -184,29 +186,6 @@ $(".load-less-link").click(function (e) {
     $(".load-more-link").show();
 });
 
-// ***************************************************************************************
-// Layout Scripts
-// ***************************************************************************************
-
-$(".explore-container-toggler").click(function (e) {
-    e.stopPropagation();
-    $(".content-dropdown-container").toggle();
-    if ($(".content-dropdown-container").css('display') == "none") {
-        contentContainerHidden($(this));
-    }
-    else {
-        contentContainerShown($(this))
-    }
-});
-
-function contentContainerShown(container) {
-    $(".down-icon", container).css('visibility', 'hidden');
-}
-
-function contentContainerHidden(container) {
-    $(".down-icon", container).css('visibility', 'visible');
-}
-
 // ****************************************************************************************
 // Sidebar Scripts
 // ****************************************************************************************
@@ -272,73 +251,51 @@ $("#sidebar-toggler").click(function (e) {
     handleSidebarWidth(sidebar);
 });
 
+// ***************************************************************************************
+// Layout Scripts
+// ***************************************************************************************
+
+$(".explore-container-toggler").click(function (e) {
+    e.stopPropagation();
+    e.preventDefault();
+    const contentDropdown = $(".content-dropdown");
+    closeAnyDropDown(contentDropdown);
+    contentDropdown.toggle();
+});
+
 // *************************************************************************************
 // User Profile control dropdown scripts
 // *************************************************************************************
 
-$(".user-profile-control").click(
-    (event) => {
-        event.preventDefault();
-    }
-);
-
-$(".user-profile-control").hover(
-    function () {
-        const userContentDropDown = $(".profile-control-dropdown");
-        showElement(userContentDropDown);
-    },
-    function () {
-        const userContentDropDown = $(".profile-control-dropdown");
-        hideElement(userContentDropDown);
-    }
-);
-
-$(".profile-control-dropdown").hover(
-    function () {
-        showElement($(this));
-    },
-    function () {
-        hideElement($(this));
-    }
-);
+$(".user-profile-control").click(function (e) {
+    e.stopPropagation();
+    e.preventDefault();
+    const userContentDropDown = $(".profile-control-dropdown");
+    closeAnyDropDown(userContentDropDown);
+    userContentDropDown.toggle();
+});
 
 // ****************************************************************************
 // notfication control dropdown scripts
 // *****************************************************************************
 
 $(".notification-dropdown-controller").click(
-    function (event) {
-        event.preventDefault();
-    }
-);
-
-$(".notification-dropdown-controller").hover(
-    function () {
+    function (e) {
+        e.stopPropagation();
+        e.preventDefault();
         const notificationDropDown = $(".notfication-control-dropdown");
+        closeAnyDropDown(notificationDropDown);
         if (getWindowSize() < 600)
-            notificationDropDown.slideDown();
+            notificationDropDown.slideToggle();
         else
-            showElement(notificationDropDown);
-    },
-    function () {
-        const notificationDropDown = $(".notfication-control-dropdown");
-        if (getWindowSize() < 600)
-            notificationDropDown.slideUp();
-        else
-            hideElement(notificationDropDown);
+            notificationDropDown.toggle();
     }
 );
 
-$(".notfication-control-dropdown").hover(
-    function () {
-        showElement($(this));
-    },
-    function () {
-        hideElement($(this));
-    }
-);
-
-$(".notification-sidebar-toggler").click(function () {
+//for mobile
+$(".notification-sidebar-toggler").click(function (event) {
+    event.stopPropagation();
     const notificationDropDown = $(".notfication-control-dropdown");
+    closeAnyDropDown(notificationDropDown);
     notificationDropDown.slideUp();
 });
