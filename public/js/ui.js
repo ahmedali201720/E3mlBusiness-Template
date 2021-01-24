@@ -320,3 +320,16 @@ $(".wishlist-sidebar-toggler").click(function (event) {
     closeAnyDropDown(wishlistDropdown);
     wishlistDropdown.slideUp();
 });
+
+// user-learning scripts
+
+$(".user-learning-controller").click(function (event) {
+    event.stopPropagation();
+    event.preventDefault();
+    const learningDropdown = $(".learning-control-dropdown");
+    closeAnyDropDown(learningDropdown);
+    if (getWindowSize() < 600)
+        learningDropdown.slideDown();
+    else
+        learningDropdown.toggle();
+});
