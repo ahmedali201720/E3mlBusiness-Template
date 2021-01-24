@@ -484,4 +484,15 @@
     text-decoration: none;
 }
 
+.footer-lang-select {
+    background-color: transparent;
+    color: white;
+    border: none;
+    outline: none !important;
+}
+
+.footer-lang-select option {
+    color: black !important;
+}
+
 /* End of sidebar styles */
