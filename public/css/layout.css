@@ -162,6 +162,7 @@
 
 .notification-link, .wishlist-link {
     position: relative;
+    cursor: pointer;
 }
 
 .notification-dropdown-link, .wishlist-dropdown-link {
@@ -336,6 +337,10 @@
 
 .regular-link:hover {
     color: var(--blueColor) !important;
+}
+
+.separator-link {
+    padding: 0 12px;
 }
 
 /* End of header styles */
