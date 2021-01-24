@@ -23,6 +23,13 @@
         width: 100%;
         height: 100vh;
     }
+    #main-header .wishlist-content-dropdown {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+    }
 }
 
 @media only screen and (min-width: 600px) {

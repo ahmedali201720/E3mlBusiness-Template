@@ -299,3 +299,24 @@ $(".notification-sidebar-toggler").click(function (event) {
     closeAnyDropDown(notificationDropDown);
     notificationDropDown.slideUp();
 });
+
+// Bookmarks scripts 
+
+$(".bookmark-dropdown-controller").click(function (event) {
+    event.stopPropagation();
+    event.preventDefault();
+    const wishlistDropdown = $(".wishlist-control-dropdown");
+    closeAnyDropDown(wishlistDropdown);
+    if (getWindowSize() < 600)
+        wishlistDropdown.slideDown();
+    else
+        wishlistDropdown.toggle();
+});
+
+//for mobile
+$(".wishlist-sidebar-toggler").click(function (event) {
+    event.stopPropagation();
+    const wishlistDropdown = $(".wishlist-control-dropdown");
+    closeAnyDropDown(wishlistDropdown);
+    wishlistDropdown.slideUp();
+});
