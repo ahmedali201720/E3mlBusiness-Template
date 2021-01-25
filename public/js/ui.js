@@ -67,36 +67,24 @@ function closeAnyDropDown(targetDropdown) {
 
 $(document).ready(() => {
 
-    // Truncate text of course card title
-    truncateCourseCardTitle();
-    truncateCourseCardText();
-
-    // Function to handle filter state
-    handleFilterState();
-
-    // Function to truncate course card title
-    function truncateCourseCardTitle() {
-        var cardTitles = $(".card-title a");
-        $.each(cardTitles, function (key, value) {
-            var titleText = value.text;
-            if (titleText.length > 60) {
-                newTitle = titleText.substring(0, 60).concat("..");
-                $(this).text(newTitle);
-            }
-        });
-    }
-
-    // Function to truncate course card text
-    function truncateCourseCardText() {
-        var cardTexts = $(".card-text");
-        $.each(cardTexts, function (key, value) {
+    function truncateText(elements, maxLength) {
+        $.each(elements, function (key, value) {
             var text = value.innerText;
-            if (text.length > 116) {
-                newText = text.substring(0, 116).concat("......");
+            if (text.length > maxLength) {
+                newText = text.substring(0, maxLength).concat("...");
                 $(this).text(newText);
             }
         });
     }
+
+    // Truncate text of course card title
+    var cardTitles = $(".card-title a");
+    var cardTexts = $(".card-text");
+    truncateText(cardTitles, 60);
+    truncateText(cardTexts, 112);
+
+    // Function to handle filter state
+    handleFilterState();
 
     // function to handle filter state on load
     function handleFilterState() {
@@ -205,7 +193,7 @@ function openSideBar(sidebar) {
             width: '40%'
         }, 500);
         setTimeout(() => {
-            $("*", sidebar).fadeIn(150);
+            $("*", sidebar).css('visibility', 'visible');
         }, 300);
     }
     else if (getWindowSize() >= 600 && getWindowSize() < 768) {
@@ -213,7 +201,7 @@ function openSideBar(sidebar) {
             width: '50%'
         }, 500);
         setTimeout(() => {
-            $("*", sidebar).fadeIn(150);
+            $("*", sidebar).css('visibility', 'visible');
         }, 300);
     }
     else if (getWindowSize() <= 400) {
@@ -221,13 +209,13 @@ function openSideBar(sidebar) {
             width: '100%'
         }, 500);
         setTimeout(() => {
-            $("*", sidebar).fadeIn(150);
+            $("*", sidebar).css('visibility', 'visible');
         }, 300);
     }
 }
 
 function closeSideBar(sidebar) {
-    $("*", sidebar).fadeOut(50);
+    $("*", sidebar).css('visibility', 'hidden');
     setTimeout(() => {
         sidebar.animate({
             width: 0
