@@ -322,3 +322,12 @@ $(".user-learning-controller").click(function (event) {
     else
         learningDropdown.toggle();
 });
+
+// *************************************************************************************************
+// Custom Dropdown 
+// *************************************************************************************************
+
+$(".custom-dropdown").click(function (event) {
+    // Stop propagation to avoid body click event triggering
+    event.stopPropagation();
+});
