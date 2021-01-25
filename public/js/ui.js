@@ -4,13 +4,15 @@
 
 $('body').click(function () {
     closeAnyDropDown();
-    // for debugging body propagation
     console.log("Body Clicked");
 });
 
+// ***************************************************************************************
+// Window Scroll Event
+// ***************************************************************************************
+
 $(window).scroll(function () {
     closeAnyDropDown();
-    // for debugging body propagation
 });
 
 // ***************************************************************************************
@@ -245,7 +247,6 @@ $("#sidebar-toggler").click(function (e) {
 
 $(".explore-container-toggler").click(function (e) {
     e.stopPropagation();
-    e.preventDefault();
     const contentDropdown = $(".content-dropdown");
     closeAnyDropDown(contentDropdown);
     contentDropdown.toggle();
