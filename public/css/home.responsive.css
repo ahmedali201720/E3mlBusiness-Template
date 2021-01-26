@@ -1,0 +1,217 @@
+@media only screen and (max-width:600px) {
+    /* Start of course card styles */
+    .course-card {
+        width: 100%;
+        height: 390px;
+        max-height: 390px;
+    }
+    .course-card .course-card-text {
+        height: 80px;
+        max-height: 80px;
+        overflow: auto;
+    }
+    /* End of course card styles */
+    /* Start of slider course card styles */
+    .slider-course-card {
+        width: 100%;
+        height: 395px;
+        max-height: 395px;
+    }
+    .slider-course-card .course-card-title {
+        height: 65px;
+        max-height: 65px;
+    }
+    .slider-course-card .course-card-text {
+        height: 90px;
+        max-height: 90px;
+        overflow: auto;
+    }
+    /* End of slider course card styles */
+    /* Start of diploma card styles */
+    .diploma-card .diploma-card-text {
+        height: 65px;
+        max-height: 65px;
+    }
+    /* End of diploma card styles */
+}
+
+@media only screen and (max-width:340px) {
+    /* Start of course card styles */
+    .course-card {
+        width: 100%;
+        height: 380px;
+        max-height: 380px;
+    }
+    .course-card .course-card-text {
+        height: 95px;
+        max-height: 95px;
+        overflow: auto;
+    }
+    /* End of course card styles */
+}
+
+@media only screen and (min-width:600px) {
+    /* Start of course card styles */
+    .course-card {
+        width: 100%;
+        height: 385px;
+        max-height: 385px;
+    }
+    .course-card .course-card-text {
+        height: 90px;
+        max-height: 90px;
+        overflow: auto;
+    }
+    .course-card .course-card-title {
+        height: 45px;
+        max-height: 45px;
+    }
+    /* End of course card styles */
+}
+
+@media only screen and (min-width:768px) {
+    /* Start of course card styles */
+    .course-card {
+        width: 100%;
+        height: 360px;
+        max-height: 360px;
+    }
+    .course-card .course-card-text {
+        height: 75px;
+        max-height: 75px;
+        overflow: auto;
+    }
+    .course-card .course-card-title {
+        height: 30px;
+        max-height: 30px;
+    }
+    /* End of course card styles */
+}
+
+@media only screen and (min-width:992px) {
+    /* Start of course card styles */
+    .course-card {
+        width: 100%;
+        height: 370px;
+        max-height: 370px;
+    }
+    .course-card .course-card-title {
+        height: 45px;
+        max-height: 45px;
+    }
+    .course-card .course-card-text {
+        height: 90px;
+        max-height: 90px;
+        overflow: auto;
+    }
+    /* End of course card styles */
+}
+
+@media only screen and (min-width:1200px) {
+    /* Start of course card styles */
+    .course-card {
+        width: 100%;
+        height: 370px;
+        max-height: 370px;
+    }
+    .course-card .course-card-text {
+        height: 90px;
+        max-height: 90px;
+        overflow: auto;
+    }
+    /* End of course card styles */
+    /* Start of slider course card styles */
+    .slider-course-card {
+        width: 100%;
+        height: 375px;
+        max-height: 375px;
+    }
+    .slider-course-card .course-card-title {
+        height: 50px;
+        max-height: 50px;
+        overflow: auto;
+    }
+    /* End of slider course card styles */
+    /* Diploma-card styles */
+    .diploma-card {
+        height: 400px;
+    }
+    .diploma-card .diploma-card-img img {
+        width: 100%;
+        min-height: auto;
+        max-height: 135px;
+    }
+    .diploma-card .diploma-card-title {
+        height: 47px;
+        max-height: 47px;
+    }
+    .diploma-card .diploma-card-text {
+        height: 125px;
+        max-height: 125px;
+    }
+    /* End diploma card styles */
+}
+
+@media only screen and (min-width:1300px) {
+    /* Diploma-card styles */
+    .diploma-card .diploma-card-title {
+        height: 47px;
+        max-height: 47px;
+    }
+    .diploma-card .diploma-card-text {
+        height: 115px;
+        max-height: 115px;
+    }
+    /* End diploma card styles */
+}
+
+@media only screen and (min-width:1400px) {
+    /* Start of course card styles */
+    .course-card {
+        width: 100%;
+        height: 370px;
+        max-height: 370px;
+    }
+    .course-card .course-card-text {
+        height: 70px;
+        max-height: 70px;
+        overflow: auto;
+    }
+    /* End of course card styles */
+    /* Start of course card styles */
+    .slider-course-card {
+        width: 100%;
+        height: 370px;
+        max-height: 370px;
+    }
+    /* End of course card styles */
+    /* Diploma-card styles */
+    .diploma-card {
+        height: 385px;
+    }
+    .diploma-card .diploma-card-text {
+        height: 100px;
+        max-height: 100px;
+    }
+    .diploma-card .diploma-card-title {
+        height: 40px;
+        max-height: 40px;
+    }
+    /* End diploma card styles */
+}
+
+@media only screen and (min-width:1500px) {
+    /* Diploma-card styles */
+    .diploma-card {
+        height: 390px;
+    }
+    .diploma-card .diploma-card-text {
+        height: 90px;
+        max-height: 90px;
+    }
+    .diploma-card .diploma-card-title {
+        height: 40px;
+        max-height: 40px;
+    }
+    /* End diploma card styles */
+}

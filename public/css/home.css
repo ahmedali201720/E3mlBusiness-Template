@@ -1,0 +1,389 @@
+/* Start of course card styles */
+
+.course-card {
+    border: 1px solid var(--cardBorderColor);
+    border-radius: 5px;
+    margin-bottom: 1.1rem;
+}
+
+.course-card .course-card-img {
+    border-bottom: 1px solid var(--cardBorderColor);
+}
+
+.course-card .course-card-img:hover {
+    cursor: pointer;
+}
+
+.course-card .course-card-img img {
+    width: 100%;
+    min-height: 150px;
+    height: auto;
+    max-height: 170px;
+    border-radius: 5px;
+}
+
+.course-card .course-card-body {
+    padding: 8px 6px;
+}
+
+.course-card .course-card-title {
+    line-height: 15px;
+    height: 40px;
+    max-height: 40px;
+    overflow: hidden;
+    margin-bottom: 0px !important;
+}
+
+.course-card .course-card-title a {
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--cardTitleColor);
+}
+
+.course-card .course-introducer {
+    font-size: 12px;
+    padding: 8px 0;
+}
+
+.course-card .course-introducer a {
+    color: #08206b;
+}
+
+.course-card .course-card-text {
+    font-size: 14px;
+    font-weight: 400;
+    color: #808a85;
+    overflow: auto;
+}
+
+.course-card .rating-stars {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.course-card .star {
+    display: inline-block;
+    position: relative;
+    font-size: 16px;
+    color: gray;
+}
+
+.course-card .value-star {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    overflow: hidden;
+    color: #f80;
+}
+
+.course-card .course-rate-view {
+    padding: 4px 0;
+}
+
+.course-card .rate-contributors-number {
+    font-size: 14px;
+    font-weight: 400;
+    color: #b3b9b6;
+}
+
+/* End of course card styles */
+
+/* Start of course slider card styles */
+
+.slider-course-card {
+    border: 1px solid var(--cardBorderColor);
+    border-radius: 5px;
+    margin-bottom: 1.1rem;
+}
+
+.slider-course-card .course-card-img {
+    border-bottom: 1px solid var(--cardBorderColor);
+}
+
+.slider-course-card .course-card-img:hover {
+    cursor: pointer;
+}
+
+.slider-course-card .course-card-img img {
+    width: 100%;
+    min-height: 150px;
+    height: auto;
+    max-height: 170px;
+    border-radius: 5px;
+}
+
+.slider-course-card .course-card-body {
+    padding: 8px 6px;
+}
+
+.slider-course-card .course-card-title {
+    line-height: 15px;
+    height: 40px;
+    max-height: 40px;
+    overflow: hidden;
+    margin-bottom: 0px !important;
+}
+
+.slider-course-card .course-card-title a {
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--cardTitleColor);
+}
+
+.slider-course-card .course-introducer {
+    font-size: 12px;
+    padding: 8px 0;
+}
+
+.slider-course-card.course-introducer a {
+    color: #08206b;
+}
+
+.slider-course-card .course-card-text {
+    font-size: 14px;
+    font-weight: 400;
+    color: #808a85;
+    overflow: auto;
+}
+
+.slider-course-card .rating-stars {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.slider-course-card .star {
+    display: inline-block;
+    position: relative;
+    font-size: 16px;
+    color: gray;
+}
+
+.slider-course-card .value-star {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    overflow: hidden;
+    color: #f80;
+}
+
+.slider-course-card .course-rate-view {
+    padding: 4px 0;
+}
+
+.slider-course-card .rate-contributors-number {
+    font-size: 14px;
+    font-weight: 400;
+    color: #b3b9b6;
+}
+
+/* End of course slider card styles */
+
+/* Start of main filter Styles */
+
+.filter-group-label {
+    font-size: 16px;
+    font-weight: 600;
+    padding: 0.4rem 0;
+    border-bottom: 2px solid var(--borderColor);
+}
+
+.filter-group-content {
+    font-size: 15px;
+    font-weight: 400;
+    padding: 0.5rem 0;
+    color: #808a85;
+}
+
+.filter-group-content .form-check {
+    padding-top: 0.125rem;
+    padding-bottom: 0.125rem;
+}
+
+.form-check-label:hover {
+    cursor: pointer;
+}
+
+.form-check-toggler {
+    position: relative;
+    display: none;
+    width: 20px;
+    height: 20px;
+    font-size: 10px;
+    border-radius: 50%;
+    background-color: red;
+    text-align: center;
+    color: white;
+}
+
+.form-check-toggler:hover {
+    background-color: rgb(245, 61, 61);
+    cursor: pointer;
+}
+
+.form-check-toggler i {
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    vertical-align: middle;
+}
+
+.form-check-tooltip {
+    position: absolute;
+    top: 0;
+    background-color: black;
+    color: white;
+    padding: 2px 3px;
+    border-radius: 5px;
+    z-index: 500;
+    display: none;
+}
+
+.form-check-tooltip:lang(en) {
+    right: 120%
+}
+
+.form-check-tooltip:lang(ar) {
+    left: 120%;
+}
+
+.hidden-input-label:hover {
+    cursor: pointer;
+}
+
+.load-less-link {
+    display: none;
+}
+
+/* End of main filter Styles */
+
+/* Headers and labels styles */
+
+.section-header {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--blueColor);
+}
+
+.section-sub-header {
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--sectionSubHeaderColor);
+}
+
+.section-header-filter a {
+    font-size: 14px;
+    font-weight: 400;
+    color: black;
+}
+
+.section-header-filter a:hover {
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--blackTextHoverColor);
+}
+
+/* End of headers and labels styles */
+
+/* Start of diploma card styles */
+
+.diploma-card {
+    height: 405px;
+    border: 1px solid var(--cardBorderColor);
+    border-radius: 5px;
+    margin-bottom: 1.1rem;
+}
+
+.diploma-card .diploma-card-img {
+    border-bottom: 1px solid var(--cardBorderColor);
+}
+
+.diploma-card .diploma-card-img:hover {
+    cursor: pointer;
+}
+
+.diploma-card .diploma-card-img img {
+    width: 100%;
+    min-height: 150px;
+    height: auto;
+    max-height: 170px;
+}
+
+.diploma-card .diploma-card-body {
+    padding: 8px 8px;
+}
+
+.diploma-card .diploma-card-title {
+    line-height: 15px;
+    height: 40px;
+    max-height: 40px;
+    overflow: hidden;
+    margin-bottom: 0px !important;
+}
+
+.diploma-card .diploma-card-title a {
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--cardTitleColor);
+}
+
+.diploma-card .diploma-courses-num {
+    font-size: 12px;
+    padding: 8px 0;
+}
+
+.diploma-card .diploma-courses-num a {
+    color: #08206b;
+}
+
+.diploma-card .diploma-card-text {
+    height: 85px;
+    max-height: 85px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #808a85;
+    overflow: auto;
+}
+
+.diploma-card .rating-stars {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.diploma-card .star {
+    display: inline-block;
+    position: relative;
+    font-size: 16px;
+    color: gray;
+}
+
+.diploma-card .value-star {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    overflow: hidden;
+    color: #f80;
+}
+
+.diploma-card .diploma-rate-view {
+    padding: 4px 0;
+}
+
+.diploma-card .rate-contributors-number {
+    font-size: 14px;
+    font-weight: 400;
+    color: #b3b9b6;
+}
+
+.diploma-card .diploma-price {
+    color: var(--actionBackColor);
+    font-size: 24px;
+    font-weight: 700;
+}
+
+/* End of diploma card styles */

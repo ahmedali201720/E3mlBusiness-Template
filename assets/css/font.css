@@ -1,0 +1,329 @@
+/* font family 'Aileron' styles*/
+
+@font-face {
+    font-family: 'Aileron';
+    src: url('../fonts/Aileron/Aileron-BlackItalic.woff2') format('woff2');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Aileron';
+    src: url('../fonts/Aileron/Aileron-Heavy.woff2') format('woff2');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Aileron';
+    src: url('../fonts/Aileron/Aileron-HeavyItalic.woff2') format('woff2');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Aileron';
+    src: url('../fonts/Aileron/Aileron-Bold.woff2') format('woff2');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Aileron';
+    src: url('../fonts/Aileron/Aileron-Black.woff2') format('woff2');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Aileron';
+    src: url('../fonts/Aileron/Aileron-Light.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Aileron';
+    src: url('../fonts/Aileron/Aileron-BlackItalic.woff2') format('woff2');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Aileron';
+    src: url('../fonts/Aileron/Aileron-Italic.woff2') format('woff2');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Aileron';
+    src: url('../fonts/Aileron/Aileron-UltraLight.woff2') format('woff2');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Aileron';
+    src: url('../fonts/Aileron/Aileron-UltraLightItalic.woff2') format('woff2');
+    font-weight: 200;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Aileron';
+    src: url('../fonts/Aileron/Aileron-Thin.woff2') format('woff2');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Aileron';
+    src: url('../fonts/Aileron/Aileron-SemiBoldItalic.woff2') format('woff2');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Aileron';
+    src: url('../fonts/Aileron/Aileron-ThinItalic.woff2') format('woff2');
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Aileron';
+    src: url('../fonts/Aileron/Aileron-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Aileron';
+    src: url('../fonts/Aileron/Aileron-SemiBold.woff2') format('woff2');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* End of Aileron font family styles */
+
+/* Start of Tajwal font family styles */
+
+/* arabic */
+
+@font-face {
+    font-family: 'Tajawal';
+    font-style: normal;
+    font-weight: 200;
+    font-display: swap;
+    src: url(../fonts/Tajawal/Tajawal-ExtraLight.ttf) format('woff2');
+    unicode-range: U+0600-06FF, U+200C-200E, U+2010-2011, U+204F, U+2E41, U+FB50-FDFF, U+FE80-FEFC;
+}
+
+/* latin */
+
+@font-face {
+    font-family: 'Tajawal';
+    font-style: normal;
+    font-weight: 200;
+    font-display: swap;
+    src: url(../fonts/Tajawal/Tajawal-ExtraLight.ttf) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* arabic */
+
+@font-face {
+    font-family: 'Tajawal';
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: url(../fonts/Tajawal/Tajawal-Light.ttf) format('woff2');
+    unicode-range: U+0600-06FF, U+200C-200E, U+2010-2011, U+204F, U+2E41, U+FB50-FDFF, U+FE80-FEFC;
+}
+
+/* latin */
+
+@font-face {
+    font-family: 'Tajawal';
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: url(../fonts/Tajawal/Tajawal-Light.ttf) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* arabic */
+
+@font-face {
+    font-family: 'Tajawal';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(../fonts/Tajawal/Tajawal-Regular.ttf) format('woff2');
+    unicode-range: U+0600-06FF, U+200C-200E, U+2010-2011, U+204F, U+2E41, U+FB50-FDFF, U+FE80-FEFC;
+}
+
+/* latin */
+
+@font-face {
+    font-family: 'Tajawal';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(../fonts/Tajawal/Tajawal-Regular.ttf) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* arabic */
+
+@font-face {
+    font-family: 'Tajawal';
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url(../fonts/Tajawal/Tajawal-Medium.ttf) format('woff2');
+    unicode-range: U+0600-06FF, U+200C-200E, U+2010-2011, U+204F, U+2E41, U+FB50-FDFF, U+FE80-FEFC;
+}
+
+/* latin */
+
+@font-face {
+    font-family: 'Tajawal';
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url(../fonts/Tajawal/Tajawal-Medium.ttf) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* arabic */
+
+@font-face {
+    font-family: 'Tajawal';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url(../fonts/Tajawal/Tajawal-Bold.ttf) format('woff2');
+    unicode-range: U+0600-06FF, U+200C-200E, U+2010-2011, U+204F, U+2E41, U+FB50-FDFF, U+FE80-FEFC;
+}
+
+/* latin */
+
+@font-face {
+    font-family: 'Tajawal';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url(../fonts/Tajawal/Tajawal-Bold.ttf) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* arabic */
+
+@font-face {
+    font-family: 'Tajawal';
+    font-style: normal;
+    font-weight: 800;
+    font-display: swap;
+    src: url(../fonts/Tajawal/Tajawal-ExtraBold.ttf) format('woff2');
+    unicode-range: U+0600-06FF, U+200C-200E, U+2010-2011, U+204F, U+2E41, U+FB50-FDFF, U+FE80-FEFC;
+}
+
+/* latin */
+
+@font-face {
+    font-family: 'Tajawal';
+    font-style: normal;
+    font-weight: 800;
+    font-display: swap;
+    src: url(../fonts/Tajawal/Tajawal-ExtraBold.ttf) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* arabic */
+
+@font-face {
+    font-family: 'Tajawal';
+    font-style: normal;
+    font-weight: 900;
+    font-display: swap;
+    src: url(../fonts/Tajawal/Tajawal-Black.ttf) format('woff2');
+    unicode-range: U+0600-06FF, U+200C-200E, U+2010-2011, U+204F, U+2E41, U+FB50-FDFF, U+FE80-FEFC;
+}
+
+/* latin */
+
+@font-face {
+    font-family: 'Tajawal';
+    font-style: normal;
+    font-weight: 900;
+    font-display: swap;
+    src: url(../fonts/Tajawal/Tajawal-Black.ttf) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* End of Tajwal font family styles  */
+
+/* Start of DINNextLTW23 font styles */
+
+@font-face {
+    font-family: 'DIN NEXTTM ARABIC';
+    src: url('../fonts/DINNextLTW23/DINNextLTW23-Black.woff2') format('woff2');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'DIN NEXTTM ARABIC';
+    src: url('../fonts/DINNextLTW23/DINNextLTW23-Bold.woff2') format('woff2');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'DIN NEXTTM ARABIC';
+    src: url('../fonts/DINNextLTW23/DINNextLTW23-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'DIN NEXTTM ARABIC';
+    src: url('../fonts/DINNextLTW23/DINNextLTW23-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* End of DINNextLTW23 font styles */
+
+/* Start of FF Shamel Family Sans One styles */
+
+@font-face {
+    font-family: 'FF Shamel Family Sans One';
+    src: url('../fonts/FFShamelFamily-SansOne/FFShamelFamily-SansOne-Bold.ttf') format('woff2');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* End of FF Shamel Family Sans One styles */
