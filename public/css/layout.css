@@ -71,14 +71,6 @@
     border-width: 16px;
 }
 
-#main-header .content-dropdown::before:lang(en), #main-header .content-dropdown::after:lang(en) {
-    left: 27%;
-}
-
-#main-header .content-dropdown::before:lang(ar), #main-header .content-dropdown::after:lang(ar) {
-    right: 27%;
-}
-
 #main-header .user-content-dropdown {
     position: absolute;
     display: none;

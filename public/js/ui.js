@@ -82,8 +82,10 @@ $(document).ready(() => {
     // Truncate text of course card title
     var cardTitles = $(".card-title a");
     var cardTexts = $(".card-text");
+    var diplomaTexts = $(".diploma-text");
     truncateText(cardTitles, 60);
-    truncateText(cardTexts, 112);
+    truncateText(cardTexts, 115);
+    truncateText(diplomaTexts, 120);
 
     // Function to handle filter state
     handleFilterState();
