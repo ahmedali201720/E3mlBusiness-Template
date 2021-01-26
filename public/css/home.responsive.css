@@ -27,6 +27,12 @@
         overflow: auto;
     }
     /* End of slider course card styles */
+    /* Start of diploma card styles */
+    .diploma-card .diploma-card-text {
+        height: 65px;
+        max-height: 65px;
+    }
+    /* End of diploma card styles */
 }
 
 @media only screen and (max-width:340px) {
@@ -126,6 +132,37 @@
         overflow: auto;
     }
     /* End of slider course card styles */
+    /* Diploma-card styles */
+    .diploma-card {
+        height: 400px;
+    }
+    .diploma-card .diploma-card-img img {
+        width: 100%;
+        min-height: auto;
+        max-height: 135px;
+    }
+    .diploma-card .diploma-card-title {
+        height: 47px;
+        max-height: 47px;
+    }
+    .diploma-card .diploma-card-text {
+        height: 125px;
+        max-height: 125px;
+    }
+    /* End diploma card styles */
+}
+
+@media only screen and (min-width:1300px) {
+    /* Diploma-card styles */
+    .diploma-card .diploma-card-title {
+        height: 47px;
+        max-height: 47px;
+    }
+    .diploma-card .diploma-card-text {
+        height: 115px;
+        max-height: 115px;
+    }
+    /* End diploma card styles */
 }
 
 @media only screen and (min-width:1400px) {
@@ -148,4 +185,33 @@
         max-height: 370px;
     }
     /* End of course card styles */
+    /* Diploma-card styles */
+    .diploma-card {
+        height: 385px;
+    }
+    .diploma-card .diploma-card-text {
+        height: 100px;
+        max-height: 100px;
+    }
+    .diploma-card .diploma-card-title {
+        height: 40px;
+        max-height: 40px;
+    }
+    /* End diploma card styles */
+}
+
+@media only screen and (min-width:1500px) {
+    /* Diploma-card styles */
+    .diploma-card {
+        height: 390px;
+    }
+    .diploma-card .diploma-card-text {
+        height: 90px;
+        max-height: 90px;
+    }
+    .diploma-card .diploma-card-title {
+        height: 40px;
+        max-height: 40px;
+    }
+    /* End diploma card styles */
 }

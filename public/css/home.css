@@ -291,9 +291,7 @@
 /* Start of diploma card styles */
 
 .diploma-card {
-    width: 255px;
     height: 405px;
-    padding: 0 3px;
     border: 1px solid var(--cardBorderColor);
     border-radius: 5px;
     margin-bottom: 1.1rem;
@@ -312,11 +310,10 @@
     min-height: 150px;
     height: auto;
     max-height: 170px;
-    border-radius: 5px;
 }
 
 .diploma-card .diploma-card-body {
-    padding: 8px 6px;
+    padding: 8px 8px;
 }
 
 .diploma-card .diploma-card-title {

@@ -83,9 +83,12 @@ $(document).ready(() => {
     var cardTitles = $(".card-title a");
     var cardTexts = $(".card-text");
     var diplomaTexts = $(".diploma-text");
-    truncateText(cardTitles, 60);
+    truncateText(cardTitles, 50);
     truncateText(cardTexts, 115);
-    truncateText(diplomaTexts, 120);
+    if (getWindowSize() >= 1200 && getWindowSize() <= 1400)
+        truncateText(diplomaTexts, 100);
+    else
+        truncateText(diplomaTexts, 110);
 
     // Function to handle filter state
     handleFilterState();
