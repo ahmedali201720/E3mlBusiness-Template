@@ -1,0 +1,262 @@
+.plan-section-label {
+    color: var(--blueColor);
+}
+
+.plan-section-text {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.plan-section-text li::marker {
+    content: '\f1ea';
+    font-family: FontAwesome;
+    color: var(--actionBackColor);
+}
+
+.plan-section-text li::before {
+    content: '\00a0 \00a0';
+}
+
+.plan-section-text i {
+    color: var(--actionBackColor);
+}
+
+.plan-subscription-container {
+    border: 2px solid #efefef;
+    border-radius: 5px;
+}
+
+.plan-subscription-container .plans-list {
+    list-style: none;
+    text-align: center;
+}
+
+.plans-list .plan-item {
+    position: relative;
+    padding: 0.625rem 0;
+    border: 1px solid #f3eded;
+    display: inline-block;
+    width: 180px;
+    border-radius: 10px;
+    transition: all 0.4s;
+    overflow: hidden;
+}
+
+.plan-item .card-badge {
+    position: absolute;
+    background: rgb(252, 14, 6);
+    background: radial-gradient(circle, rgba(252, 14, 6, 1) 8%, rgba(247, 218, 217, 1) 100%);
+    color: #fff;
+    font-weight: 600;
+    top: 15%;
+    left: -25%;
+    padding: 0 2.5rem;
+    transform: rotateZ(-50deg);
+    animation: colorChange 3s infinite alternate;
+}
+
+@-webkit-keyframes colorChange {
+    0% {
+        background-position: left top;
+        background-size: 200% 200%;
+    }
+    25% {
+        background-position: 50% 50%;
+    }
+    50% {
+        background-size: 100% 100%;
+    }
+    75% {
+        background-position: 150% 150%;
+    }
+    100% {
+        background-position: right top;
+        background-size: 200% 200%;
+    }
+}
+
+@-moz-keyframes colorChange {
+    0% {
+        background-position: left top;
+        background-size: 200% 200%;
+    }
+    25% {
+        background-position: 50% 50%;
+    }
+    50% {
+        background-size: 100% 100%;
+    }
+    75% {
+        background-position: 150% 150%;
+    }
+    100% {
+        background-position: right top;
+        background-size: 200% 200%;
+    }
+}
+
+@-o-keyframes colorChange {
+    0% {
+        background-position: left top;
+        background-size: 200% 200%;
+    }
+    25% {
+        background-position: 50% 50%;
+    }
+    50% {
+        background-size: 100% 100%;
+    }
+    75% {
+        background-position: 150% 150%;
+    }
+    100% {
+        background-position: right top;
+        background-size: 200% 200%;
+    }
+}
+
+@keyframes colorChange {
+    0% {
+        background-position: left top;
+        background-size: 200% 200%;
+    }
+    25% {
+        background-position: 50% 50%;
+    }
+    50% {
+        background-size: 100% 100%;
+    }
+    75% {
+        background-position: 150% 150%;
+    }
+    100% {
+        background-position: right top;
+        background-size: 200% 200%;
+    }
+}
+
+.plans-list .plan-item:hover {
+    cursor: pointer;
+    background-color: var(--actionBackColor);
+    -webkit-transform: scale(1.06);
+    transform: scale(1.06);
+}
+
+.plans-list .plan-item:hover .plan-duration {
+    background-color: #fff;
+    color: #000;
+}
+
+.plans-list .plan-item:hover .plan-type {
+    color: #fff;
+}
+
+.plans-list .plan-item:hover .plan-price {
+    color: #fff;
+}
+
+.plans-list .plan-item .plan-duration {
+    background-color: var(--actionBackColor);
+    padding: 0.225rem 0.425rem;
+    color: white;
+    border-radius: 50px;
+    font-weight: 700;
+}
+
+.plans-list .plan-item .plan-type {
+    color: var(--blueColor);
+    font-weight: 700;
+}
+
+.plans-list .plan-item .plan-price {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.plans-list .plan-item-active {
+    background-color: var(--actionBackColor) !important;
+    -webkit-transform: scale(1.06);
+    transform: scale(1.06);
+}
+
+.plans-list .plan-item-active .plan-duration {
+    background-color: #fff;
+    color: #000;
+}
+
+.plans-list .plan-item-active .plan-type, .plans-list .plan-item-active .plan-price {
+    color: #fff;
+}
+
+.coupon-form .promo-input {
+    outline: none !important;
+    border: 1px solid #efefef;
+    padding: 0.325rem 0.925rem;
+}
+
+.coupon-btn {
+    outline: none !important;
+    border: none;
+    background-color: var(--actionBackColor);
+    color: #fff;
+    font-weight: 600;
+}
+
+.coupon-btn:hover {
+    cursor: pointer;
+    background-color: var(--actionHoverBackColor)
+}
+
+.payment-option {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #cacace;
+    border-radius: 5px;
+    transition: all 0.4s;
+    height: 100%;
+}
+
+.payment-option:hover {
+    cursor: pointer;
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+}
+
+.payment-option img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.payment-option-selected .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #f8f8fc85;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #70a130;
+    font-size: 50px;
+    transition: all 0.4s;
+}
+
+.payment-form .payment-btn {
+    background-color: var(--actionBackColor);
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 700;
+    outline: none !important;
+    border-radius: 5px;
+    border: none;
+    padding: 0.625rem;
+}
+
+.payment-form .payment-btn:hover {
+    background-color: var(--actionHoverBackColor);
+    cursor: pointer;
+}

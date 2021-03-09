@@ -256,7 +256,7 @@
 
 .search-form-container input {
     font-family: 'FontAwesome', var(--aileron);
-    font-size: 0.7rem !important;
+    font-size: 1.2rem !important;
     padding: 12px !important;
     background-color: var(--inputBackColor);
 }

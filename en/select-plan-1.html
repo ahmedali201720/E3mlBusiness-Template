@@ -662,15 +662,143 @@
 
     <!-- End of sidebar section -->
 
-    <!-- Dummy Section -->
+    <!-- Select Plan Section -->
 
-    <section class="my-5 text-center">
+    <section id="select-plan" class="select-plan-section mx-xl-5 mx-lg-4 mx-2 my-5 text-center">
 
-        <h1>E3ml Business Template</h1>
+        <div class="container-fluid">
+
+            <div class="row">
+
+                <div class="col-xl-5 col-md-6 px-xl-5 px-lg-4 px-3 dynamic-md-align dynamic-align-xs-center">
+
+                    <h4 class="plan-section-label">Join and Start Learn</h4>
+                    <h6 class="plan-section-sublabel">Join more than 10,000 subscribers</h6>
+
+                    <ul class="plan-section-text px-4 py-2 my-lg-4 my-3">
+                        <li class="label-text mb-2">Lorem ipsum dolor sit amet.</li>
+                        <li class="label-text mb-2">Lorem ipsum dolor sit amet.</li>
+                        <li class="label-text mb-2">Lorem ipsum dolor sit amet.</li>
+                        <li class="label-text mb-2">Lorem ipsum dolor sit amet.</li>
+                        <li class="label-text mb-2">Lorem ipsum dolor sit amet.</li>
+                        <li class="label-text mb-2">Lorem ipsum dolor sit amet.</li>
+                    </ul>
+
+                </div>
+
+                <div class="col-xl-7 col-md-6 px-xl-3 px-lg-4 px-3 dynamic-md-align dynamic-align-xs-center">
+
+                    <div class="plan-subscription-container px-2 py-lg-5 py-3">
+
+                        <h5 class="plan-section-label text-center">Join Now</h5>
+                        <h6 class="plan-section-sublabel text-center">Select your plan</h6>
+
+                        <ul class="plans-list mt-4 mt-3 mb-xl-4 mb-3 px-0">
+                            <li id="threeMonthPlan" class="plan-item px-3 py-4">
+                                <p class="plan-duration">3 Months</p>
+                                <p class="plan-type">Regular</p>
+                                <p class="plan-price">
+                                    <span class="cost">120</span>
+                                    <span class="currency">$</span>
+                                </p>
+                            </li>
+                            <li id="sixMonthPlan" class="plan-item mx-2 px-3 py-4">
+                                <p class="plan-duration">6 Months</p>
+                                <p class="plan-type best-deal">Professional</p>
+                                <p class="plan-price">
+                                    <span class="cost">180</span>
+                                    <span class="currency">$</span>
+                                </p>
+                                <p class="card-badge mb-0">Best Deal</p>
+                            </li>
+                            <li id="threeMonthPlan" class="plan-item px-3 py-4">
+                                <p class="plan-duration">9 Months</p>
+                                <p class="plan-type">Advanced</p>
+                                <p class="plan-price">
+                                    <span class="cost">240</span>
+                                    <span class="currency">$</span>
+                                </p>
+                            </li>
+                        </ul>
+
+                        <form class="coupon-form mx-xl-5 my-5">
+                            <div class="form-row">
+                                <input type="text" class="col-8 promo-input" id="promo" placeholder="Enter Promo code.."
+                                    name="promo">
+                                <button type="submit" class="coupon-btn col-4">Apply</button>
+                            </div>
+                        </form>
+
+                        <h5 class="plan-section-label text-center">Payment Methods</h5>
+                        <h6 class="plan-section-sublabel text-center">Select a payment method</h6>
+
+                        <div class="row px-xl-5 px-lg-3 px-2 my-xl-5 my-lg-4 my-3">
+                            <div class="col-lg-3 col-sm-6 px-2">
+                                <div id="cardOption" class="payment-option payment-option-selected">
+                                    <img src="../assets/img/master-card.png" alt="master">
+                                    <div class="overlay">
+                                        <i class="fa fa-check-circle"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-sm-6 px-2">
+                                <div id="fawryOption" class="payment-option">
+                                    <img src="../assets/img/fawry.png" alt="master">
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-sm-6 px-2">
+                                <div id="vcashOption" class="payment-option">
+                                    <img src="../assets/img/vcash.png" alt="master">
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-sm-6 px-2">
+                                <div id="madaOption" class="payment-option">
+                                    <img src="../assets/img/mada.png" alt="master">
+                                </div>
+                            </div>
+                        </div>
+
+                        <form class="payment-form px-xl-5 px-lg-4 px-3 my-3">
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Card Number</label>
+                                <input type="text" class="form-control" id="cardNum" placeholder="Enter Card Number">
+                            </div>
+                            <div class="form-row">
+                                <div class="col-6">
+                                    <div class="form-group">
+                                        <label for="expDate">Expiration</label>
+                                        <input type="text" class="form-control" id="expDate" placeholder="MM / YY">
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="form-group">
+                                        <label for="cvv">CVV</label>
+                                        <input type="text" class="form-control" id="cvv" placeholder="000">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label class="form-check-label" for="exampleCheck1">Save Payment Info</label>
+                            </div>
+                            <div class="form-row">
+                                <div class="col-12 my-2">
+                                    <button type="submit" class="payment-btn w-100">Pay Now</button>
+                                </div>
+                            </div>
+                        </form>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
 
     </section>
 
-    <!--  End of dummy section  -->
+    <!-- End of Select Plan Section -->
 
     <!-- Start of footer section -->
 
