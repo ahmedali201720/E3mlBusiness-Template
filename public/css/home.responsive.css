@@ -6,8 +6,8 @@
         max-height: 380px;
     }
     .course-card .course-card-text {
-        height: 80px;
-        max-height: 80px;
+        height: 85px;
+        max-height: 85px;
         overflow: auto;
     }
     /* End of course card styles */
