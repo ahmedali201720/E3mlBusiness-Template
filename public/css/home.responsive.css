@@ -1,4 +1,4 @@
-@media only screen and (max-width:600px) {
+@media only screen and (max-width:576px) {
     /* Start of course card styles */
     .course-card {
         width: 100%;
@@ -35,7 +35,25 @@
     /* End of diploma card styles */
 }
 
-@media only screen and (max-width:340px) {
+@media only screen and (max-width:500px) {
+    .course-card-column {
+        padding: 0 6rem;
+    }
+}
+
+@media only screen and (max-width:414px) {
+    .course-card-column {
+        padding: 0 3.5rem;
+    }
+}
+
+@media only screen and (max-width:375px) {
+    .course-card-column {
+        padding: 0 2.2rem;
+    }
+}
+
+@media only screen and (max-width:320px) {
     /* Start of course card styles */
     .course-card {
         width: 100%;
@@ -47,10 +65,15 @@
         max-height: 95px;
         overflow: auto;
     }
+    @media only screen and (max-width:370px) {
+        .course-card-column {
+            padding: 0 1rem;
+        }
+    }
     /* End of course card styles */
 }
 
-@media only screen and (min-width:600px) {
+@media only screen and (min-width:576px) {
     /* Start of course card styles */
     .course-card {
         width: 100%;
@@ -73,8 +96,8 @@
     /* Start of course card styles */
     .course-card {
         width: 100%;
-        height: 360px;
-        max-height: 360px;
+        height: 380px;
+        max-height: 380px;
     }
     .course-card .course-card-text {
         height: 75px;
@@ -92,8 +115,8 @@
     /* Start of course card styles */
     .course-card {
         width: 100%;
-        height: 370px;
-        max-height: 370px;
+        height: 385px;
+        max-height: 385px;
     }
     .course-card .course-card-title {
         height: 45px;
@@ -111,8 +134,8 @@
     /* Start of course card styles */
     .course-card {
         width: 100%;
-        height: 370px;
-        max-height: 370px;
+        height: 385px;
+        max-height: 385px;
     }
     .course-card .course-card-text {
         height: 90px;
@@ -169,8 +192,8 @@
     /* Start of course card styles */
     .course-card {
         width: 100%;
-        height: 370px;
-        max-height: 370px;
+        height: 385px;
+        max-height: 385px;
     }
     .course-card .course-card-text {
         height: 70px;

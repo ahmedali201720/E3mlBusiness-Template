@@ -1,0 +1,45 @@
+.fav-tabs {
+    list-style: none;
+    padding: 0;
+}
+
+.fav-tabs li {
+    display: inline-block;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 0.425rem 0;
+}
+
+.fav-tabs li:hover {
+    cursor: pointer;
+    color: var(--actionHoverBackColor);
+}
+
+.space-tab {
+    margin: 0 0.825rem;
+}
+
+.fav-tab-active {
+    border-bottom: 3px solid var(--actionBackColor);
+    color: var(--actionBackColor);
+    font-weight: 700;
+}
+
+.course-card-img .course-category {
+    position: absolute;
+    left: 5%;
+    top: 5%;
+    background-color: var(--blueColor);
+    color: #fff;
+    padding: 0.225rem;
+    font-size: 13px;
+    border-radius: 5px;
+}
+
+.course-card-img .card-fav-icon {
+    position: absolute;
+    right: 5%;
+    top: 5%;
+    color: #ff0f0f;
+    font-size: 24px;
+}
