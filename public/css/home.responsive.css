@@ -2,8 +2,8 @@
     /* Start of course card styles */
     .course-card {
         width: 100%;
-        height: 390px;
-        max-height: 390px;
+        height: 380px;
+        max-height: 380px;
     }
     .course-card .course-card-text {
         height: 80px;
