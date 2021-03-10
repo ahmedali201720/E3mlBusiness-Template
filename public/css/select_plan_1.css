@@ -7,14 +7,27 @@
     font-weight: 600;
 }
 
-.plan-section-text li::marker {
+.plan-section-text li {
+    padding-left: 1.5em;
+    text-indent: -1.5em;
+}
+
+.plan-section-text li::before {
     content: '\f1ea';
     font-family: FontAwesome;
     color: var(--actionBackColor);
 }
 
-.plan-section-text li::before {
-    content: '\00a0 \00a0';
+.plan-section-text:lang(en) li::before {
+    margin-right: 10px;
+}
+
+.plan-section-text:lang(ar) li::before {
+    margin-left: 10px;
+}
+
+.plan-section-text li::marker {
+    content: '';
 }
 
 .plan-section-text i {
