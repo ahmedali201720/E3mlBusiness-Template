@@ -56,22 +56,24 @@
     position: absolute;
     left: 5%;
     top: 5%;
-    background-color: var(--blueColor);
     color: #fff;
     padding: 0.225rem;
-    font-size: 13px;
+    font-size: 11px;
+    font-weight: 600;
     border-radius: 5px;
 }
 
-.diploma-card-img .course-academy {
-    position: absolute;
-    left: 5%;
-    top: 27%;
-    background-color: #ff0f0f;
-    color: #fff;
-    padding: 0.225rem;
-    font-size: 13px;
+.diploma-card-img .course-category .label {
+    background-color: var(--blueColor);
+    padding: 0.325rem;
     border-radius: 5px;
+}
+
+.diploma-card-img .course-category .academy {
+    background-color: #ff0f0f;
+    padding: 0.225rem;
+    border-radius: 5px;
+    margin-top: 3px;
 }
 
 .diploma-card-img .card-fav-icon {
