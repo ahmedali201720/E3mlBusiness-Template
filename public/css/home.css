@@ -292,7 +292,9 @@
 /* Start of diploma card styles */
 
 .diploma-card {
-    height: 405px;
+    height: 385px;
+    max-height: 385px;
+    overflow: auto;
     border: 1px solid var(--cardBorderColor);
     border-radius: 5px;
     margin-bottom: 1.1rem;
@@ -300,6 +302,8 @@
 
 .diploma-card .diploma-card-img {
     border-bottom: 1px solid var(--cardBorderColor);
+    max-height: 150px;
+    overflow: hidden;
 }
 
 .diploma-card .diploma-card-img:hover {
@@ -308,9 +312,7 @@
 
 .diploma-card .diploma-card-img img {
     width: 100%;
-    min-height: 150px;
     height: auto;
-    max-height: 170px;
 }
 
 .diploma-card .diploma-card-body {
@@ -318,9 +320,8 @@
 }
 
 .diploma-card .diploma-card-title {
-    line-height: 15px;
-    height: 40px;
-    max-height: 40px;
+    height: 50px;
+    max-height: 50px;
     overflow: hidden;
     margin-bottom: 0px !important;
 }
@@ -341,12 +342,13 @@
 }
 
 .diploma-card .diploma-card-text {
-    height: 85px;
-    max-height: 85px;
-    font-size: 14px;
+    height: 60px;
+    max-height: 60px;
+    line-height: 20px;
     font-weight: 400;
     color: #808a85;
-    overflow: auto;
+    font-size: 14px;
+    overflow: hidden;
 }
 
 .diploma-card .rating-stars {
