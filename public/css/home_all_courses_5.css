@@ -1,13 +1,16 @@
 .fav-tabs {
     list-style: none;
     padding: 0;
+    margin-bottom: 0;
 }
 
 .fav-tabs li {
     display: inline-block;
     font-size: 1rem;
     font-weight: 500;
-    padding: 0.425rem 0;
+    padding: 0.925rem 0.625rem;
+    height: 100%;
+    transition: all 0.4s;
 }
 
 .fav-tabs li:hover {
@@ -20,8 +23,8 @@
 }
 
 .fav-tab-active {
-    border-bottom: 3px solid var(--actionBackColor);
-    color: var(--actionBackColor);
+    background-color: var(--actionBackColor);
+    color: #fff;
     font-weight: 700;
 }
 
@@ -42,4 +45,62 @@
     top: 5%;
     color: #ff0f0f;
     font-size: 24px;
+}
+
+.course-group-label {
+    padding: 0.425rem 0;
+    border-bottom: 2px solid #efefef;
+}
+
+.diploma-card-img .course-category {
+    position: absolute;
+    left: 5%;
+    top: 5%;
+    background-color: var(--blueColor);
+    color: #fff;
+    padding: 0.225rem;
+    font-size: 13px;
+    border-radius: 5px;
+}
+
+.diploma-card-img .course-academy {
+    position: absolute;
+    left: 5%;
+    top: 27%;
+    background-color: #ff0f0f;
+    color: #fff;
+    padding: 0.225rem;
+    font-size: 13px;
+    border-radius: 5px;
+}
+
+.diploma-card-img .card-fav-icon {
+    position: absolute;
+    right: 5%;
+    top: 5%;
+    color: #ff0f0f;
+    background-color: #fff;
+    padding: 0.325rem;
+    border-radius: 50%;
+    font-size: 24px;
+}
+
+@media only screen and (max-width:414px) {
+    .course-group-label h4 {
+        font-size: 16px !important;
+    }
+    .fav-tabs li {
+        font-size: 14px;
+        padding: 0.925rem 0.425rem;
+    }
+}
+
+@media only screen and (max-width:320px) {
+    .course-group-label h4 {
+        font-size: 13px !important;
+    }
+    .fav-tabs li {
+        font-size: 12px;
+        padding: 0.625rem 0.325rem;
+    }
 }

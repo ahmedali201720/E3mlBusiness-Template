@@ -301,6 +301,7 @@
 }
 
 .diploma-card .diploma-card-img {
+    position: relative;
     border-bottom: 1px solid var(--cardBorderColor);
     max-height: 150px;
     overflow: hidden;
