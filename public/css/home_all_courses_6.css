@@ -1,0 +1,129 @@
+.fav-tabs {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 0;
+}
+
+.fav-tabs li {
+    display: inline-block;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 0.925rem 0.625rem;
+    height: 100%;
+    transition: all 0.4s;
+}
+
+.fav-tabs li:hover {
+    cursor: pointer;
+    color: var(--actionHoverBackColor);
+}
+
+.fav-tab-active {
+    background-color: var(--actionBackColor);
+    color: #fff;
+    font-weight: 700;
+}
+
+.course-group-label {
+    padding: 0.425rem 0;
+    border-bottom: 2px solid #efefef;
+}
+
+.article-card {
+    border: 1px solid var(--cardBorderColor);
+    border-radius: 5px;
+    height: 370px;
+    max-height: 370px;
+    overflow: hidden;
+}
+
+.article-card .img {
+    position: relative;
+    height: 150px;
+    max-height: 150px;
+    overflow: hidden;
+    transition: all 0.6s;
+}
+
+.article-card .img:hover img {
+    -webkit-transform: scale(1.02);
+    transform: scale(1.02);
+}
+
+.article-card .img img {
+    width: 100%;
+    height: auto;
+}
+
+.article-card .body {
+    padding: 0.625rem;
+    height: 170px;
+    max-height: 170px;
+}
+
+.article-card .body .text a {
+    font-size: 14px;
+    font-weight: 600;
+    color: rgb(95, 92, 92);
+    text-decoration: none;
+}
+
+.article-card .body .text a:hover {
+    color: #000;
+}
+
+.article-card .footer {
+    background-color: var(--footerBackColor);
+}
+
+.article-card .footer a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    font-size: 14px;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    transition: all 0.2s;
+}
+
+.article-card .footer a:hover {
+    color: #d6d6d6;
+}
+
+.footer-col {
+    border-right: 1px solid #fff;
+    border-left: 1px solid #fff;
+}
+
+.card-fav-icon {
+    position: absolute;
+    right: 5%;
+    top: 5%;
+    color: #ff0f0f;
+    background-color: #fff;
+    padding: 0.325rem;
+    border-radius: 50%;
+    font-size: 24px;
+}
+
+@media only screen and (max-width:414px) {
+    .course-group-label h4 {
+        font-size: 16px !important;
+    }
+    .fav-tabs li {
+        font-size: 14px;
+        padding: 0.925rem 0.425rem;
+    }
+}
+
+@media only screen and (max-width:320px) {
+    .course-group-label h4 {
+        font-size: 13px !important;
+    }
+    .fav-tabs li {
+        font-size: 12px;
+        padding: 0.625rem 0.325rem;
+    }
+}
