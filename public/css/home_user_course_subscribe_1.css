@@ -1,0 +1,45 @@
+.course-progress-card {
+    border: 1px solid var(--borderColor);
+    border-radius: 10px;
+}
+
+.course-progress-card .img {
+    height: 150px;
+    max-height: 150px;
+    overflow: hidden;
+}
+
+.course-progress-card .img img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: all 0.4s;
+}
+
+.course-progress-card .img img:hover {
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+}
+
+.course-progress-card .body {
+    padding: 20px 12px;
+    font-size: 16px;
+}
+
+.course-progress-card .body :is(.title, .introducer) {
+    margin-bottom: 8px;
+}
+
+.course-progress-card .body .lecture-num {
+    margin: 12px 0;
+    color: var(--actionBackColor);
+}
+
+.course-progress-card .body :is(.title a, .lecture-num a) {
+    color: var(--actionBackColor);
+    font-weight: 600;
+}
+
+.course-progress-card .body :is(.progress-info, .progress-bar-container) {
+    margin-bottom: 4px;
+}
