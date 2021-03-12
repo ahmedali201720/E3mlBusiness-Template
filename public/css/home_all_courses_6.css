@@ -25,15 +25,19 @@
 }
 
 .course-group-label {
+    font-size: 1.3rem;
+    font-weight: 700;
     padding: 0.425rem 0;
     border-bottom: 2px solid #efefef;
 }
 
+/* ************************************************************************************** */
+
 .article-card {
     border: 1px solid var(--cardBorderColor);
     border-radius: 5px;
-    height: 370px;
-    max-height: 370px;
+    height: 365px;
+    max-height: 365px;
     overflow: hidden;
 }
 
@@ -59,6 +63,7 @@
     padding: 0.625rem;
     height: 170px;
     max-height: 170px;
+    overflow: auto;
 }
 
 .article-card .body .text a {
@@ -73,15 +78,15 @@
 }
 
 .article-card .footer {
-    background-color: var(--footerBackColor);
+    background-color: var(--blueColor);
 }
 
 .article-card .footer a {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 50px;
-    font-size: 14px;
+    height: 45px;
+    font-size: 13px;
     color: #fff;
     text-decoration: none;
     text-align: center;
@@ -108,22 +113,63 @@
     font-size: 24px;
 }
 
+.card-fav-icon:hover {
+    color: #f0f;
+    cursor: pointer;
+}
+
+.article-topic {
+    position: absolute;
+    left: 5%;
+    top: 5%;
+    color: #fff;
+    background-color: var(--blueColor);
+    padding: 0.225rem 0.425rem;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+@media only screen and (max-width:576px) {
+    .course-group-label p {
+        font-size: 18px !important;
+    }
+    .articles-section {
+        padding: 0 3.5rem;
+    }
+}
+
 @media only screen and (max-width:414px) {
-    .course-group-label h4 {
+    .course-group-label p {
         font-size: 16px !important;
     }
     .fav-tabs li {
         font-size: 14px;
         padding: 0.925rem 0.425rem;
     }
+    .articles-section {
+        padding: 0 2.6rem;
+    }
+}
+
+@media only screen and (max-width:375px) {
+    .course-group-label p {
+        font-size: 14px !important;
+    }
+    .articles-section {
+        padding: 0 1.6rem;
+    }
 }
 
 @media only screen and (max-width:320px) {
-    .course-group-label h4 {
+    .course-group-label p {
         font-size: 13px !important;
     }
     .fav-tabs li {
         font-size: 12px;
         padding: 0.625rem 0.325rem;
+    }
+    .articles-section {
+        padding: 0;
     }
 }
