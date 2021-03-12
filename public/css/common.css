@@ -7,7 +7,7 @@
     --din: 'DIN NEXTTM ARABIC';
     --shamel: 'FF Shamel Family Sans One';
     /* ******************************************************************* */
-    /* color variables */
+    /* color variables #0b2f9e */
     /* ******************************************************************* */
     --borderColor: #efefef;
     --cardBorderColor: #e6e8e7;
@@ -20,7 +20,7 @@
     --cardTitleColor: #00d66c;
     --starFillColor: #FFD800;
     --goldColor: #FFD700;
-    --blueColor: #08206b;
+    --blueColor: #0b2f9e;
     --sectionSubHeaderColor: #858882;
     --blueHoverColor: rgb(16, 111, 167);
 }

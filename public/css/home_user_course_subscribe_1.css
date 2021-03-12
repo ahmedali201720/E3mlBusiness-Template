@@ -1,9 +1,18 @@
+:is(.learning-path-section, .courses-categories-section) .header {
+    font-size: 20px;
+    font-weight: 700;
+}
+
 .course-progress-card {
+    height: 325px;
+    max-height: 325px;
     border: 1px solid var(--borderColor);
     border-radius: 10px;
+    overflow: hidden;
 }
 
 .course-progress-card .img {
+    position: relative;
     height: 150px;
     max-height: 150px;
     overflow: hidden;
@@ -12,7 +21,9 @@
 .course-progress-card .img img {
     width: 100%;
     height: auto;
-    border-radius: 10px;
+    min-height: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
     transition: all 0.4s;
 }
 
@@ -29,8 +40,15 @@
 .course-progress-card .body :is(.title, .introducer) {
     margin-bottom: 8px;
     overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
+}
+
+.course-progress-card .body .title {
+    height: 35px;
+    line-height: 15px;
+}
+
+.course-progress-card .body .introducer i {
+    font-size: 14px;
 }
 
 .course-progress-card .body .introducer a {
@@ -39,7 +57,8 @@
 }
 
 .course-progress-card .body .lecture-num {
-    margin: 12px 0;
+    margin-top: 15px;
+    margin-bottom: 3px;
     color: var(--actionBackColor);
 }
 
@@ -61,4 +80,101 @@
 
 .course-progress-card .progress-bar-container {
     height: 5px;
+}
+
+.course-progress-card .course-category {
+    position: absolute;
+    left: 5%;
+    top: 5%;
+    color: #fff;
+    padding: 0.225rem;
+    font-size: 11px;
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+.course-progress-card .course-category .label {
+    background-color: var(--blueColor);
+    padding: 0.325rem;
+    border-radius: 5px;
+}
+
+.course-progress-card .course-category .academy {
+    background-color: #ff0f0f;
+    padding: 0.225rem;
+    border-radius: 5px;
+    margin-top: 3px;
+}
+
+.course-progress-card .card-fav-icon {
+    position: absolute;
+    right: 5%;
+    top: 5%;
+    color: #ff0f0f;
+    background-color: #fff;
+    padding: 0.325rem;
+    border-radius: 50%;
+    font-size: 24px;
+}
+
+/* ********************************************************************************************* */
+
+.course-category-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--borderColor);
+    border-radius: 7px;
+    font-size: 16px;
+    font-weight: 600;
+    height: 100%;
+}
+
+.course-category-item a {
+    display: block;
+    width: 100%;
+    color: var(--blueColor);
+    text-align: center;
+    padding: 0.825rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.course-category-item:hover {
+    cursor: pointer;
+    background-color: var(--actionBackColor);
+}
+
+.course-category-item:hover a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* ********************************************************************************************** */
+
+@media only screen and (max-width:576px) {}
+
+@media only screen and (max-width:500px) {
+    :is(.learning-path-section, .courses-categories-section) {
+        padding: 0 4rem;
+    }
+}
+
+@media only screen and (max-width:414px) {
+    :is(.learning-path-section, .courses-categories-section) {
+        padding: 0 3rem;
+    }
+}
+
+@media only screen and (max-width:375px) {
+    :is(.learning-path-section, .courses-categories-section) {
+        padding: 0 2.5rem;
+    }
+}
+
+@media only screen and (max-width:350px) {
+    :is(.learning-path-section, .courses-categories-section) {
+        padding: 0 2rem;
+    }
 }
