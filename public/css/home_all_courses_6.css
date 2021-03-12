@@ -139,7 +139,6 @@
 @media only screen and (max-width:576px) {
     .course-group-label p {
         font-size: 18px !important;
-        text-align: center;
     }
     .articles-section {
         padding: 0 3.5rem;
