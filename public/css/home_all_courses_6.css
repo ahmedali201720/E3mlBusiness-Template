@@ -25,10 +25,16 @@
 }
 
 .course-group-label {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     font-weight: 700;
     padding: 0.425rem 0;
     border-bottom: 2px solid #efefef;
+}
+
+.course-group-label p {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
 
 /* ************************************************************************************** */
