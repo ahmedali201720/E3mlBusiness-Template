@@ -43,7 +43,18 @@
 }
 
 .course-progress-card .body .title {
-    line-height: 22px;
+    display: -webkit-box;
+    display: -moz-box;
+    text-overflow: ellipsis;
+    line-height: 21px;
+    height: 48px;
+    max-height: 48px;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    color: var(--actionBackColor);
 }
 
 .course-progress-card .body .introducer i {
@@ -175,5 +186,11 @@
 @media only screen and (max-width:350px) {
     :is(.learning-path-section, .courses-categories-section) {
         padding: 0 2rem;
+    }
+}
+
+@media only screen and (max-width:320px) {
+    :is(.learning-path-section, .courses-categories-section) {
+        padding: 0 0.625rem;
     }
 }
