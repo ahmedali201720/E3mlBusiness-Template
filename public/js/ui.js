@@ -84,9 +84,11 @@ $(document).ready(() => {
     var cardTexts = $(".card-text");
     var diplomaTexts = $(".diploma-text");
     var articleCardText = $(".article-card .body .text a");
+    var progressCardTitle = $(".course-progress-card .body .title a");
     truncateText(cardTitles, 50);
     truncateText(cardTexts, 115);
     truncateText(articleCardText, 186);
+    truncateText(progressCardTitle, 72);
     if (getWindowSize() >= 1200 && getWindowSize() <= 1400)
         truncateText(diplomaTexts, 100);
     else

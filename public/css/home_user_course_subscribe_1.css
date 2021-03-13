@@ -4,8 +4,8 @@
 }
 
 .course-progress-card {
-    height: 325px;
-    max-height: 325px;
+    height: 330px;
+    max-height: 330px;
     border: 1px solid var(--borderColor);
     border-radius: 10px;
     overflow: hidden;
@@ -43,8 +43,7 @@
 }
 
 .course-progress-card .body .title {
-    height: 31px;
-    line-height: 15px;
+    line-height: 22px;
 }
 
 .course-progress-card .body .introducer i {
