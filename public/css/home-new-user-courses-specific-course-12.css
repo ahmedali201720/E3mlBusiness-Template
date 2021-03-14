@@ -1,0 +1,129 @@
+.course-control-rate-view .rate-view .stars {
+    color: var(--starFillColor);
+}
+
+.course-control-rate-view .rate-view .stars i {
+    position: relative;
+}
+
+.value-star {
+    position: absolute !important;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    color: var(--starFillColor);
+}
+
+.control-btn {
+    border: 1px solid var(--actionBackColor);
+    border-radius: 7px;
+    background-color: transparent;
+    color: var(--footerBackColor);
+    font-weight: 600;
+    padding: 0.125rem 0.625rem;
+    transition: all 0.4s;
+}
+
+.control-btn:hover {
+    background-color: var(--actionBackColor);
+    color: #fff;
+    cursor: pointer;
+}
+
+.course-video-frame {
+    position: relative;
+    overflow: hidden;
+    padding-top: 56.25%;
+}
+
+.course-video-frame iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 7px;
+}
+
+.instructor-comment {
+    border: 1px solid var(--footerBackColor);
+    border-radius: 8px;
+}
+
+.instructor-comment .header img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.instructor-comment .header {
+    background-color: var(--footerBackColor);
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+}
+
+.instructor-comment .header .info {
+    width: 100%;
+}
+
+.instructor-comment .header .info .text {
+    display: inline-block;
+}
+
+.instructor-comment .header .info .text .job-title {
+    font-size: 13px;
+    font-weight: 600;
+    color: #b4b2b2;
+}
+
+.instructor-comment .header .related-links {
+    font-size: 30px;
+}
+
+.instructor-comment .header :is(a) {
+    color: #fff;
+}
+
+.instructor-comment .preview p {
+    font-weight: 400;
+    color: #000;
+}
+
+.instructor-comment .preview a {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--actionBackColor);
+}
+
+.course-statistics {
+    border: 1px solid var(--footerBackColor);
+    border-radius: 5px;
+}
+
+.course-statistics .header {
+    background-color: var(--footerBackColor);
+    font-weight: 600;
+    color: #fff;
+}
+
+.start-course-btn {
+    height: 50px;
+    border: none;
+    outline: none !important;
+    border-radius: 5px;
+    background-color: var(--actionBackColor);
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.start-course-btn:hover {
+    background-color: var(--actionHoverBackColor);
+    cursor: pointer;
+}
+
+@media only screen and (min-width:992px) {}
+
+@media only screen and (min-width:1200px) {}
