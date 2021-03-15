@@ -291,60 +291,504 @@
 
     </section>
 
-    <section class="course-details-tabs-section px-xl-5 px-lg-4 px-3 py-3 mb-4" id="courseTabs">
+    <section class="course-details-tabs-section px-xl-5 px-lg-4 px-2 py-3 mb-4" id="courseTabs">
 
         <div class="container-fluid">
 
-            <ul class="nav nav-tabs course-tabs" role="tablist">
+            <ul class="nav nav-tabs course-tabs d-flex justify-content-sm-start justify-content-center" role="tablist">
 
                 <li class="nav-item course-tab">
-                    <a class="nav-link active px-xl-5 px-lg-4 px-md-3 px-sm-2" data-toggle="tab"
-                        href="#detailsContent">About
+                    <a class="nav-link px-xl-5 px-lg-4 px-md-3 px-sm-2" data-toggle="tab" href="#detailsContent">About
                         course</a>
                 </li>
                 <li class="nav-item course-tab">
-                    <a class="nav-link px-xl-5 px-lg-4 px-md-3 px-sm-2" data-toggle="tab"
+                    <a class="nav-link active px-xl-5 px-lg-4 px-md-3 px-sm-2" data-toggle="tab"
                         href="#lectureContent">Content</a>
                 </li>
                 <li class="nav-item course-tab">
-                    <a class="nav-link px-xl-5 px-lg-4 px-md-3 px-sm-2" data-toggle="tab" href="#menu2">Rating</a>
+                    <a class="nav-link px-xl-5 px-lg-4 px-md-3 px-sm-2" data-toggle="tab" href="#courseRate">Rating</a>
                 </li>
                 <li class="nav-item course-tab">
-                    <a class="nav-link px-xl-5 px-lg-4 px-md-3 px-sm-2" data-toggle="tab" href="#menu2">Certificates</a>
+                    <a class="nav-link px-xl-5 px-lg-4 px-md-3 px-sm-2" data-toggle="tab"
+                        href="#certificates">Certificates</a>
                 </li>
 
             </ul>
 
             <!-- Tabs content -->
-            <div class="tab-content">
+            <div class="tab-content mt-5">
 
-                <div id="detailsContent" class="container tab-pane active"><br>
+                <div id="detailsContent" class="container tab-pane">
                     <h5 class="content-label mb-3">Course Details</h5>
-                    <ul class="course-latest-update mb-0">
-                        <li>
+                    <ul class="course-latest-update px-0 mb-0">
+                        <li class="course-text-list-item">
                             <span class="sub-label">Last updated : </span>
                             <span class="date text-info">11/11/2020</span>
                         </li>
-                    </ul>
-                    <ul class="text">
-                        <li>
+                        <li class="course-text-list-item">
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
                             ut labore et dolore magna aliqua.
                         </li>
                     </ul>
+
                     <h5 class="content-label mt-3 mb-3">Course topics</h5>
-                    <ul class="course-topics-text mb-0">
-                        <li>Lorem ipsum dolor sit amet.</li>
-                        <li>Lorem ipsum dolor sit amet.</li>
-                        <li>Lorem ipsum dolor sit amet.</li>
-                        <li>Lorem ipsum dolor sit amet.</li>
-                        <li>Lorem ipsum dolor sit amet.</li>
-                        <li>Lorem ipsum dolor sit amet.</li>
+                    <ul class="course-topics-text px-0 mb-0">
+                        <li class="course-text-list-item">Lorem ipsum dolor sit amet.</li>
+                        <li class="course-text-list-item">Lorem ipsum dolor sit amet.</li>
+                        <li class="course-text-list-item">Lorem ipsum dolor sit amet.</li>
+                        <li class="course-text-list-item">Lorem ipsum dolor sit amet.</li>
+                        <li class="course-text-list-item">Lorem ipsum dolor sit amet.</li>
+                        <li class="course-text-list-item">Lorem ipsum dolor sit amet.</li>
                     </ul>
                 </div>
 
-                <div id="lectureContent" class="container tab-pane active"><br>
+                <div id="lectureContent" class="container tab-pane active">
+                    <h5 class="content-label mb-4">Course Content</h5>
 
+                    <div class="course-sections-wrapper">
+
+                        <div class="course-specific-section">
+
+                            <button class="section-collapse-btn" type="button" data-toggle="collapse"
+                                data-target="#sec-1" aria-expanded="false" aria-controls="sec-1">
+                                <p class="sec-title dynamic-align mb-0">
+                                    <span class="sec-num">1 -</span>
+                                    <span class="actual-title">
+                                        Intoduction.
+                                    </span>
+                                </p>
+                                <div class="info d-sm-block d-none">
+                                    <span class="duration mx-1">
+                                        2h & 32min
+                                    </span>
+                                    <i class="fa fa-caret-down"></i>
+                                </div>
+                            </button>
+                            <div class="collapse section-data" id="sec-1">
+                                <div class="specific-section-lectures p-3">
+                                    <div class="lecture py-2">
+                                        <div class="text-dark">
+                                            <i class="fa fa-play-circle text-success"></i>
+                                            <span class="num">1-</span>
+                                            <a href="#" class="text-dark">
+                                                <span class="lec-title">
+                                                    Digital markiting preview.
+                                                </span>
+                                            </a>
+                                        </div>
+                                        <p class="mb-0 d-sm-block d-none">
+                                            <span class="type mx-1 text-info font-weight-bold">( free )</span>
+                                            <span class="duration">
+                                                2h & 32min
+                                            </span>
+                                        </p>
+                                    </div>
+                                    <div class="lecture lecture-disabled py-2">
+                                        <div class="text-dark">
+                                            <i class="fa fa-lock"></i>
+                                            <span class="num">2-</span>
+                                            <a href="#" class="lec-link">
+                                                <span class="lec-title">Digital markiting preview.</span>
+                                            </a>
+                                        </div>
+                                        <p class="mb-0 d-sm-block d-none">
+                                            <span class="type mx-1 d-none text-info font-weight-bold">( free )</span>
+                                            <span class="duration">
+                                                4h & 12min
+                                            </span>
+                                        </p>
+                                    </div>
+                                    <div class="lecture lecture-disabled py-2">
+                                        <div class="text-dark">
+                                            <i class="fa fa-lock"></i>
+                                            <span class="num">3-</span>
+                                            <a href="#" class="lec-link">
+                                                <span class="lec-title">Digital markiting preview.</span>
+                                            </a>
+                                        </div>
+                                        <p class="mb-0 d-sm-block d-none">
+                                            <span class="type mx-1 d-none text-info font-weight-bold">( free )</span>
+                                            <span class="duration">
+                                                4h & 12min
+                                            </span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="course-specific-section">
+
+                            <button class="section-collapse-btn" type="button" data-toggle="collapse"
+                                data-target="#sec-1" aria-expanded="false" aria-controls="sec-1">
+                                <p class="sec-title dynamic-align mb-0">
+                                    <span class="sec-num">2 -</span>
+                                    <span class="actual-title">
+                                        Overview.
+                                    </span>
+                                </p>
+                                <div class="info d-sm-block d-none">
+                                    <span class="duration mx-1">
+                                        01h & 50min
+                                    </span>
+                                    <i class="fa fa-caret-down"></i>
+                                </div>
+                            </button>
+                            <div class="collapse section-data" id="sec-1">
+                                <div class="specific-section-lectures p-3">
+                                    <div class="lecture py-2">
+                                        <div class="text-dark">
+                                            <i class="fa fa-play-circle text-success"></i>
+                                            <span class="num">1-</span>
+                                            <a href="#" class="text-dark">
+                                                <span class="lec-title">
+                                                    Digital markiting preview.
+                                                </span>
+                                            </a>
+                                        </div>
+                                        <p class="mb-0 d-sm-block d-none">
+                                            <span class="type mx-1 text-info font-weight-bold">( free )</span>
+                                            <span class="duration">
+                                                2h & 32min
+                                            </span>
+                                        </p>
+                                    </div>
+                                    <div class="lecture lecture-disabled py-2">
+                                        <div class="text-dark">
+                                            <i class="fa fa-lock"></i>
+                                            <span class="num">2-</span>
+                                            <a href="#" class="lec-link">
+                                                <span class="lec-title">Digital markiting preview.</span>
+                                            </a>
+                                        </div>
+                                        <p class="mb-0 d-sm-block d-none">
+                                            <span class="type mx-1 d-none text-info font-weight-bold">( free )</span>
+                                            <span class="duration">
+                                                4h & 12min
+                                            </span>
+                                        </p>
+                                    </div>
+                                    <div class="lecture lecture-disabled py-2">
+                                        <div class="text-dark">
+                                            <i class="fa fa-lock"></i>
+                                            <span class="num">3-</span>
+                                            <a href="#" class="lec-link">
+                                                <span class="lec-title">Digital markiting preview.</span>
+                                            </a>
+                                        </div>
+                                        <p class="mb-0 d-sm-block d-none">
+                                            <span class="type mx-1 d-none text-info font-weight-bold">( free )</span>
+                                            <span class="duration">
+                                                4h & 12min
+                                            </span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="course-specific-section">
+
+                            <button class="section-collapse-btn" type="button" data-toggle="collapse"
+                                data-target="#sec-1" aria-expanded="false" aria-controls="sec-1">
+                                <p class="sec-title dynamic-align mb-0">
+                                    <span class="sec-num">3 -</span>
+                                    <span class="actual-title">
+                                        Get Ready to start.
+                                    </span>
+                                </p>
+                                <div class="info d-sm-block d-none">
+                                    <span class="duration mx-1">
+                                        2h & 32min
+                                    </span>
+                                    <i class="fa fa-caret-down"></i>
+                                </div>
+                            </button>
+                            <div class="collapse section-data" id="sec-1">
+                                <div class="specific-section-lectures p-3">
+                                    <div class="lecture py-2">
+                                        <div class="text-dark">
+                                            <i class="fa fa-play-circle text-success"></i>
+                                            <span class="num">1-</span>
+                                            <a href="#" class="text-dark">
+                                                <span class="lec-title">
+                                                    Digital markiting preview.
+                                                </span>
+                                            </a>
+                                        </div>
+                                        <p class="mb-0 d-sm-block d-none">
+                                            <span class="type mx-1 text-info font-weight-bold">( free )</span>
+                                            <span class="duration">
+                                                2h & 32min
+                                            </span>
+                                        </p>
+                                    </div>
+                                    <div class="lecture lecture-disabled py-2">
+                                        <div class="text-dark">
+                                            <i class="fa fa-lock"></i>
+                                            <span class="num">2-</span>
+                                            <a href="#" class="lec-link">
+                                                <span class="lec-title">Digital markiting preview.</span>
+                                            </a>
+                                        </div>
+                                        <p class="mb-0 d-sm-block d-none">
+                                            <span class="type mx-1 d-none text-info font-weight-bold">( free )</span>
+                                            <span class="duration">
+                                                4h & 12min
+                                            </span>
+                                        </p>
+                                    </div>
+                                    <div class="lecture lecture-disabled py-2">
+                                        <div class="text-dark">
+                                            <i class="fa fa-lock"></i>
+                                            <span class="num">3-</span>
+                                            <a href="#" class="lec-link">
+                                                <span class="lec-title">Digital markiting preview.</span>
+                                            </a>
+                                        </div>
+                                        <p class="mb-0 d-sm-block d-none">
+                                            <span class="type mx-1 d-none text-info font-weight-bold">( free )</span>
+                                            <span class="duration">
+                                                4h & 12min
+                                            </span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div id="courseRate" class="container tab-pane">
+                    <div class="wrapper mb-3">
+                        <h5 class="content-label">Ratings
+                            <span class="mx-1 text-success">(4.5)</span>
+                        </h5>
+                        <p>
+                            <i class="fa fa-star star-filled"></i>
+                            <i class="fa fa-star star-filled"></i>
+                            <i class="fa fa-star star-filled"></i>
+                            <i class="fa fa-star star-filled"></i>
+                            <i class="fa fa-star"></i>
+                            <span>(112,550)</span>
+                        </p>
+                    </div>
+
+                    <div class="comment-controller mt-4 mb-2">
+                        <div class="row">
+                            <div class="col-xl-3 col-lg-4 col-md-6">
+                                <button class="comment-btn w-100" id="leaveComment">
+                                    <i class="fa fa-comment-alt"></i>
+                                    <span class="mx-1">Add Comment</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="students-comment-container my-lg-4 my-3">
+
+                        <div class="student-comment-item dynamic-md-align dynamic-align-xs-center mb-2 px-4 py-3">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="row">
+                                        <div class="col-lg-1 col-md-2 d-flex justify-content-center">
+                                            <a href="#">
+                                                <img src="../assets/img/me.jpg" alt="avatar" class="avatar">
+                                            </a>
+                                        </div>
+                                        <div class="col-lg-11 col-md-10">
+                                            <div class="name">
+                                                <a href="#">Ahmed Ali</a>
+                                            </div>
+                                            <div class="rate">
+                                                <i class="fa fa-star star-filled"></i>
+                                                <i class="fa fa-star star-filled"></i>
+                                                <i class="fa fa-star star-filled"></i>
+                                                <i class="fa fa-star star-filled"></i>
+                                                <i class="fa fa-star"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-1 col-md-2"></div>
+                                        <div class="col-lg-11 col-md-10">
+                                            <div class="comment-text">
+                                                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+                                                eirmod tempor invidunt ut labore et dolore
+                                                magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo
+                                                duo dolores et ea rebum. Stet clita kasd
+                                                gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                                                Lorem.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="student-comment-item dynamic-md-align dynamic-align-xs-center mb-2 px-4 py-3">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="row">
+                                        <div class="col-lg-1 col-md-2 d-flex justify-content-center">
+                                            <a href="#">
+                                                <img src="../assets/img/me.jpg" alt="avatar" class="avatar">
+                                            </a>
+                                        </div>
+                                        <div class="col-lg-11 col-md-10">
+                                            <div class="name">
+                                                <a href="#">Ahmed Ali</a>
+                                            </div>
+                                            <div class="rate">
+                                                <i class="fa fa-star star-filled"></i>
+                                                <i class="fa fa-star star-filled"></i>
+                                                <i class="fa fa-star star-filled"></i>
+                                                <i class="fa fa-star star-filled"></i>
+                                                <i class="fa fa-star"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-1 col-md-2"></div>
+                                        <div class="col-lg-11 col-md-10">
+                                            <div class="comment-text">
+                                                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+                                                eirmod tempor invidunt ut labore et dolore
+                                                magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo
+                                                duo dolores et ea rebum. Stet clita kasd
+                                                gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                                                Lorem.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="student-comment-item dynamic-md-align dynamic-align-xs-center mb-2 px-4 py-3">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="row">
+                                        <div class="col-lg-1 col-md-2 d-flex justify-content-center">
+                                            <a href="#">
+                                                <img src="../assets/img/me.jpg" alt="avatar" class="avatar">
+                                            </a>
+                                        </div>
+                                        <div class="col-lg-11 col-md-10">
+                                            <div class="name">
+                                                <a href="#">Ahmed Ali</a>
+                                            </div>
+                                            <div class="rate">
+                                                <i class="fa fa-star star-filled"></i>
+                                                <i class="fa fa-star star-filled"></i>
+                                                <i class="fa fa-star star-filled"></i>
+                                                <i class="fa fa-star star-filled"></i>
+                                                <i class="fa fa-star"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-1 col-md-2"></div>
+                                        <div class="col-lg-11 col-md-10">
+                                            <div class="comment-text">
+                                                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+                                                eirmod tempor invidunt ut labore et dolore
+                                                magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo
+                                                duo dolores et ea rebum. Stet clita kasd
+                                                gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                                                Lorem.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="student-comment-item dynamic-md-align dynamic-align-xs-center mb-2 px-4 py-3">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="row">
+                                        <div class="col-lg-1 col-md-2 d-flex justify-content-center">
+                                            <a href="#">
+                                                <img src="../assets/img/me.jpg" alt="avatar" class="avatar">
+                                            </a>
+                                        </div>
+                                        <div class="col-lg-11 col-md-10">
+                                            <div class="name">
+                                                <a href="#">Ahmed Ali</a>
+                                            </div>
+                                            <div class="rate">
+                                                <i class="fa fa-star star-filled"></i>
+                                                <i class="fa fa-star star-filled"></i>
+                                                <i class="fa fa-star star-filled"></i>
+                                                <i class="fa fa-star star-filled"></i>
+                                                <i class="fa fa-star"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-1 col-md-2"></div>
+                                        <div class="col-lg-11 col-md-10">
+                                            <div class="comment-text">
+                                                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+                                                eirmod tempor invidunt ut labore et dolore
+                                                magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo
+                                                duo dolores et ea rebum. Stet clita kasd
+                                                gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                                                Lorem.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div id="certificates" class="container tab-pane">
+                    <div class="row">
+                        <div class="col-lg-6 mb-3">
+                            <div class="content">
+                                <h5 class="content-label mb-3">Final Certificate From E3mel Bussiness</h5>
+                                <ul class="course-topics-text px-0 mb-0">
+                                    <li class="course-text-list-item">Lorem ipsum dolor sit amet.</li>
+                                    <li class="course-text-list-item">Lorem ipsum dolor sit amet.</li>
+                                    <li class="course-text-list-item">Lorem ipsum dolor sit amet.</li>
+                                    <li class="course-text-list-item">Lorem ipsum dolor sit amet.</li>
+                                    <li class="course-text-list-item">Lorem ipsum dolor sit amet.</li>
+                                    <li class="course-text-list-item">Lorem ipsum dolor sit amet.</li>
+                                </ul>
+                                <h5 class="content-label mt-4 mb-3">About Certificate</h5>
+                                <ul class="course-topics-text px-0 mb-0">
+                                    <li class="course-text-list-item">
+                                        You can add the certificate to your CV.
+                                    </li>
+                                    <li class="course-text-list-item">
+                                        <span>
+                                            You can authenticate the certificate from HRCI.
+                                        </span>
+                                        <a href="#">
+                                            <img class="cert-organization-img" src="../assets/img/hrci.png" alt="logo">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 mb-3">
+                            <div class="content">
+                                <div class="cert-img-wrapper">
+                                    <img src="../assets/img/cert.png" alt="certificate">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
 

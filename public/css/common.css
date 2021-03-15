@@ -88,6 +88,10 @@ body {
     color: var(--blackTextHoverColor) !important;
 }
 
+.text-gray {
+    color: #8e8e8e;
+}
+
 .text-footer {
     color: var(--footerBackColor);
 }
@@ -137,4 +141,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.star-filled {
+    color: var(--goldColor);
 }
