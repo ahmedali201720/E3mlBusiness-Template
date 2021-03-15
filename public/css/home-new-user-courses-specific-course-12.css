@@ -142,6 +142,21 @@
     color: #585a56;
 }
 
-@media only screen and (min-width:992px) {}
+/* ************************************************************************************************* */
 
-@media only screen and (min-width:1200px) {}
+.course-tabs {
+    display: flex;
+    justify-content: start;
+}
+
+.course-tabs .course-tab a {
+    color: #000;
+    font-weight: 600;
+    transition: all 0.4s;
+}
+
+.course-tabs .course-tab :is(.active) {
+    background-color: var(--actionBackColor);
+    color: #fff;
+    border-bottom: 1px solid var(--actionBackColor);
+}
