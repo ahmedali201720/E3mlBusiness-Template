@@ -88,6 +88,14 @@ body {
     color: var(--blackTextHoverColor) !important;
 }
 
+.text-footer {
+    color: var(--footerBackColor);
+}
+
+.bg-footer {
+    background-color: var(--footerBackColor)
+}
+
 .text-transparent {
     color: transparent !important;
 }

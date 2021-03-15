@@ -124,6 +124,24 @@
     cursor: pointer;
 }
 
+.course-statistics-sm {
+    text-align: center;
+    border: 1px solid var(--footerBackColor);
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.course-statistics-sm :is(p, h6) {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.course-statistics-sm p {
+    color: #585a56;
+}
+
 @media only screen and (min-width:992px) {}
 
 @media only screen and (min-width:1200px) {}
