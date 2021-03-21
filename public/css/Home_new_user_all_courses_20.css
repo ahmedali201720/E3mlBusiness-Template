@@ -1,0 +1,74 @@
+/* Start Style Page Content */
+
+/* Start Style Startup Companies */
+
+#startup-companies {
+    padding:85px 0
+}
+
+#startup-companies #startup-companies-book {
+    text-align: center;
+}
+
+/* Start Style Startup Companies Book Image*/
+
+#startup-companies #startup-companies-book img{
+    width : 149px;
+    height: 226px
+}
+
+/* End Style Startup Companies Book Image*/
+
+/* Start Style Startup Companies Book Download Button */
+
+#startup-companies #startup-companies-book button {
+    margin-top : 1em;
+    width: 164px;
+    height: 48px;
+    border-radius: 4px;
+    background-color: #00d66c;
+    border : 1px solid #00d66c;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center
+}
+
+#startup-companies #startup-companies-book button:focus {
+    outline: none;
+    box-shadow: none
+}
+
+/* End Style Startup Companies Book Download Button */
+
+/* Start Style Startup Companies Book Overview */
+
+#startup-companies #startup-companies-book #startup-companies-book-overview {
+    margin-top:4%;
+    text-align : right;
+}
+
+#startup-companies #startup-companies-book #startup-companies-book-overview h3 {
+    direction: rtl;
+    font-size: 24px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.88;
+    letter-spacing: normal;
+    color: #111111;
+    margin-bottom: 2%
+}
+
+#startup-companies #startup-companies-book #startup-companies-book-overview p {
+    font-size: 18px;
+    line-height: 32px;
+    direction: rtl;
+    color : #3c4037;
+}
+
+/* End Style Startup Companies Book Overview */
+
+/* End Style Startup Companies */
+
+/* End Style Page Content */
+

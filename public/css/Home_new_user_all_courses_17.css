@@ -1,0 +1,60 @@
+/* Start Style Page Content */
+
+/* Start Style Academy Credits And Membership */
+
+#academy_credits_and_memberships {
+    padding : 85px 0;
+}
+
+/* End Style Academy Credits And Membership */
+
+/* Start Style Academy Credits And Membership Title */
+
+#academy_credits_and_memberships #title h3 {
+    direction: rtl;
+    font-size: 30px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.88;
+    letter-spacing: normal;
+    color: #08206b;
+    margin-bottom: 3%;
+    text-align: right
+}
+
+/* End Style Academy Credits And Membership Title */
+
+/* Start Style Academy Credits And Membership Details */
+
+#academy_credits_and_memberships #academy_credits_and_memberships_details .academy_credits_and_memberships_details_wrapper .academy_credits_and_memberships_details_items {
+    width : 95%;
+    margin: auto;
+}
+
+#academy_credits_and_memberships #academy_credits_and_memberships_details .academy_credits_and_memberships_details_wrapper .academy_credits_and_memberships_details_items .academy_credits_and_memberships_details_item {
+    padding : 18px 28px 32px 26px;
+    height: 257px;
+    min-height: 257px;
+    margin-bottom: 6.5%;
+    border : 1px solid #dcdcdd;
+    background-color: #FFF;
+    border-radius: 2px
+}
+
+#academy_credits_and_memberships #academy_credits_and_memberships_details .academy_credits_and_memberships_details_wrapper .academy_credits_and_memberships_details_items .academy_credits_and_memberships_details_item .title h4 {
+    font-family: Tajawal;
+    font-size: 20px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 28px;
+    letter-spacing: normal;
+    color : #111111;
+    overflow: hidden;
+    /*white-space: nowrap; */
+}
+
+/* End Style Academy Credits And Membership Details */
+
+/* End Style Page Content */

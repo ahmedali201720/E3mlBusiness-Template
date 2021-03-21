@@ -1,0 +1,48 @@
+/* Start Style Page Content */
+
+/* Start Style Business Graduates Association */
+
+#business_graduates_association {
+    padding : 85px 0
+}
+
+/* Start Style Business Graduates Association Image */
+
+#business_graduates_association #business_graduates_association_image img {
+    width: 281px;
+    height: 233px;
+}
+
+/* End Style Business Graduates Association Image */
+
+/* Start Style Business Graduates Association Details */
+
+#business_graduates_association #business_graduates_association_details {
+    margin-top:4%;
+    text-align : right;
+}
+
+#business_graduates_association #business_graduates_association_details h3 {
+    direction: rtl;
+    font-size: 24px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.88;
+    letter-spacing: normal;
+    color: #111111;
+    margin-bottom: 2%
+}
+
+#business_graduates_association #business_graduates_association_details p {
+    font-size: 18px;
+    line-height: 32px;
+    direction: rtl;
+    color : #3c4037;
+}
+
+/* End Style Business Graduates Association Details */
+
+/* End Style Business Graduates Association */
+
+/* End Style Page Content */
