@@ -1,0 +1,98 @@
+/* Start Style Page Content */
+
+/* Start Style Newest Books */
+
+#newest_books {
+    padding:55px 0
+}
+
+/* Start Style Newest Books Title */
+
+#newest_books .newest_books_title h3 {
+    direction: rtl;
+    font-size: 24px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.88;
+    letter-spacing: normal;
+    margin-bottom: 2.5%;
+    text-align : right;
+    color : #08206b
+}
+
+/* Start Style Newest Book */
+
+#newest_books .newest_books_details .newest_book_details {
+  border-radius: 4px;
+  border: solid 1px #efefef;
+  background-color: #ffffff;
+  min-height: 404px;
+  padding-bottom: 8%;
+  margin-bottom: 8%
+}
+
+/* Start Style Newest Book Title */
+
+#newest_books .newest_books_details .newest_book_details .title h4 {
+    direction : rtl;
+    font-size: 18px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.08;
+    letter-spacing: normal;
+    text-align: right;
+    color: #08206b;
+    margin-top: 7%;
+    margin-bottom: 6%;
+    padding-right: 4%
+} 
+
+/* End Style Newest Book Title */
+
+/* Start Style Newest Book Description */
+
+#newest_books .newest_books_details .newest_book_details .description p {
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: right;
+    color: #0b1005;
+    padding : 0 4%;
+    direction: rtl
+} 
+
+/* End Style Newest Book Description */
+
+/* Start Style Newest Book Author */
+
+#newest_books .newest_books_details .newest_book_details .author {
+    font-size: 15px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: right;
+    color: #0b1005;
+    padding-right: 4%
+} 
+
+/* End Style Newest Book Author */
+
+/* End Style Newest Book */
+
+/* End Style Newest Books Title*/
+
+/* End Style Newest Books */
+
+/* End Style Page Content */
+
+
+
+
+
