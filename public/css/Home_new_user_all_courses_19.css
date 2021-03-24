@@ -32,6 +32,13 @@
   margin-bottom: 8%
 }
 
+/* Start Style Newest Book Image */
+
+#newest_books .newest_books_details .newest_book_details .image img { width: 100%  }
+
+/* End Style Newest Book Image */
+
+
 /* Start Style Newest Book Title */
 
 #newest_books .newest_books_details .newest_book_details .title h4 {
