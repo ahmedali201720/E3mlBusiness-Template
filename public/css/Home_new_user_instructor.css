@@ -1,0 +1,85 @@
+/* Start Style Page Content */
+
+/* Start Style Instructor Details */
+
+#instructor_details {
+    padding : 85px 0
+}
+
+/* End Style Instructor Details */
+
+/* Start Style Instructor Overview */
+
+/* Start Style Instructor Image */
+
+#instructor_details #instructor_overview #instructor_image img { width : 100% }
+
+/* End Style Instructor Image */
+
+/* Start Style Instructor Linkedin Profile */
+
+#instructor_details #instructor_overview #instructor_linkedin_profile {
+    text-align : center;
+    margin-top : 0.5rem
+}
+
+#instructor_details #instructor_overview #instructor_linkedin_profile a { text-decoration: none }
+
+#instructor_details #instructor_overview #instructor_linkedin_profile a i {
+    font-size: 28px;
+    color : #2671b1
+}
+
+/* End Style Instructor Linkedin Profile */
+
+/* Start Style Instructor Name */
+
+#instructor_details #instructor_overview #instructor_name h4 {
+    font-size: 20px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.94;
+    letter-spacing: normal;
+    text-align: right;
+    color: #00150b;
+    direction: rtl;
+}
+
+/* End Style Instructor Name */
+
+/* Start Style Instructor Job Position */
+
+#instructor_details #instructor_overview #instructor_job_position p {
+    font-size: 16px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.44;
+    letter-spacing: normal;
+    text-align: right;
+    color: #bebebe;
+    direction: rtl;
+}
+
+/* End Style Instructor Job Position */
+
+/* Start Style Instructor Description */
+
+#instructor_details #instructor_overview #instructor_description p {
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.70;
+    letter-spacing: normal;
+    text-align: right;
+    color: #3c4037;
+    direction: rtl;
+}
+
+/* End Style Instructor Description */
+
+/* End Style Instructor Overview */
+
+/* End Style Page Content */
