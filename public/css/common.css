@@ -30,6 +30,14 @@
     box-sizing: border-box;
 }
 
+*:lang(en) {
+    font-family: var(--aileron);
+}
+
+*:lang(ar) {
+    font-family: var(--din);
+}
+
 body {
     margin: 0px;
     padding: 0px;
