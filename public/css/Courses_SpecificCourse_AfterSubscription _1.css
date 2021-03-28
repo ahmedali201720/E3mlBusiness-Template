@@ -1,0 +1,288 @@
+.pg-content {
+    padding: 25px 0
+}
+
+.pg-content * {
+    direction: rtl;
+    text-align: right
+}
+
+/* Accordion part */
+
+
+
+.cont-acc .accordion-button {
+    color: #00150b;
+    background-color: #f9f9f9;
+    border: none;
+    border: none;
+    display: inline-block;
+    text-align: right;
+    padding: 25px 30px 25px 80px;
+    box-shadow: none;
+    font-size: 16px;
+    width: 100%;
+    cursor: pointer;
+    position: relative;
+}
+
+.cont-acc .accordion-header {
+    margin-bottom: 0;
+}
+
+.cont-acc .accordion-collapse {
+    border: none
+}
+
+.cont-acc .accordion-body {
+    background-color: #cef7e3;
+    color: #818a85;
+    padding: 0;
+    padding-bottom: 20px
+}
+
+.cont-acc .acc-cont {
+    list-style: none;
+    padding: 0
+}
+
+.cont-acc .acc-item {
+    border-radius: 5px;
+    font-size: 18px;
+    padding: 10px 30px
+}
+
+.cont-acc .acc-item.active {
+    color: #fff;
+    background-color: #00d66c
+}
+
+.cont-acc .acc-item i {
+    color: #c6d9ad;
+    font-size: 75%;
+    margin-left: 5px
+}
+
+.cont-acc .acc-item.active i {
+    color: #fff
+}
+
+
+.cont-acc .accordion-button::after {
+    content: "\f107";
+    float: left;
+    display: block;
+    position: absolute;
+    left: 30px;
+    top: 36%;
+    color: #333;
+    font-family: "FontAwesome"
+}
+
+.cont-acc .accordion-button[aria-expanded="true"]::after {
+    content: "\f104";
+}
+
+.cont-acc .vid-time {
+    float: left;
+}
+
+.cont-acc .acc-count {
+    float: left;
+    color: #a1a1a1
+}
+
+/* Tabs content */
+.pgtab-cont {
+    padding: 30px 0
+}
+
+.top-bar {
+    background-color: #f9f9f9;
+    display: inline-block;
+    width: 100%;
+    padding: 10px 0 0
+}
+
+.bar-tabs {
+    float: right;
+    border: none
+}
+
+.cont-control {
+    display: flex;
+    float: left
+}
+
+.cont-control a {
+    color: #00150b;
+    width: 49%;
+    display: inline-block;
+    padding: 0 30px;
+    margin-bottom: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 16px;
+}
+
+.cont-control a i {
+    float: right;
+    height: 100%;
+    display: flex;
+    vertical-align: baseline;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.cont-control a:nth-of-type(2) i {
+    float: left;
+}
+
+.cont-control a:nth-of-type(2) {
+    border-right: 1px solid #dcdcdd
+}
+
+.cont-control a span {
+    display: block;
+    color: #4d5b54;
+    font-size: 12px;
+}
+
+.bar-tabs .nav-item {
+    border: none
+}
+
+.bar-tabs .nav-item .nav-link {
+    background: unset;
+    position: relative;
+    border: none;
+    outline: none;
+    margin: 0 15px;
+    cursor: pointer
+}
+
+.bar-tabs .nav-item .nav-link.active {
+    background: unset
+}
+
+.bar-tabs .nav-item .nav-link.active:after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    right: 0;
+    border-bottom: 2px solid #0d2167
+}
+
+.pgtab-cont .tab-cont {
+    padding: 20px 0;
+}
+
+.about-title {
+    font-size: 20px;
+    margin-bottom: 25px
+}
+
+.about-details p {
+    display: inline-block;
+    margin-left: 20px;
+    font-size: 14px;
+    color: #6d7069
+}
+
+.about-details .cont-txt {
+    width: 50%;
+    font-size: 14px;
+    line-height: 28px
+}
+
+/* Questions tab */
+.pgtab-cont .qstn-topbar {
+    display: inline-block;
+    width: 100%;
+    border-bottom: 2px solid #dadadb;
+    padding: 10px 0
+}
+
+.pgtab-cont .qstn-topbar a {
+    color: #646464
+}
+
+.pgtab-cont .qstn-topbar .add-qstn {
+    float: left;
+    color: #111
+}
+
+.pgtab-cont .qstn-body {
+    padding: 20px 0;
+    display: inline-block
+}
+
+.pgtab-cont .qstn-body:not(:last-of-type) {
+    border-bottom: 2px solid #dadadb;
+}
+
+.pgtab-cont .qstn-txt {
+    width: 96%;
+    display: inline-block;
+    padding-right: 20px
+}
+
+.pgtab-cont .user-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #333;
+    float: right
+}
+
+.pgtab-cont .user-nm {
+    font-size: 18px;
+    display: inline-block;
+    margin-bottom: 10px
+}
+
+.pgtab-cont .user-txt {
+    font-size: 14px
+}
+
+.pgtab-cont .add-time span {
+    color: #4291e0;
+    text-decoration: underline;
+    margin-left: 10px
+}
+
+.pgtab-cont .add-time {
+    margin-top: 40px;
+    color: #8a8a8e;
+    text-decoration: none
+}
+
+/* Files Tab content */
+.files-tab .filter-files {
+    float: left
+}
+
+.files-tab .files-cont {
+    list-style: none
+}
+
+.files-tab .file-item {
+    margin: 10px 0
+}
+
+.files-tab .file-item i {
+    margin-left: 10px
+}
+
+.files-tab .file-item .fa-file {
+    color: #08206b
+}
+
+.files-tab .file-item a {
+    color: #00d66c;
+    text-decoration: underline;
+    margin-right: 20px
+}
