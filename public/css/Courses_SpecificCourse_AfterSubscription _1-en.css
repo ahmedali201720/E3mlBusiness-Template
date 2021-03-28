@@ -1,0 +1,68 @@
+.pg-content {
+    padding: 25px 0
+}
+
+.pg-content * {
+    direction: ltr;
+    text-align: left
+}
+
+/* Accordion part */
+.about-details p {
+    margin-left: 0;
+}
+
+.cont-acc .accordion-button {
+    text-align: left;
+    padding: 25px 80px 25px 30px;
+}
+
+.cont-acc .acc-count {
+    float: right;
+}
+
+.cont-acc .vid-time {
+    float: right;
+}
+
+.cont-acc .accordion-button::after {
+    content: "\f107";
+    float: left;
+    left: auto;
+    right: 30px;
+
+}
+
+.cont-acc .accordion-button[aria-expanded="true"]::after {
+    content: "\f105";
+}
+
+.bar-tabs {
+    float: left;
+}
+
+.cont-control {
+    float: right;
+}
+
+.cont-control a i {
+    float: left;
+}
+
+.cont-control a i {
+    margin-right: 20px;
+}
+
+.cont-control a:nth-of-type(2) i {
+    float: right;
+    margin-right: 0;
+}
+
+.cont-control a:nth-of-type(2) {
+    border-left: 1px solid #dcdcdd;
+    border-right: 0
+}
+
+.pgtab-cont .qstn-topbar .add-qstn {
+    float: right;
+}

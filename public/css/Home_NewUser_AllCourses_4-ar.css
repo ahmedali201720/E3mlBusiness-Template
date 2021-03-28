@@ -1,0 +1,4 @@
+.srch-sec * {
+    direction: rtl !important;
+    text-align: right
+}

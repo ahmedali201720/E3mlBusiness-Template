@@ -235,10 +235,9 @@ html {
 /* Main header section */
 
 .main-hdr {
-    height: 682px;
+    height: 91vh;
     object-fit: cover;
     position: relative;
-
 }
 
 .main-hdr:after {
