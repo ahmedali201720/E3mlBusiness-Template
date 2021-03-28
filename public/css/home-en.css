@@ -1,4 +1,9 @@
 /*General style*/
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden
+}
+
 .star-ratings-css {
     unicode-bidi: bidi-override;
     color: #c5c5c5;
@@ -29,12 +34,55 @@
     overflow: hidden;
 }
 
+.sec-title {
+    font-family: Aileron;
+    font-size: 32px;
+    font-weight: bold;
+    color: #08206b;
+    line-height: 38px;
+    text-align: center
+}
+
+.sec-txt {
+    color: #8a8a8e;
+    font-size: 24px;
+    text-align: center;
+    line-height: 1.42;
+    width: 77%;
+    margin: 0 auto 30px;
+}
+
+@keyframes float {
+    0% {
+        transform: translatey(0px);
+    }
+
+    50% {
+        transform: translatey(-10px);
+    }
+
+    100% {
+        transform: translatey(0px);
+    }
+}
+
 /* Main header section */
 
 .main-hdr {
     height: 682px;
     object-fit: cover;
     position: relative;
+
+}
+
+.main-hdr:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    background-image: linear-gradient(to right, #04140c 0%, rgba(31, 46, 39, 0.89) 12%, rgba(244, 244, 244, 0) 100%, #ffffff 100%);
 }
 
 .main-hdr .main-hdr-img {
@@ -50,12 +98,14 @@
     left: auto;
     margin: auto;
     height: fit-content;
+    z-index: 1
 }
 
 .main-hdr .cont-txt .main-title {
     font-size: 42px;
     line-height: 1.21;
     color: #ffffff;
+    font-family: Aileron;
 }
 
 .main-hdr .cont-txt .main-txt {
@@ -74,12 +124,28 @@
     display: inline-block;
 }
 
-/* Services Section */
-.sec-title {
-    font-size: 32px;
-    color: #08206b;
-    line-height: 38px
+.main-hdr .scroll-btm {
+    position: absolute;
+    bottom: 26px;
+    top: auto;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    width: max-content;
+    text-align: center;
+    color: #fff;
+    margin: auto;
+    text-decoration: none;
+    animation: float 2s ease-in-out infinite;
+    z-index: 1
 }
+
+.main-hdr .scroll-btm i {
+    text-shadow: 1px 1px 5px rgba(4, 20, 12, 0.44);
+}
+
+/* Services Section */
 
 .srvcs-sec {
     padding: 28px 0 17px
@@ -120,7 +186,8 @@
     display: inline-block;
     width: 100%;
     border: none;
-    margin-bottom: 27px
+    margin-bottom: 27px;
+    margin-top: 25px
 }
 
 .srvcs-sec .nav-tab {
@@ -203,16 +270,19 @@
     height: 100%;
     object-fit: cover
 }
-
+.srvcs-sec .card {
+    border: none
+}
 .srvcs-sec .card-body {
-    padding: 8px 8px 13px
+    padding: 8px 8px 13px;
+      border: solid 1px #e6e8e7;
 }
 
 .srvcs-sec .card-title {
     color: #00d66c;
     font-size: 14px;
     line-height: 30px;
-    margin-bottom: 8px
+    margin-bottom: 5px;
 }
 
 .srvcs-sec .writer-nm {
@@ -260,9 +330,57 @@
     background-image: linear-gradient(to right, #04140c 0%, rgba(31, 46, 39, 0.89) 48%, rgba(66, 79, 73, 0.74) 70%, rgba(244, 244, 244, 0) 100%, #ffffff 100%);
 }
 
+.sldr-sec .sldr-bg {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover
+}
+
 .sldr-sec .home-sldr,
-.sldr-sec .owl-stage-outer {
+.sldr-sec .owl-stage,
+.sldr-sec .owl-stage-outer,
+.sldr-sec .owl-item {
     height: 100%
+}
+
+.sldr-sec .home-sldr .owl-dots {
+    position: absolute;
+    bottom: 50px;
+    left: 0;
+    right: 0;
+}
+
+.sldr-sec .home-sldr .owl-dot {
+    background-color: #fff !important;
+}
+
+.sldr-sec .home-sldr .owl-dot.active {
+    background-color: #00d66c !important;
+}
+
+.sldr-sec .home-sldr .owl-nav i {
+    color: #00d66c !important;
+    line-height: 20px
+}
+
+.sldr-sec .home-sldr .owl-nav button {
+    top: auto;
+    bottom: 37px;
+    background-color: unset !important;
+    z-index: 1;
+}
+
+.sldr-sec .home-sldr .owl-nav .owl-prev {
+    left: 44%;
+}
+
+.sldr-sec .home-sldr .owl-nav .owl-next {
+    right: 44%;
 }
 
 .sldr-sec .item {
@@ -276,7 +394,61 @@
     height: auto;
 }
 
+.sldr-sec .cont-txt {
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    top: 0;
+    top: 50%;
+    bottom: 10px;
+    transform: translateY(-50%);
+}
+
+.sldr-sec .cont-txt .cont-cat {
+    background-color: #08206b;
+    padding: 4px 8px;
+    border-radius: 2px;
+    font-size: 14px;
+    color: #ffffff;
+    line-height: 1.5;
+}
+
+.sldr-sec .cont-txt .cont-title {
+    font-family: Aileron;
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 1.19;
+    color: #00d66c;
+    margin: 22px 0 17px;
+}
+
+.sldr-sec .cont-txt .cont-p {
+    margin: 17px 294px 8px 0;
+    font-family: Aileron;
+    font-size: 24px;
+    line-height: 1.21;
+    color: #ffffff;
+}
+
+.sldr-sec .cont-txt .join-btn {
+    margin: 30px 358px 88px 0;
+    padding: 14px 44px 13px;
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #00d66c;
+    color: #fff;
+    text-decoration: none
+}
+
 /*Memebers section*/
+.members-sec {
+    padding: 41px 0 104px;
+    text-align: center
+}
+
+.members-sec .sec-title {
+    color: #111111;
+}
 
 .members-sec .cont-img {
     height: 257px;
@@ -300,7 +472,7 @@
 .members-sec .cont-img .com-name {
     margin: 72px 0 0;
     font-family: Tajawal;
-    font-size: 20px;
+    font-size: 24px;
     font-weight: 500;
     line-height: 1.4;
     color: #111111;
@@ -310,11 +482,59 @@
     left: 0;
     right: 0;
 }
+
+.members-sec .cont-img .com-name span {
+    display: block;
+    font-size: 20px;
+    color: #111111;
+    padding: 0 15px
+}
+
 /*App section */
 .app-sec {
-    background-color: #e6e7e9;
-    padding: 20px 0 0;
+    background-color: #F0F0F0;
 }
+
+.app-sec .app-img {
+    padding-top: 20px;
+    height: 100%;
+    width: auto;
+    object-fit: cover
+}
+
 .app-sec .cont-txt {
     display: table
+}
+
+.app-sec .cntr-txt {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    background-color: #e6e7e9;
+    padding: 64px 20px
+}
+
+.app-sec .cont-txt .cont-title {
+    font-size: 32px;
+    color: #111111;
+    line-height: 1.19;
+}
+
+.app-sec .cont-txt .cont-p {
+    font-size: 24px;
+    color: #8a8a8e;
+    line-height: 1.21;
+}
+
+.app-sec .cont-txt .store-lnk {
+    padding: 0 13px;
+    margin: 110px 16px 60px 0;
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #000;
+    text-decoration: none;
+    color: #fff;
+    font-size: 21px;
+    line-height: 2.38;
+    font-weight: 500;
 }
