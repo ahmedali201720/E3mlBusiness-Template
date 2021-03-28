@@ -52,6 +52,7 @@ html {
     margin: 0 auto 30px;
 }
 
+/*Animations */
 @keyframes float {
     0% {
         transform: translatey(0px);
@@ -64,6 +65,171 @@ html {
     100% {
         transform: translatey(0px);
     }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-o-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-ms-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Navbar */
+#main-header .content-dropdown.mega-dropdown::after,
+#main-header .content-dropdown.mega-dropdown::before {
+    left: 5%;
+}
+
+#main-header .mega-dropdown {
+    width: 1150px;
+    flex-direction: row;
+    margin-top: 15px;
+    animation: fadeIn ease .5s;
+    -webkit-animation: fadeIn ease .5s;
+    -moz-animation: fadeIn ease .5s;
+    -o-animation: fadeIn ease .5s;
+    -ms-animation: fadeIn ease .5s;
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.16);
+    border-radius: 5px
+}
+
+.mega-dropdown .megamenu {
+    list-style: none;
+    padding: 10px;
+    display: inline-block;
+    position: relative;
+    padding: 32px 0 5px 30px;
+}
+
+.mega-dropdown .megamenu:not(:last-of-type) .menu-item:first-of-type {
+    margin: 0 0 12px 0;
+    font-family: Aileron;
+    font-size: 16px;
+    font-weight: bold;
+    color: #00d66c;
+}
+
+.mega-dropdown .megamenu .menu-item {
+    width: 100%;
+}
+
+.mega-dropdown .megamenu .menu-item a {
+    font-size: 14px;
+    color: #00150b;
+    line-height: 1.21;
+    margin: 8px 30px 6px 0;
+    width: 100%;
+    text-decoration: none;
+    display: inline-block;
+    transition: .1s ease-in-out;
+    font-family: Aileron;
+    font-weight: normal;
+}
+
+.mega-dropdown .megamenu .menu-item a:hover {
+    color: #00d66c;
+}
+
+.mega-dropdown .megamenu .menu-item a > img {
+    max-width: 143px;
+    max-height: 85px;
+    display: block;
+    margin-bottom: 5px
+}
+
+.mega-dropdown .last-megamenu {
+    position: relative;
+    overflow: hidden;
+    padding: 20px 30px
+}
+
+.mega-dropdown .last-megamenu {
+    padding-left: 32px;
+    list-style: none;
+    position: relative
+}
+
+.mega-dropdown .last-megamenu .menu-item {
+    position: relative;
+}
+
+.mega-dropdown .last-megamenu:after {
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 200%;
+    border-left: 1px solid #e3e3e3;
+    left: 0;
+    right: auto;
+    top: -50%;
+    bottom: 0
+}
+
+.mega-dropdown .last-megamenu a i {
+    position: absolute;
+    right: 0;
+    font-size: 75%;
+    line-height: 18px
+}
+
+.mega-dropdown .last-megamenu a {
+    font-size: 16px;
+    color: #00150b;
+    line-height: 1.21;
+    margin: 8px 30px 6px 0;
+    width: 100%;
+    text-decoration: none;
+    font-weight: normal;
+    display: inline-block;
+    transition: .1s ease-in-out;
+    font-family: Aileron;
+}
+
+.mega-dropdown .last-megamenu a:hover {
+    color: #00d66c;
 }
 
 /* Main header section */
@@ -270,12 +436,14 @@ html {
     height: 100%;
     object-fit: cover
 }
+
 .srvcs-sec .card {
     border: none
 }
+
 .srvcs-sec .card-body {
     padding: 8px 8px 13px;
-      border: solid 1px #e6e8e7;
+    border: solid 1px #e6e8e7;
 }
 
 .srvcs-sec .card-title {
@@ -537,4 +705,11 @@ html {
     font-size: 21px;
     line-height: 2.38;
     font-weight: 500;
+}
+
+/* Small devices responsive */
+@media screen and (max-width:765px) {
+    .app-sec .app-img {
+        width: 100%;
+    }
 }
