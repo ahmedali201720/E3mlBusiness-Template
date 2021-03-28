@@ -84,6 +84,53 @@
 
 /* End Style Instructor Overview */
 
+/* Start Style Favourite Tabs */
+
+#instructor_details .fav-tabs {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 4%;
+    text-align: right;
+    margin-top: -3%;
+}
+
+#instructor_details .fav-tabs-container hr {
+    border-bottom: 1px solid #EEEEEE;
+    margin-top: -46px;
+    margin-bottom: 4%;
+    width: 94%
+}
+
+#instructor_details .fav-tabs li {
+    display: inline-block;
+    font-size: 1rem;
+    font-weight: 500;
+    height: 100%;
+    transition: all 0.4s;
+    font-weight: bold;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+/*#instructor_details .fav-tabs li:hover {*/
+/*    background-color: var(--actionHoverBackColor);*/
+/*    color : #FFF*/
+/*}*/
+
+/*#instructor_details .fav-tabs li:hover .count {*/
+/*   color : #FFF;*/
+/*}*/
+
+#instructor_details .fav-tab-active {
+    border-bottom: 2px solid #00cf69;
+    color: #00cf69;
+    font-weight: 700;
+}
+
+#instructor_details .fav-tab-active .count { color : #464646 }
+
+/* End Style Favourite Tabs */
+
 /* Start Style Instructor Courses */
 
 /* Start Style Instructor Course */
