@@ -294,4 +294,53 @@
 
 /* End Style Instructor Courses */
 
+/* Start Responsive Of The Page */
+
+@media(min-width: 280px) and (max-width: 653px) {
+    #instructor_details .fav-tabs { margin-bottom: 18%  }
+}
+
+@media(min-width: 540px) and (max-width: 720px) {
+    #instructor_details .fav-tabs { margin-bottom: 9% }
+    #instructor_details .instructor_courses .instructor_course .course_rate .count span { margin-right: -7.5rem ; }
+}
+
+@media(min-width: 1024px) and (max-width: 1366px) {
+    #instructor_details .fav-tabs { margin-bottom: 5% }
+    #instructor_details .instructor_courses .instructor_course .course_rate .stars { font-size: 14px }
+    #instructor_details .instructor_courses .instructor_course .course_rate .count span { margin-right: 0  }
+}
+
+@media(min-width: 768px) and (max-width: 1024px) {
+    #instructor_details .fav-tabs { margin-bottom: 6.5% }
+    #instructor_details .instructor_courses .instructor_course .course_rate .count span { margin-right: -2.5rem  }
+}
+
+@media(min-width: 375px) and (max-width: 812px) {
+    #instructor_details .fav-tabs { margin-bottom: 13% }
+    #instructor_details .instructor_courses .instructor_course .course_rate .count span { margin-right: -3rem }
+}
+
+@media(min-width: 414px) and (max-width: 736px) {
+    #instructor_details .fav-tabs { margin-bottom: 11.5% }
+    #instructor_details .instructor_courses .instructor_course .course_rate .count span { margin-right: -4rem }
+}
+
+@media(min-width: 320px) and (max-width: 568px) {
+    #instructor_details .fav-tabs { margin-bottom: 15.5% }
+    #instructor_details .instructor_courses .instructor_course .course_rate .count span { margin-right: -1.5rem }
+}
+
+@media(min-width: 411px) and (max-width: 823px) {
+    #instructor_details .fav-tabs { margin-bottom: 11.5% }
+    #instructor_details .instructor_courses .instructor_course .course_rate .count span { margin-right: -4rem }
+}
+
+@media(min-width: 360px) and (max-width: 640px) {
+    #instructor_details .fav-tabs { margin-bottom: 13.5% }
+    #instructor_details .instructor_courses .instructor_course .course_rate .count span { margin-right: -2.7rem }
+}
+
+/* End Responsive Of The Page */
+
 /* End Style Page Content */
