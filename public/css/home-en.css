@@ -35,7 +35,7 @@ html {
 }
 
 .sec-title {
-    font-family: Aileron;
+
     font-size: 32px;
     font-weight: bold;
     color: #08206b;
@@ -146,7 +146,6 @@ html {
 
 .mega-dropdown .megamenu:not(:last-of-type) .menu-item:first-of-type {
     margin: 0 0 12px 0;
-    font-family: Aileron;
     font-size: 16px;
     font-weight: bold;
     color: #00d66c;
@@ -165,7 +164,7 @@ html {
     text-decoration: none;
     display: inline-block;
     transition: .1s ease-in-out;
-    font-family: Aileron;
+
     font-weight: normal;
 }
 
@@ -225,7 +224,7 @@ html {
     font-weight: normal;
     display: inline-block;
     transition: .1s ease-in-out;
-    font-family: Aileron;
+
 }
 
 .mega-dropdown .last-megamenu a:hover {
@@ -270,7 +269,7 @@ html {
     font-size: 42px;
     line-height: 1.21;
     color: #ffffff;
-    font-family: Aileron;
+
 }
 
 .main-hdr .cont-txt .main-txt {
@@ -579,7 +578,7 @@ html {
 }
 
 .sldr-sec .cont-txt .cont-title {
-    font-family: Aileron;
+
     font-size: 32px;
     font-weight: bold;
     line-height: 1.19;
@@ -589,7 +588,7 @@ html {
 
 .sldr-sec .cont-txt .cont-p {
     margin: 17px 0 8px 0;
-    font-family: Aileron;
+
     font-size: 24px;
     line-height: 1.21;
     color: #ffffff;
