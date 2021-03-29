@@ -1,0 +1,58 @@
+.home-ar * {
+    direction: rtl
+}
+
+.mega-dropdown .megamenu {
+    text-align: right;
+    padding: 32px 30px 5px 0;
+}
+
+.mega-dropdown .last-megamenu {
+    margin-bottom: 0;
+}
+
+.mega-dropdown .last-megamenu a {
+    margin: 8px 0 6px 30px;
+}
+
+.mega-dropdown .last-megamenu a i {
+    left: 0;
+    right: auto
+}
+
+.mega-dropdown .megamenu .menu-item a {
+    font-size: 14px;
+    color: #00150b;
+    line-height: 1.21;
+    margin: 8px 0 6px 30px;
+}
+
+.mega-dropdown .last-megamenu .menu-item {
+    text-align: right;
+}
+
+.mega-dropdown .last-megamenu:after {
+    left: auto;
+    right: 0;
+}
+
+.main-hdr .cont-txt {
+    text-align: right;
+}
+
+.srvcs-sec .card {
+    text-align: right !important;
+}
+
+.sldr-sec .cont-txt {
+    direction: rtl;
+    text-align: right;
+}
+
+.app-sec .cont-txt {
+    text-align: right;
+}
+
+.app-sec .cont-txt .cont-title {
+    margin-bottom: 20px;
+}

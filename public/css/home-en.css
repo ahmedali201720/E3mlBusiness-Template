@@ -35,7 +35,7 @@ html {
 }
 
 .sec-title {
-    font-family: Aileron;
+
     font-size: 32px;
     font-weight: bold;
     color: #08206b;
@@ -146,7 +146,6 @@ html {
 
 .mega-dropdown .megamenu:not(:last-of-type) .menu-item:first-of-type {
     margin: 0 0 12px 0;
-    font-family: Aileron;
     font-size: 16px;
     font-weight: bold;
     color: #00d66c;
@@ -165,7 +164,7 @@ html {
     text-decoration: none;
     display: inline-block;
     transition: .1s ease-in-out;
-    font-family: Aileron;
+
     font-weight: normal;
 }
 
@@ -225,7 +224,7 @@ html {
     font-weight: normal;
     display: inline-block;
     transition: .1s ease-in-out;
-    font-family: Aileron;
+
 }
 
 .mega-dropdown .last-megamenu a:hover {
@@ -270,7 +269,7 @@ html {
     font-size: 42px;
     line-height: 1.21;
     color: #ffffff;
-    font-family: Aileron;
+
 }
 
 .main-hdr .cont-txt .main-txt {
@@ -564,8 +563,6 @@ html {
 .sldr-sec .cont-txt {
     position: absolute;
     z-index: 1;
-    bottom: 0;
-    top: 0;
     top: 50%;
     bottom: 10px;
     transform: translateY(-50%);
@@ -581,7 +578,7 @@ html {
 }
 
 .sldr-sec .cont-txt .cont-title {
-    font-family: Aileron;
+
     font-size: 32px;
     font-weight: bold;
     line-height: 1.19;
@@ -590,8 +587,8 @@ html {
 }
 
 .sldr-sec .cont-txt .cont-p {
-    margin: 17px 294px 8px 0;
-    font-family: Aileron;
+    margin: 17px 0 8px 0;
+
     font-size: 24px;
     line-height: 1.21;
     color: #ffffff;
@@ -623,7 +620,8 @@ html {
     border-radius: 2px;
     border: solid 1px #dcdcdd;
     background-color: #ffffff;
-    object-fit: cover
+    object-fit: cover;
+    position: relative
 }
 
 .members-sec .cont-img img {
@@ -708,7 +706,51 @@ html {
 
 /* Small devices responsive */
 @media screen and (max-width:765px) {
+    .main-hdr .cont-txt {
+        margin-left: 30px;
+    }
+
+    .sldr-sec {
+        height: 100vh;
+    }
+
+    .sldr-sec .cont-txt {
+        top: 44%;
+        left: 22px;
+        right: 0;
+        padding-right: 30px;
+    }
+
     .app-sec .app-img {
         width: 100%;
+    }
+
+    .sldr-sec .owl-carousel.owl-drag .owl-item {
+        overflow: hidden
+    }
+
+    .sldr-sec .home-sldr .owl-nav .owl-next {
+        right: 20%;
+    }
+
+    .sldr-sec .home-sldr .owl-nav .owl-prev {
+        left: 20%;
+    }
+
+    .sldr-sec .cont-txt .join-btn {
+        text-align: center;
+        width: 100%
+    }
+
+    .members-sec .cont-img {
+        margin-bottom: 30px
+    }
+
+    .members-sec {
+        padding: 41px 0;
+    }
+
+    .app-sec .cont-txt .store-lnk {
+        margin: 50px 16px 0 0;
     }
 }

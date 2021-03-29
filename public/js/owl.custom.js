@@ -49,14 +49,25 @@ $(document).ready(function () {
         }
     });
     // Home Page 
-    $(".home-sldr").owlCarousel({
+    $("#en-homeSldr").owlCarousel({
         nav: true,
         navText: ['<i class="fa fa-angle-left" aria-hidden="true"></i>', '<i class="fa fa-angle-right" aria-hidden="true"></i>'],
-        slideSpeed: 300,
-        slideSpeed: 200,
-        autoPlay: true,
         loop: true,
-        items: 1
+        autoplay: true,
+        autoplayTimeout: 4000,
+        items: 1,
+
+    });
+
+    $("#ar-homeSldr").owlCarousel({
+        nav: true,
+        rtl: true,
+        navText: ['<i class="fa fa-angle-left" aria-hidden="true"></i>', '<i class="fa fa-angle-right" aria-hidden="true"></i>'],
+        loop: true,
+        autoplay: true,
+        autoplayTimeout: 4000,
+        items: 1,
+
     });
 
 });
