@@ -1,0 +1,209 @@
+.profile-pg {
+    padding: 40px 0 77px
+}
+
+.profile-pg .profiletab-content {
+    border: solid 1px #efefef;
+    padding: 27px 65px;
+    display: inline-block
+}
+
+.profile-pg .box {
+    position: relative;
+    display: inline-block;
+    margin: auto;
+    font-size: 14px;
+}
+
+.profile-pg .box select {
+    background-color: unset;
+    color: #08206b;
+    padding: 0;
+    width: auto;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin: 4px auto 9px;
+}
+
+
+.profile-pg .box select {
+    /* for Firefox */
+    -moz-appearance: none;
+    /* for Chrome */
+    -webkit-appearance: none;
+}
+
+/* For IE10 */
+.profile-pg .box select::-ms-expand {
+    display: none;
+}
+
+
+.profile-pg .box select option {
+    padding: 0;
+}
+
+.profile-pg .tab-title {
+    font-size: 16px;
+    font-weight: bold;
+    color: #111111;
+    margin: 0 0 26px 16px;
+}
+
+.profile-pg .profile-img {
+    width: 127px;
+    height: 127px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.profile-pg .cont-img {
+    display: flex;
+    flex-direction: column;
+    margin-right: 37px
+}
+
+.profile-pg .cont-img .add-img {
+    font-size: 12px;
+    margin: 11px auto;
+    text-align: center;
+    color: #0b1005;
+    text-decoration: none
+}
+
+.profile-pg .form-inputs input {
+    margin: 26px 0 8px;
+    border-radius: 4px;
+    border: solid 1px #efefef;
+    height: 48px;
+    background-color: #f9f9f9;
+}
+
+.profile-pg .form-inputs input:first-of-type {
+    margin-top: 0
+}
+
+.profile-pg .form-inputs input::placeholder {
+    color: #b1b1b1;
+}
+
+.profile-pg .form-inputs input:focus {
+    background-color: #fff;
+    outline: none;
+    box-shadow: none;
+    border-color: #00d66c
+}
+
+.profile-pg .save-btn {
+    float: right;
+    background-color: #00d66c;
+    border-radius: 4px;
+    padding: 14px 48px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #ffffff;
+    margin: 95px 16px 0 0;
+    text-decoration: none
+}
+
+.profile-pg .save-btn:first-of-type {
+    background: unset;
+    border: solid 2px #efefef;
+    color: #00150b;
+    margin-right: 0
+}
+
+.profile-pg .profile-tabs {
+    padding: 25px 55px 55px 27px;
+    border: solid 1px #f9f9f9;
+}
+
+.profile-pg .nav-pills .nav-link {
+    font-size: 16px;
+    line-height: 1.44;
+    position: relative;
+    color: #3c4037;
+    padding: 6px 0;
+}
+
+.profile-pg .nav-pills .nav-link:after {
+    content: "\f105";
+    float: left;
+    display: block;
+    position: absolute;
+    left: auto;
+    right: 0;
+    top: 18%;
+    color: #333;
+    font-family: "FontAwesome"
+}
+
+.profile-pg .nav-pills .nav-link.active,
+.profile-pg .nav-pills .show > .nav-link {
+    font-weight: bold;
+    line-height: 1.44;
+    color: #0b1005;
+    background-color: unset;
+}
+
+.profile-pg .tabs-title {
+    margin: 0 0 29px 0;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.28;
+    color: #08206b;
+}
+
+.profile-pg .tabs-title:last-of-type {
+    font-size: 24px;
+    margin: 98px 0 32px 0;
+}
+
+@media screen and (max-width: 765px) {
+    .profile-pg .profiletab-content {
+        padding: 27px 30px;
+    }
+
+    .profile-pg .tab-title {
+        margin: 15px auto 30px;
+        display: block;
+        text-align: center;
+    }
+
+    .profile-pg .cont-img {
+        display: block;
+        margin-right: 0;
+    }
+
+    .profile-pg .profiletab-content .media {
+        display: block
+    }
+
+    .profile-pg .profile-img {
+        display: block;
+        margin: auto;
+    }
+
+    .profile-pg .cont-img .add-img {
+        display: block;
+    }
+
+    .profile-pg .box {
+        display: block;
+        margin: auto;
+        text-align: center;
+    }
+
+    .profile-pg .save-btn {
+        width: 100%;
+        margin: 15px auto 10px;
+        display: inline-block;
+        text-align: center
+    }
+
+    .profile-pg .save-btn:first-of-type {
+        margin: 30px auto 0;
+    }
+
+}
