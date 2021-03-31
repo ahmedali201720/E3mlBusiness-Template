@@ -1,0 +1,177 @@
+.about-hdr .cont-img {
+    position: relative;
+    text-align: center;
+    height: 380px;
+    background-image: url(../../assets/img/About_us/about-hdr.png);
+    background-attachment: fixed;
+    background-position: center
+}
+
+.about-hdr .cont-img:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background-color: #000;
+    opacity: .7
+}
+
+.about-hdr img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: fixed
+}
+
+.main-title {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    right: 0;
+    margin: auto;
+    color: #fff;
+    z-index: 1
+}
+
+/*About us content*/
+.about-cont {
+    padding: 40px 0 60px
+}
+
+.about-cont .about-title {
+    text-align: center;
+    font-weight: bold;
+    font-size: 24px;
+    position: relative;
+    margin-bottom: 60px
+}
+
+.about-cont .about-title:after {
+    content: '';
+    position: absolute;
+    bottom: -30px;
+    left: 0;
+    right: 0;
+    background-image: url(../../assets/img/About_us/seprator.png);
+    width: 100%;
+    background-position: center;
+    height: 5px;
+    background-repeat: no-repeat;
+}
+
+.about-cont .cont-txt {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.about-cont .cont-img {
+    height: 230px;
+    margin-bottom: 30px
+}
+
+.about-cont .cont-img img {
+    height: 100%;
+    width: auto;
+    margin-left: auto;
+    display: block
+}
+
+.about-cont .cont-img:nth-of-type(even) img {}
+
+.about-cont .cont-txt .cont-p {
+    font-size: 16px;
+    color: #333
+}
+
+/*vision Section*/
+
+.vision-sec {
+    background-color: #f5f5f5;
+    padding: 60px 0
+}
+
+.vision-sec .cont-txt {
+    margin-bottom: 40px
+}
+
+.vision-sec .vis-title {
+    color: #333;
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 25px
+}
+
+.vision-sec .cont-txt .vis-txt {
+    font-size: 16px;
+    color: #333
+}
+
+.vision-sec .acc-cont .card-header,
+.vision-sec .acc-cont .card {
+    border: none;
+    background: none;
+    outline: none
+}
+
+.vision-sec .acc-cont .card-header {
+    padding-left: 0;
+}
+
+.vision-sec .acc-cont .card-header .btn {
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px
+}
+
+.vision-sec .acc-cont .card-header .btn i {
+    color: #39b54a;
+    margin-right: 15px;
+}
+
+.vision-sec .acc-cont .card-body {
+    font-size: 16px;
+    color: #000;
+    padding: 0 50px 30px
+        
+}
+/*Discover Section*/
+.discover-sec .cont-img {
+    height: 190px;
+    position: relative
+}
+.discover-sec .discover-bg{
+    height: 100%;
+    width: 100%;
+}
+.discover-sec .cont-img:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top:0;
+    bottom: 0;
+    background-color: #000;
+    opacity: .6
+}
+.discover-sec .cont-img .discover-txt {
+    position: absolute;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-size: 26px;
+    width: 80%;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #fff;
+    z-index: 1;
+    margin: auto
+}
+#particle-canvas {
+  width: 100%;
+  height: 100%;
+}
