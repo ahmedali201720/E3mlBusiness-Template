@@ -48,7 +48,6 @@
 }
 
 .instructor-comment {
-    border: 1px solid var(--footerBackColor);
     border-radius: 8px;
 }
 
@@ -59,7 +58,6 @@
 }
 
 .instructor-comment .header {
-    background-color: var(--footerBackColor);
     border-top-left-radius: 7px;
     border-top-right-radius: 7px;
 }
@@ -83,7 +81,8 @@
 }
 
 .instructor-comment .header :is(a) {
-    color: #fff;
+    color: var(--blueColor);
+    font-weight: 700;
 }
 
 .instructor-comment .preview p {
@@ -98,14 +97,18 @@
 }
 
 .course-statistics {
-    border: 1px solid var(--footerBackColor);
+    border: 1px solid #efefef;
     border-radius: 5px;
 }
 
 .course-statistics .header {
-    background-color: var(--footerBackColor);
+    background-color: #efefef;
     font-weight: 600;
-    color: #fff;
+    color: var(--blueColor);
+}
+
+.course-statistics .content {
+    color: var(--actionBackColor);
 }
 
 .start-course-btn {
@@ -151,9 +154,10 @@
 }
 
 .course-tabs .course-tab :is(.active) {
-    background-color: var(--actionBackColor);
-    color: #fff;
-    border-bottom: 1px solid var(--actionBackColor);
+    color: var(--blueColor);
+    font-weight: 700;
+    border: none;
+    border-bottom: 1px solid var(--blueColor);
 }
 
 .course-text-list-item:lang(en) {
@@ -239,8 +243,8 @@
 
 .section-collapse-btn {
     border: none;
-    background-color: var(--footerBackColor);
-    color: #ffffdf;
+    background-color: #efefef;
+    color: #000;
     font-weight: 700;
     width: 100%;
     display: flex;
