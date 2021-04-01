@@ -1,0 +1,18 @@
+#instructor_details #instructor_overview #instructor_name h4,
+#instructor_details #instructor_overview #instructor_job_position p,
+#instructor_details #instructor_overview #instructor_description p,
+#instructor_details .fav-tabs,
+#instructor_details .instructor_courses .instructor_course .course_title h4,
+#instructor_details .instructor_courses .instructor_course .course_instructor,
+#instructor_details .instructor_courses .instructor_course .course_description p {
+    text-align: left;
+}
+
+#instructor_details .instructor_courses .instructor_course .course_rate .stars,
+#instructor_details .instructor_courses .instructor_course .course_rate .count {
+    float: left;
+    text-align: left;
+}
+#instructor_details .instructor_courses .instructor_course .course_title h4 {
+    padding-left: 4%;
+}
