@@ -163,34 +163,49 @@
 
 /* ********************************************************************************************** */
 
+.course-tabs .course-tab a {
+    color: #000;
+    font-weight: 600;
+    transition: all 0.4s;
+}
+
+.course-tabs .course-tab :is(.active) {
+    color: var(--actionBackColor);
+    font-weight: 700;
+    border: none;
+    border-bottom: 1px solid var(--actionBackColor);
+}
+
+/* ********************************************************************************************* */
+
 @media only screen and (max-width:576px) {}
 
 @media only screen and (max-width:500px) {
-    :is(.learning-path-section, .courses-categories-section) {
+    :is(.learning-path-section, .courses-categories-section, .recommended-section) {
         padding: 0 4rem;
     }
 }
 
 @media only screen and (max-width:414px) {
-    :is(.learning-path-section, .courses-categories-section) {
+    :is(.learning-path-section, .courses-categories-section, .recommended-section) {
         padding: 0 3rem;
     }
 }
 
 @media only screen and (max-width:375px) {
-    :is(.learning-path-section, .courses-categories-section) {
+    :is(.learning-path-section, .courses-categories-section, .recommended-section) {
         padding: 0 2.5rem;
     }
 }
 
 @media only screen and (max-width:350px) {
-    :is(.learning-path-section, .courses-categories-section) {
+    :is(.learning-path-section, .courses-categories-section, .recommended-section) {
         padding: 0 2rem;
     }
 }
 
 @media only screen and (max-width:320px) {
-    :is(.learning-path-section, .courses-categories-section) {
+    :is(.learning-path-section, .courses-categories-section, .recommended-section) {
         padding: 0 0.625rem;
     }
 }

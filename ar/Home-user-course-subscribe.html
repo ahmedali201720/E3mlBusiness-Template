@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home | User course subscribe 1 | arabic</title>
+    <title>Home | User course subscribe | arabic</title>
     <link rel="stylesheet" type="text/css" href="../assets/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" type="text/css" href="../assets/css/font.css">
     <link rel="stylesheet" type="text/css" href="../assets/icons/css/all.css">
@@ -32,8 +32,8 @@
 
                 <div class="col-12 d-flex justify-content-center">
 
-                    <a class="not-member-link" href="#">Are you an Instructor ? <span class="text-white">Join us
-                            now</span></a>
+                    <a class="not-member-link" href="#">هل أنت محاضر ؟ <span class="text-white">التحق بنا
+                            الآن</span></a>
 
                 </div>
 
@@ -73,8 +73,44 @@
                 <div
                     class="col-xl-1 col-lg-2 d-lg-flex d-none justify-content-xl-start justify-content-lg-end align-items-center">
 
-                    <div href="#" class="explore-container d-flex justify-content-center align-items-center">
-                        <a>Explore <span class="fa fa-caret-down mx-1"></span></a>
+                    <div
+                        class="explore-container explore-container-toggler d-flex justify-content-center align-items-center">
+
+                        <a>استكشف <span class="fa fa-caret-down down-icon mx-1"></span></a>
+
+
+                        <div class="custom-dropdown content-dropdown">
+
+                            <div class="content-dropdown-link dynamic-align">
+                                <a href="#">الكورسات</a>
+                            </div>
+
+                            <div class="content-dropdown-link dynamic-align">
+                                <a href="#">الدبلومات</a>
+                            </div>
+
+                            <div class="content-dropdown-link dynamic-align">
+                                <a href="#">الأسعار</a>
+                            </div>
+
+                            <div class="content-dropdown-link dynamic-align">
+                                <a href="#">الشهادات</a>
+                            </div>
+
+                            <div class="content-dropdown-link dynamic-align">
+                                <a href="#">عن الأكاديمية</a>
+                            </div>
+
+                            <div class="content-dropdown-link dynamic-align">
+                                <a href="#">اتصل بنا</a>
+                            </div>
+
+                            <div class="content-dropdown-link dynamic-align">
+                                <a href="#">الشروط و الأحكام</a>
+                            </div>
+
+                        </div>
+
                     </div>
 
                 </div>
@@ -86,7 +122,7 @@
                         <div class="form-row d-flex align-items-center">
                             <div class="col-12">
                                 <input type="text" id="main-search-input" class="form-control"
-                                    placeholder="&#xF002;   Search by Name / Category">
+                                    placeholder="&#xF002;   بحث عن كورسات او دبلومات ...">
                             </div>
                         </div>
 
@@ -94,13 +130,448 @@
 
                 </div>
 
-                <div
-                    class="col-xl-4 col-lg-5 col-md-4 col-sm-4 col-7 profile-data-container d-flex justify-content-sm-around justify-content-end align-items-center">
+                <div id="no-user-data-container"
+                    class="col-xl-4 col-lg-5 col-md-4 col-sm-4 col-7 no-user-data-container d-none justify-content-sm-around justify-content-end align-items-center">
 
-                    <a class="not-member-link d-lg-flex d-none" href="#">Join As Instructor</a>
+                    <a class="not-member-link d-lg-flex d-none" href="#">التحق بنا كمحاضر</a>
                     <div class="medium-vertical-line d-lg-flex d-none"></div>
-                    <a class="not-member-link mx-sm-0 mx-2" href="#">Login</a>
-                    <a href="#" class="action-link">Sign Up</a>
+                    <a class="not-member-link mx-sm-0 mx-2" href="#">دخول</a>
+                    <a href="#" class="action-link">تسجيل</a>
+
+                </div>
+
+                <div id="user-data-container" class="col-xl-4 col-lg-5 col-md-4 col-sm-4 col-7 user-data-container">
+
+                    <div class="row">
+
+                        <div class="col-6 user-learning d-lg-flex d-none justify-content-end align-items-center">
+
+                            <a class="user-learning-link user-learning-controller" href="#">كورساتى
+
+                                <div class="custom-dropdown learning-content-dropdown learning-control-dropdown pb-3">
+
+                                    <!-- User-learning dropdown header -->
+                                    <div
+                                        class="learning-dropdown-header d-flex justify-content-between align-items-center bg-action p-3">
+                                        <div class="wrapper">
+                                            <h6 class="label text-white mx-sm-0 mx-2 mb-0 d-inline-block">
+                                                مسارك التعليمي
+                                            </h6>
+                                        </div>
+                                        <a href="#" class="see-all-wishlist">
+                                            الكل
+                                        </a>
+                                    </div>
+
+                                    <div class="container-fluid">
+                                        <div class="row py-2">
+                                            <div class="col-12 text-center">
+                                                <i class="fa fa-bell"></i>
+                                                لا يوجد بيانات لعرضها
+                                            </div>
+                                        </div>
+                                        <div class="row border-top py-2">
+                                            <div class="col-12 text-center">
+                                                <a class="regular-link" href="#">تصفح الدورات</a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="container-fluid">
+                                        <a class="row learning-dropdown-link" href="#">
+                                            <div class="col-3 d-flex justify-content-center align-items-center">
+                                                <img src="../assets/img/course-banner.jpg" class="dropdown-course-img"
+                                                    alt="learn">
+                                            </div>
+                                            <div class="col-9">
+                                                <div class="row">
+                                                    <div class="col-12 learning-dropdown-text">
+                                                        Javascript Bible from zero to Hero Bootcamp 2021 , your guide to
+                                                        script mastery
+                                                    </div>
+                                                    <div class="col-12 learning-dropdown-subtitle">
+                                                        Continue Learning !
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <div class="container-fluid">
+                                        <a class="row learning-dropdown-link" href="#">
+                                            <div class="col-3 d-flex justify-content-center align-items-center">
+                                                <img src="../assets/img/course-banner.jpg" class="dropdown-course-img"
+                                                    alt="learn">
+                                            </div>
+                                            <div class="col-9">
+                                                <div class="row">
+                                                    <div class="col-12 learning-dropdown-text">
+                                                        Javascript Bible from zero to Hero Bootcamp 2021 , your guide to
+                                                        script mastery
+                                                    </div>
+                                                    <div class="col-12 learning-dropdown-subtitle">
+                                                        Continue Learning !
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <div class="container-fluid">
+                                        <a class="row learning-dropdown-link" href="#">
+                                            <div class="col-3 d-flex justify-content-center align-items-center">
+                                                <img src="../assets/img/course-banner.jpg" class="dropdown-course-img"
+                                                    alt="learn">
+                                            </div>
+                                            <div class="col-9">
+                                                <div class="row">
+                                                    <div class="col-12 learning-dropdown-text">
+                                                        Javascript Bible from zero to Hero Bootcamp 2021 , your guide to
+                                                        script mastery
+                                                    </div>
+                                                    <div class="col-12 learning-dropdown-subtitle">
+                                                        Continue Learning !
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <div class="container-fluid">
+                                        <a class="row learning-dropdown-link" href="#">
+                                            <div class="col-3 d-flex justify-content-center align-items-center">
+                                                <img src="../assets/img/course-banner.jpg" class="dropdown-course-img"
+                                                    alt="learn">
+                                            </div>
+                                            <div class="col-9">
+                                                <div class="row">
+                                                    <div class="col-12 learning-dropdown-text">
+                                                        Javascript Bible from zero to Hero Bootcamp 2021 , your guide to
+                                                        script mastery
+                                                    </div>
+                                                    <div class="col-12 learning-dropdown-subtitle">
+                                                        Continue Learning !
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                </div>
+
+                            </a>
+
+                        </div>
+
+                        <div class="col-1 d-lg-flex d-none justify-content-center align-items-center">
+                            <div class="medium-vertical-line"></div>
+                        </div>
+
+                        <div
+                            class="col-lg-3 col-md-7 col-sm-7 col-8 user-related-data-container d-flex justify-content-md-around justify-content-end align-items-center">
+
+                            <a class="wishlist-link bookmark-dropdown-controller">
+
+                                <i class="far fa-bookmark position-relative">
+                                    <div class="alert-dot"></div>
+                                </i>
+
+                                <div class="custom-dropdown wishlist-content-dropdown wishlist-control-dropdown pb-3">
+
+                                    <!-- Wishlist dropdown header -->
+                                    <div
+                                        class="wishlist-dropdown-header d-flex justify-content-between align-items-center bg-action p-3">
+                                        <div class="wrapper">
+                                            <i class="wishlist-sidebar-toggler fa fa-bars d-sm-none d-inline-block"></i>
+                                            <h6 class="label text-white mx-sm-0 mx-2 mb-0 d-inline-block">
+                                                My Wishlist
+                                            </h6>
+                                        </div>
+                                        <a href="#" class="see-all-wishlist">
+                                            View All
+                                        </a>
+                                    </div>
+
+                                    <div class="container-fluid">
+                                        <div class="row py-2">
+                                            <div class="col-12 text-center">
+                                                <i class="fa fa-bell"></i>
+                                                No Item in wishlist to display
+                                            </div>
+                                        </div>
+                                        <div class="row border-top py-2">
+                                            <div class="col-12 text-center">
+                                                <a class="regular-link" href="#">Explore Courses</a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="container-fluid">
+                                        <a class="row wishlist-dropdown-link" href="#">
+                                            <div class="col-3 d-flex justify-content-center align-items-center">
+                                                <img src="../assets/img/course-banner.jpg" class="dropdown-course-img"
+                                                    alt="wishlist">
+                                            </div>
+                                            <div class="col-9">
+                                                <div class="row">
+                                                    <div class="col-12 wishlist-dropdown-text">
+                                                        Javascript Bible from zero to Hero Bootcamp 2021 , your guide to
+                                                        script mastery
+                                                    </div>
+                                                    <div class="col-12 wishlist-dropdown-subtitle">
+                                                        Buy now and start !
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <div class="container-fluid">
+                                        <a class="row wishlist-dropdown-link" href="#">
+                                            <div class="col-3 d-flex justify-content-center align-items-center">
+                                                <img src="../assets/img/course-banner.jpg" class="dropdown-course-img"
+                                                    alt="wishlist">
+                                            </div>
+                                            <div class="col-9">
+                                                <div class="row">
+                                                    <div class="col-12 wishlist-dropdown-text">
+                                                        Javascript Bible from zero to Hero Bootcamp 2021 , your guide to
+                                                        script mastery
+                                                    </div>
+                                                    <div class="col-12 wishlist-dropdown-subtitle">
+                                                        Buy now and start !
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <div class="container-fluid">
+                                        <a class="row wishlist-dropdown-link" href="#">
+                                            <div class="col-3 d-flex justify-content-center align-items-center">
+                                                <img src="../assets/img/course-banner.jpg" class="dropdown-course-img"
+                                                    alt="wishlist">
+                                            </div>
+                                            <div class="col-9">
+                                                <div class="row">
+                                                    <div class="col-12 wishlist-dropdown-text">
+                                                        Javascript Bible from zero to Hero Bootcamp 2021 , your guide to
+                                                        script mastery
+                                                    </div>
+                                                    <div class="col-12 wishlist-dropdown-subtitle">
+                                                        Buy now and start !
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <div class="container-fluid">
+                                        <a class="row wishlist-dropdown-link" href="#">
+                                            <div class="col-3 d-flex justify-content-center align-items-center">
+                                                <img src="../assets/img/course-banner.jpg" class="dropdown-course-img"
+                                                    alt="wishlist">
+                                            </div>
+                                            <div class="col-9">
+                                                <div class="row">
+                                                    <div class="col-12 wishlist-dropdown-text">
+                                                        Javascript Bible from zero to Hero Bootcamp 2021 , your guide to
+                                                        script mastery
+                                                    </div>
+                                                    <div class="col-12 wishlist-dropdown-subtitle">
+                                                        Buy now and start !
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                </div>
+
+                            </a>
+
+                            <a class="separator-link d-block d-sm-none">
+                            </a>
+
+                            <a class="notification-link notification-dropdown-controller" href="#">
+
+                                <i class="far fa-bell position-relative">
+                                    <div class="alert-dot"></div>
+                                </i>
+
+                                <div class="custom-dropdown notification-content-dropdown notfication-control-dropdown">
+
+                                    <!-- Notification dropdown header -->
+                                    <div
+                                        class="notification-dropdown-header d-flex justify-content-between align-items-center bg-action p-3">
+                                        <div class="wrapper">
+                                            <i
+                                                class="notification-sidebar-toggler fa fa-bars d-sm-none d-inline-block"></i>
+                                            <h6 class="label text-white mx-sm-0 mx-2 mb-0 d-inline-block">
+                                                Notifications
+                                            </h6>
+                                        </div>
+                                        <a href="#" class="notification-setting">
+                                            <i class="fa fa-cog"></i>
+                                            Settings
+                                        </a>
+                                    </div>
+
+                                    <div class="container-fluid">
+                                        <div class="row py-4">
+                                            <div class="col-12 text-center">
+                                                <i class="fa fa-bell"></i>
+                                                No Notifications to display
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="container-fluid">
+                                        <a class="row notification-dropdown-link" href="#">
+                                            <div class="col-2 d-flex justify-content-center align-items-center">
+                                                <img src="../assets/img/me.jpg" class="dropdown-img" alt="notification">
+                                            </div>
+                                            <div class="col-10">
+                                                <div class="row">
+                                                    <div class="col-12 notification-dropdown-text">
+                                                        Training 5 or more people?Get your team access to Udemy's top
+                                                        5,000+
+                                                        courses
+                                                    </div>
+                                                    <div class="col-12 notification-dropdown-time">
+                                                        3 days ago
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <div class="container-fluid">
+                                        <a class="row notification-dropdown-link" href="#">
+                                            <div class="col-2 d-flex justify-content-center align-items-center">
+                                                <img src="../assets/img/me.jpg" class="dropdown-img" alt="notification">
+                                            </div>
+                                            <div class="col-10">
+                                                <div class="row">
+                                                    <div class="col-12 notification-dropdown-text">
+                                                        Training 5 or more people?Get your team access to Udemy's top
+                                                        5,000+
+                                                        courses
+                                                    </div>
+                                                    <div class="col-12 notification-dropdown-time">
+                                                        3 days ago
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <div class="container-fluid">
+                                        <a class="row notification-dropdown-link" href="#">
+                                            <div class="col-2 d-flex justify-content-center align-items-center">
+                                                <img src="../assets/img/me.jpg" class="dropdown-img" alt="notification">
+                                            </div>
+                                            <div class="col-10">
+                                                <div class="row">
+                                                    <div class="col-12 notification-dropdown-text">
+                                                        Training 5 or more people?Get your team access to Udemy's top
+                                                        5,000+
+                                                        courses
+                                                    </div>
+                                                    <div class="col-12 notification-dropdown-time">
+                                                        3 days ago
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <div class="container-fluid">
+                                        <a class="row notification-dropdown-link" href="#">
+                                            <div class="col-2 d-flex justify-content-center align-items-center">
+                                                <img src="../assets/img/me.jpg" class="dropdown-img" alt="notification">
+                                            </div>
+                                            <div class="col-10">
+                                                <div class="row">
+                                                    <div class="col-12 notification-dropdown-text">
+                                                        Training 5 or more people?Get your team access to Udemy's top
+                                                        5,000+
+                                                        courses
+                                                    </div>
+                                                    <div class="col-12 notification-dropdown-time">
+                                                        3 days ago
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <!-- Notification dropdown color -->
+                                    <div
+                                        class="notification-dropdown-footer d-flex justify-content-around align-items-center py-3">
+                                        <a href="#" class="mark-all-link">Mark All As Read</a>
+                                        <a href="#" class="btn btn-outline-primary see-all-link">See All</a>
+                                    </div>
+
+                                </div>
+
+                            </a>
+
+                        </div>
+
+                        <div
+                            class="col-lg-2 col-md-5 col-sm-5 col-4 user-avatar-container d-flex justify-content-md-center justify-content-end align-items-center">
+
+                            <a href="#" class="user-profile-img user-profile-control"><img src="../assets/img/me.jpg"
+                                    alt="user">
+
+                                <div class="custom-dropdown user-content-dropdown profile-control-dropdown">
+
+                                    <a href="#" class="d-flex justify-content-start align-items-center px-3 py-3">
+                                        <div class="wrapper">
+                                            <img class="dropdown-img" src="../assets/img/me.jpg" alt="user">
+                                        </div>
+                                        <div class="dropdown-email mx-1">
+                                            أحمد على محمد
+                                        </div>
+                                    </a>
+
+                                    <div class="content-dropdown-link dynamic-align">
+                                        <a href="#">مسارك التعليمي</a>
+                                    </div>
+                                    <div
+                                        class="content-dropdown-link d-flex justify-content-between align-items-center">
+                                        <a href="#">المفضلات</a>
+                                        <div class="alert-number bookmark-alert-number">+9</div>
+                                    </div>
+                                    <div
+                                        class="content-dropdown-link d-flex justify-content-between align-items-center">
+                                        <a href="#">الإشعارات</a>
+                                        <div class="alert-number notification-alert-number">+9</div>
+                                    </div>
+                                    <div class="content-dropdown-link dynamic-align">
+                                        <a href="#">إعدادات الحساب</a>
+                                    </div>
+                                    <div class="content-dropdown-link dynamic-align">
+                                        <a href="#">طرق الدفع</a>
+                                    </div>
+                                    <div class="content-dropdown-link dynamic-align">
+                                        <a href="#">مساعدة !</a>
+                                    </div>
+                                    <div class="content-dropdown-link dynamic-align">
+                                        <a href="#">تسجيل الخروج</a>
+                                    </div>
+
+                                </div>
+
+                            </a>
+
+                        </div>
+
+                    </div>
 
                 </div>
 
@@ -112,33 +583,115 @@
 
     <!-- End of main header -->
 
+    <!-- Start of sidebar Section -->
+
+    <section id="sidebar" class="">
+
+        <div class="container-fluid">
+
+            <div class="row">
+
+                <div class="col-12 in-sidebar-toggler d-flex justify-content-end pt-3">
+                    <a href="#" class="fa fa-bars"></a>
+                </div>
+
+                <div class="col-12 d-flex justify-content-start px-3 pb-2">
+                    <a class="sidebar-profile-link" href="#">
+                        <img src="../assets/img/me.jpg" alt="profile">
+                        <span class="mx-1">أهلاً ، أحمد على</span>
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="row">
+
+                <div class="col-12 sidebar-link dynamic-align">
+                    <a href="#"><i class="fa fa-home mx-1"></i> الرئيسية</a>
+                </div>
+
+                <div class="col-12 sidebar-link dynamic-align">
+                    <a href="#"><i class="fa fa-books mx-1"></i> الدبلومات</a>
+                </div>
+
+                <div class="col-12 sidebar-link dynamic-align">
+                    <a href="#"><i class="fa fa-book mx-1"></i> الكورسات</a>
+                </div>
+
+                <div class="col-12 sidebar-link dynamic-align">
+                    <a href="#"><i class="fa fa-list-alt mx-1"></i> الفئات</a>
+                </div>
+
+                <div class="col-12 sidebar-link dynamic-align">
+                    <a href="#"><i class="fa fa-hand-holding-usd mx-1"></i> المبيعات</a>
+                </div>
+
+                <div class="col-12 sidebar-link dynamic-align">
+                    <a href="#"><i class="far fa-analytics mx-1"></i>التسويق الرقمى</a>
+                </div>
+
+                <div class="col-12 sidebar-link dynamic-align">
+                    <a href="#"><i class="far fa-analytics mx-1"></i>التسويق</a>
+                </div>
+
+                <div class="col-12 sidebar-link dynamic-align">
+                    <a href="#"><i class="fa fa-users mx-1"></i>الموارد البشرية</a>
+                </div>
+
+                <div class="col-12 sidebar-link dynamic-align">
+                    <a href="#"><i class="fa fa-graduation-cap mx-1"></i> الشهادات</a>
+                </div>
+
+                <div class="col-12 sidebar-link dynamic-align">
+                    <a href="#"><i class="fa fa-question-circle mx-1"></i>عن الشركة</a>
+                </div>
+
+                <div class="col-12 sidebar-link dynamic-align">
+                    <a href="#"><i class="fa fa-phone-alt mx-1"></i> اتصل بنا</a>
+                </div>
+
+                <div class="col-12 sidebar-link dynamic-align">
+                    <a href="#"><i class="fa fa-comment-alt-exclamation mx-1"></i>الشروط و الأحكام</a>
+                </div>
+
+                <div class="col-12 sidebar-link dynamic-align">
+                    <a href="#"><i class="fa fa-language mx-1"></i> اللغة</a>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- End of sidebar section -->
+
     <!-- Learning Path Section Section -->
 
     <section id="learing-path" class="learning-path-section px-xl-5 px-lg-4 p-sm-3">
 
         <div class="container-fluid">
 
-            <div class="header my-4">
-                <p class="mb-0"> Welcome <span class="text-info"><a href="#">Ahmed</a></span>, Resume your Learning
-                    Paths.</p>
+            <div class="header dynamic-align my-4">
+                <p class="mb-0"> مرحباً <span class="text-info"><a href="#">أحمد</a></span>, استكمل مسارك التعليمي</p>
             </div>
 
             <div class="row">
 
                 <div class="col-xl-3 col-md-4 col-sm-6 mb-2">
 
-                    <div class="course-progress-card">
+                    <div class="course-progress-card dynamic-align">
 
                         <div class="img">
                             <a href="#">
                                 <img src="../assets/img/progress-card-1.jpg" alt="image">
                             </a>
                             <div class="course-category">
-                                <div class="label">
-                                    Marketing
+                                <div class="label text-center">
+                                    التسويق
                                 </div>
-                                <div class="academy">
-                                    King Saud University
+                                <div class="academy text-center">
+                                    جامعة الملك سعود
                                 </div>
                             </div>
                             <i class="far fa-heart card-fav-icon"></i>
@@ -147,22 +700,22 @@
                         <div class="body">
 
                             <div class="title">
-                                <a href="#">Marketing and advertising on YouTube.</a>
+                                <a href="#">التسويق و الإعلان على اليوتيوب باستخدام أدوات التحليل</a>
                             </div>
 
                             <div class="introducer">
                                 <i class="fa fa-user-alt"></i>
-                                <a href="#" class="mx-1">Ahmed Ali</a>
+                                <a href="#" class="mx-1">أحمد على</a>
                             </div>
 
                             <div class="lecture-num">
                                 <a href="#">
-                                    Lecture<span class="mx-1">( 2 )</span>
+                                    المحاضرة<span class="mx-1">( 2 )</span>
                                 </a>
                             </div>
 
                             <div class="progress-info d-flex justify-content-between">
-                                <a href="#" class="chapter-num">Chapter <span>2</span></a>
+                                <a href="#" class="chapter-num">الفصل <span>2</span></a>
                                 <p class="mb-0"><span class="progress-value"> 30 </span> %</p>
                             </div>
 
@@ -179,15 +732,18 @@
 
                 <div class="col-xl-3 col-md-4 col-sm-6 mb-2">
 
-                    <div class="course-progress-card">
+                    <div class="course-progress-card dynamic-align">
 
                         <div class="img">
                             <a href="#">
-                                <img src="../assets/img/banner-5.jpg" alt="image">
+                                <img src="../assets/img/progress-card-1.jpg" alt="image">
                             </a>
                             <div class="course-category">
-                                <div class="label">
-                                    Human Resources
+                                <div class="label text-center">
+                                    التسويق
+                                </div>
+                                <div class="academy text-center">
+                                    جامعة الملك سعود
                                 </div>
                             </div>
                             <i class="far fa-heart card-fav-icon"></i>
@@ -196,76 +752,22 @@
                         <div class="body">
 
                             <div class="title">
-                                <a href="#">Marketing and advertising on YouTube using angular , react and
-                                    EcmaScript6 life cycle.</a>
+                                <a href="#">التسويق و الإعلان على اليوتيوب باستخدام أدوات التحليل</a>
                             </div>
 
                             <div class="introducer">
                                 <i class="fa fa-user-alt"></i>
-                                <a href="#" class="mx-1">Sayed Elaraby</a>
+                                <a href="#" class="mx-1">أحمد على</a>
                             </div>
 
                             <div class="lecture-num">
                                 <a href="#">
-                                    Lecture<span class="mx-1">( 1 )</span>
+                                    المحاضرة<span class="mx-1">( 2 )</span>
                                 </a>
                             </div>
 
                             <div class="progress-info d-flex justify-content-between">
-                                <a href="#" class="chapter-num">Chapter <span>4</span></a>
-                                <p class="mb-0"><span class="progress-value"> 15 </span> %</p>
-                            </div>
-
-                            <div class="progress progress-bar-container">
-                                <div class="progress-bar" role="progressbar" style="width:15%" aria-valuenow="15"
-                                    aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-                <div class="col-xl-3 col-md-4 col-sm-6 mb-2">
-
-                    <div class="course-progress-card">
-
-                        <div class="img">
-                            <a href="#">
-                                <img src="../assets/img/banner-3.jpg" alt="image">
-                            </a>
-                            <div class="course-category">
-                                <div class="label">
-                                    Financial
-                                </div>
-                                <div class="academy">
-                                    Mansoura University
-                                </div>
-                            </div>
-                            <i class="far fa-heart card-fav-icon"></i>
-                        </div>
-
-                        <div class="body">
-
-                            <div class="title">
-                                <a href="#">Marketing and advertising on YouTube using angular , react and
-                                    EcmaScript6 life cycle.</a>
-                            </div>
-
-                            <div class="introducer">
-                                <i class="fa fa-user-alt"></i>
-                                <a href="#" class="mx-1">Mohamed Elbaz</a>
-                            </div>
-
-                            <div class="lecture-num">
-                                <a href="#">
-                                    Lecture<span class="mx-1">( 2 )</span>
-                                </a>
-                            </div>
-
-                            <div class="progress-info d-flex justify-content-between">
-                                <a href="#" class="chapter-num">Chapter <span>2</span></a>
+                                <a href="#" class="chapter-num">الفصل <span>2</span></a>
                                 <p class="mb-0"><span class="progress-value"> 30 </span> %</p>
                             </div>
 
@@ -282,15 +784,18 @@
 
                 <div class="col-xl-3 col-md-4 col-sm-6 mb-2">
 
-                    <div class="course-progress-card">
+                    <div class="course-progress-card dynamic-align">
 
                         <div class="img">
                             <a href="#">
-                                <img src="../assets/img/banner-7.jpg" alt="image">
+                                <img src="../assets/img/progress-card-1.jpg" alt="image">
                             </a>
                             <div class="course-category">
-                                <div class="label">
-                                    Marketing
+                                <div class="label text-center">
+                                    التسويق
+                                </div>
+                                <div class="academy text-center">
+                                    جامعة الملك سعود
                                 </div>
                             </div>
                             <i class="far fa-heart card-fav-icon"></i>
@@ -299,28 +804,79 @@
                         <div class="body">
 
                             <div class="title">
-                                <a href="#">Marketing and advertising on YouTube using angular , react and
-                                    EcmaScript6 life cycle.</a>
+                                <a href="#">التسويق و الإعلان على اليوتيوب باستخدام أدوات التحليل</a>
                             </div>
 
                             <div class="introducer">
                                 <i class="fa fa-user-alt"></i>
-                                <a href="#" class="mx-1">Omar Bakry</a>
+                                <a href="#" class="mx-1">أحمد على</a>
                             </div>
 
                             <div class="lecture-num">
                                 <a href="#">
-                                    Lecture<span class="mx-1">( 5 )</span>
+                                    المحاضرة<span class="mx-1">( 2 )</span>
                                 </a>
                             </div>
 
                             <div class="progress-info d-flex justify-content-between">
-                                <a href="#" class="chapter-num">Chapter <span>6</span></a>
-                                <p class="mb-0"><span class="progress-value"> 65 </span> %</p>
+                                <a href="#" class="chapter-num">الفصل <span>2</span></a>
+                                <p class="mb-0"><span class="progress-value"> 30 </span> %</p>
                             </div>
 
                             <div class="progress progress-bar-container">
-                                <div class="progress-bar" role="progressbar" style="width:65%" aria-valuenow="65"
+                                <div class="progress-bar" role="progressbar" style="width:30%" aria-valuenow="30"
+                                    aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="col-xl-3 col-md-4 col-sm-6 mb-2">
+
+                    <div class="course-progress-card dynamic-align">
+
+                        <div class="img">
+                            <a href="#">
+                                <img src="../assets/img/progress-card-1.jpg" alt="image">
+                            </a>
+                            <div class="course-category">
+                                <div class="label text-center">
+                                    التسويق
+                                </div>
+                                <div class="academy text-center">
+                                    جامعة الملك سعود
+                                </div>
+                            </div>
+                            <i class="far fa-heart card-fav-icon"></i>
+                        </div>
+
+                        <div class="body">
+
+                            <div class="title">
+                                <a href="#">التسويق و الإعلان على اليوتيوب باستخدام أدوات التحليل</a>
+                            </div>
+
+                            <div class="introducer">
+                                <i class="fa fa-user-alt"></i>
+                                <a href="#" class="mx-1">أحمد على</a>
+                            </div>
+
+                            <div class="lecture-num">
+                                <a href="#">
+                                    المحاضرة<span class="mx-1">( 2 )</span>
+                                </a>
+                            </div>
+
+                            <div class="progress-info d-flex justify-content-between">
+                                <a href="#" class="chapter-num">الفصل <span>2</span></a>
+                                <p class="mb-0"><span class="progress-value"> 30 </span> %</p>
+                            </div>
+
+                            <div class="progress progress-bar-container">
+                                <div class="progress-bar" role="progressbar" style="width:30%" aria-valuenow="30"
                                     aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
 
@@ -338,14 +894,494 @@
 
     <!--  End of Learning Path section  -->
 
+    <!-- Card Section -->
+
+    <section class="recommended-section px-xl-5 px-lg-4 px-3 py-3">
+
+        <div class="container-fluid">
+
+            <div class="header dynamic-align mt-3 mb-4">
+                <h5 class="font-weight-bold mb-0">موصى به لك</h5>
+            </div>
+
+            <ul class="nav nav-tabs course-tabs d-flex justify-content-sm-start justify-content-center" role="tablist">
+
+                <li class="nav-item course-tab">
+                    <a class="nav-link px-xl-5 px-lg-4 px-md-3 px-sm-2" data-toggle="tab" href="#coursesContent">كورسات
+                        <span class="count">( 5 )</span>
+                    </a>
+                </li>
+                <li class="nav-item course-tab">
+                    <a class="nav-link active px-xl-5 px-lg-4 px-md-3 px-sm-2" data-toggle="tab"
+                        href="#diplomasContent">دبلومات
+                        <span class="count">( 110 )</span>
+                    </a>
+                </li>
+
+            </ul>
+
+            <!-- Tabs content -->
+            <div class="tab-content mt-5">
+
+                <div id="coursesContent" class="container-fluid tab-pane dynamic-align">
+
+                    <div class="row">
+
+                        <div class="col-xl-3 col-lg-4 col-sm-6 col-12">
+
+                            <div class="course-card">
+
+                                <div class="course-card-img">
+                                    <img src="../assets/img/course-banner.jpg" alt="banner">
+                                </div>
+
+                                <div class="course-card-body">
+
+                                    <div class="course-card-title card-title d-flex align-items-center">
+
+                                        <a href="#">التسويق الرقمى على اليوتيوب</a>
+
+                                    </div>
+
+                                    <div class="course-introducer">
+
+                                        <i class="fa fa-user-alt"></i>
+                                        <a href="#" class="mx-1">أحمد على</a>
+
+                                    </div>
+
+                                    <div class="course-card-text card-text">
+                                        لوريم إيبسوم(Lorem Ipsum) هو ببساطة نص شكلي (بمعنى أن الغاية هي الشكل وليس
+                                        المحتوى)
+                                        ويُستخدم في صناعات المطابع ودور
+                                        النشر.
+                                    </div>
+
+                                    <div class="course-rate-view d-flex justify-content-start align-items-center">
+
+                                        <div class="rating-stars">
+
+                                            <div class="star fas fa-star">
+                                                <i class="value-star fas fa-star"></i>
+                                            </div>
+
+                                            <div class="star fas fa-star">
+                                                <i class="value-star fas fa-star"></i>
+                                            </div>
+
+                                            <div class="star fas fa-star">
+                                                <i class="value-star fas fa-star"></i>
+                                            </div>
+
+                                            <div class="star fas fa-star">
+                                                <i class="value-star fas fa-star"></i>
+                                            </div>
+
+                                            <div class="star fas fa-star">
+                                                <i class="value-star fas fa-star"></i>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="rate-contributors-number">
+                                            <p class="mx-1 mb-0">( 1200 )</p>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="col-xl-3 col-lg-4 col-sm-6 col-12">
+
+                            <div class="course-card">
+
+                                <div class="course-card-img">
+                                    <img src="../assets/img/course-banner.jpg" alt="banner">
+                                </div>
+
+                                <div class="course-card-body">
+
+                                    <div class="course-card-title card-title d-flex align-items-center">
+
+                                        <a href="#">التسويق الرقمى على اليوتيوب</a>
+
+                                    </div>
+
+                                    <div class="course-introducer">
+
+                                        <i class="fa fa-user-alt"></i>
+                                        <a href="#" class="mx-1">أحمد على</a>
+
+                                    </div>
+
+                                    <div class="course-card-text card-text">
+                                        لوريم إيبسوم(Lorem Ipsum) هو ببساطة نص شكلي (بمعنى أن الغاية هي الشكل وليس
+                                        المحتوى)
+                                        ويُستخدم في صناعات المطابع ودور
+                                        النشر.
+                                    </div>
+
+                                    <div class="course-rate-view d-flex justify-content-start align-items-center">
+
+                                        <div class="rating-stars">
+
+                                            <div class="star fas fa-star">
+                                                <i class="value-star fas fa-star"></i>
+                                            </div>
+
+                                            <div class="star fas fa-star">
+                                                <i class="value-star fas fa-star"></i>
+                                            </div>
+
+                                            <div class="star fas fa-star">
+                                                <i class="value-star fas fa-star"></i>
+                                            </div>
+
+                                            <div class="star fas fa-star">
+                                                <i class="value-star fas fa-star"></i>
+                                            </div>
+
+                                            <div class="star fas fa-star">
+                                                <i class="value-star fas fa-star"></i>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="rate-contributors-number">
+                                            <p class="mx-1 mb-0">( 1200 )</p>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="col-xl-3 col-lg-4 col-sm-6 col-12">
+
+                            <div class="course-card">
+
+                                <div class="course-card-img">
+                                    <img src="../assets/img/course-banner.jpg" alt="banner">
+                                </div>
+
+                                <div class="course-card-body">
+
+                                    <div class="course-card-title card-title d-flex align-items-center">
+
+                                        <a href="#">التسويق الرقمى على اليوتيوب</a>
+
+                                    </div>
+
+                                    <div class="course-introducer">
+
+                                        <i class="fa fa-user-alt"></i>
+                                        <a href="#" class="mx-1">أحمد على</a>
+
+                                    </div>
+
+                                    <div class="course-card-text card-text">
+                                        لوريم إيبسوم(Lorem Ipsum) هو ببساطة نص شكلي (بمعنى أن الغاية هي الشكل وليس
+                                        المحتوى)
+                                        ويُستخدم في صناعات المطابع ودور
+                                        النشر.
+                                    </div>
+
+                                    <div class="course-rate-view d-flex justify-content-start align-items-center">
+
+                                        <div class="rating-stars">
+
+                                            <div class="star fas fa-star">
+                                                <i class="value-star fas fa-star"></i>
+                                            </div>
+
+                                            <div class="star fas fa-star">
+                                                <i class="value-star fas fa-star"></i>
+                                            </div>
+
+                                            <div class="star fas fa-star">
+                                                <i class="value-star fas fa-star"></i>
+                                            </div>
+
+                                            <div class="star fas fa-star">
+                                                <i class="value-star fas fa-star"></i>
+                                            </div>
+
+                                            <div class="star fas fa-star">
+                                                <i class="value-star fas fa-star"></i>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="rate-contributors-number">
+                                            <p class="mx-1 mb-0">( 1200 )</p>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div id="diplomasContent" class="container-fluid dynamic-align tab-pane active">
+
+                    <div class="row">
+
+                        <div class="col-xl-3 col-md-4 col-sm-6 diploma-card-column">
+
+                            <div class="diploma-card">
+
+                                <div class="diploma-card-img">
+                                    <a href="#">
+                                        <img src="../assets/img/diploma-banner.jpg" alt="banner">
+                                    </a>
+                                </div>
+
+                                <div class="diploma-card-body">
+
+                                    <div class="diploma-card-title card-title d-flex align-items-center">
+
+                                        <a href="#">دبلومة التسويق الرقمى الالكترونى على اليوتيوب
+                                        </a>
+
+                                    </div>
+
+                                    <div class="diploma-courses-num">
+
+                                        <i class="fa fa-clipboard-list"></i>
+                                        <a href="#" class="mx-1"><span>7</span> كورسات</a>
+
+                                    </div>
+
+                                    <div class="diploma-card-text diploma-text">
+                                        لوريم إيبسوم(Lorem Ipsum) هو ببساطة نص شكلي (بمعنى أن الغاية هي الشكل وليس
+                                        المحتوى)
+                                        ويُستخدم في صناعات المطابع ودور
+                                        النشر.
+                                    </div>
+
+                                    <div class="diploma-rate-view d-flex justify-content-start align-items-center my-1">
+
+                                        <div class="rating-stars">
+
+                                            <div class="star fas fa-star">
+                                                <i class="value-star fas fa-star"></i>
+                                            </div>
+
+                                            <div class="star fas fa-star">
+                                                <i class="value-star fas fa-star"></i>
+                                            </div>
+
+                                            <div class="star fas fa-star">
+                                                <i class="value-star fas fa-star"></i>
+                                            </div>
+
+                                            <div class="star fas fa-star">
+                                                <i class="value-star fas fa-star"></i>
+                                            </div>
+
+                                            <div class="star fas fa-star">
+                                                <i class="value-star fas fa-star" style="width: 95%;"></i>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="rate-contributors-number">
+                                            <p class="mx-1 mb-0">( 1000 )</p>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="diploma-price dynamic-align">5000 <span class="currency">جنيهاً</span>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="col-xl-3 col-md-4 col-sm-6 diploma-card-column">
+
+                            <div class="diploma-card">
+
+                                <div class="diploma-card-img">
+                                    <a href="#">
+                                        <img src="../assets/img/diploma-banner.jpg" alt="banner">
+                                    </a>
+                                </div>
+
+                                <div class="diploma-card-body">
+
+                                    <div class="diploma-card-title card-title d-flex align-items-center">
+
+                                        <a href="#">دبلومة التسويق الرقمى الالكترونى على اليوتيوب
+                                        </a>
+
+                                    </div>
+
+                                    <div class="diploma-courses-num">
+
+                                        <i class="fa fa-clipboard-list"></i>
+                                        <a href="#" class="mx-1"><span>7</span> كورسات</a>
+
+                                    </div>
+
+                                    <div class="diploma-card-text diploma-text">
+                                        لوريم إيبسوم(Lorem Ipsum) هو ببساطة نص شكلي (بمعنى أن الغاية هي الشكل وليس
+                                        المحتوى)
+                                        ويُستخدم في صناعات المطابع ودور
+                                        النشر.
+                                    </div>
+
+                                    <div class="diploma-rate-view d-flex justify-content-start align-items-center my-1">
+
+                                        <div class="rating-stars">
+
+                                            <div class="star fas fa-star">
+                                                <i class="value-star fas fa-star"></i>
+                                            </div>
+
+                                            <div class="star fas fa-star">
+                                                <i class="value-star fas fa-star"></i>
+                                            </div>
+
+                                            <div class="star fas fa-star">
+                                                <i class="value-star fas fa-star"></i>
+                                            </div>
+
+                                            <div class="star fas fa-star">
+                                                <i class="value-star fas fa-star"></i>
+                                            </div>
+
+                                            <div class="star fas fa-star">
+                                                <i class="value-star fas fa-star" style="width: 95%;"></i>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="rate-contributors-number">
+                                            <p class="mx-1 mb-0">( 1000 )</p>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="diploma-price dynamic-align">5000 <span class="currency">جنيهاً</span>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="col-xl-3 col-md-4 col-sm-6 diploma-card-column">
+
+                            <div class="diploma-card">
+
+                                <div class="diploma-card-img">
+                                    <a href="#">
+                                        <img src="../assets/img/diploma-banner.jpg" alt="banner">
+                                    </a>
+                                </div>
+
+                                <div class="diploma-card-body">
+
+                                    <div class="diploma-card-title card-title d-flex align-items-center">
+
+                                        <a href="#">دبلومة التسويق الرقمى الالكترونى على اليوتيوب
+                                        </a>
+
+                                    </div>
+
+                                    <div class="diploma-courses-num">
+
+                                        <i class="fa fa-clipboard-list"></i>
+                                        <a href="#" class="mx-1"><span>7</span> كورسات</a>
+
+                                    </div>
+
+                                    <div class="diploma-card-text diploma-text">
+                                        لوريم إيبسوم(Lorem Ipsum) هو ببساطة نص شكلي (بمعنى أن الغاية هي الشكل وليس
+                                        المحتوى)
+                                        ويُستخدم في صناعات المطابع ودور
+                                        النشر.
+                                    </div>
+
+                                    <div class="diploma-rate-view d-flex justify-content-start align-items-center my-1">
+
+                                        <div class="rating-stars">
+
+                                            <div class="star fas fa-star">
+                                                <i class="value-star fas fa-star"></i>
+                                            </div>
+
+                                            <div class="star fas fa-star">
+                                                <i class="value-star fas fa-star"></i>
+                                            </div>
+
+                                            <div class="star fas fa-star">
+                                                <i class="value-star fas fa-star"></i>
+                                            </div>
+
+                                            <div class="star fas fa-star">
+                                                <i class="value-star fas fa-star"></i>
+                                            </div>
+
+                                            <div class="star fas fa-star">
+                                                <i class="value-star fas fa-star" style="width: 95%;"></i>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="rate-contributors-number">
+                                            <p class="mx-1 mb-0">( 1000 )</p>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="diploma-price dynamic-align">5000 <span class="currency">جنيهاً</span>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!--  End of Card section  -->
+
     <!-- Category Section -->
 
     <section id="courses-categories" class="courses-categories-section px-xl-5 px-lg-4 p-sm-3 mb-3">
 
         <div class="container-fluid">
 
-            <div class="header my-4">
-                <p class="mb-0">Courses Categories</p>
+            <div class="header dynamic-align my-4">
+                <p class="mb-0">التخصصات</p>
             </div>
 
             <div class="row">
@@ -353,7 +1389,7 @@
                 <div class="col-xl-3 col-lg-4 col-sm-6 mb-2">
 
                     <div class="course-category-item">
-                        <a href="#">Human Resouces</a>
+                        <a href="#">الموارد البشرية</a>
                     </div>
 
                 </div>
@@ -361,7 +1397,7 @@
                 <div class="col-xl-3 col-lg-4 col-sm-6 mb-2">
 
                     <div class="course-category-item">
-                        <a href="#">Marketing</a>
+                        <a href="#">التسويق</a>
                     </div>
 
                 </div>
@@ -369,7 +1405,7 @@
                 <div class="col-xl-3 col-lg-4 col-sm-6 mb-2">
 
                     <div class="course-category-item">
-                        <a href="#">Project Management</a>
+                        <a href="#">إدارة المشروعات</a>
                     </div>
 
                 </div>
@@ -377,7 +1413,7 @@
                 <div class="col-xl-3 col-lg-4 col-sm-6 mb-2">
 
                     <div class="course-category-item">
-                        <a href="#">Digital Marketing</a>
+                        <a href="#">التسويق الرقمى</a>
                     </div>
 
                 </div>
@@ -385,7 +1421,7 @@
                 <div class="col-xl-3 col-lg-4 col-sm-6 mb-2">
 
                     <div class="course-category-item">
-                        <a href="#">Human Resouces</a>
+                        <a href="#">الموارد البشرية</a>
                     </div>
 
                 </div>
@@ -393,7 +1429,7 @@
                 <div class="col-xl-3 col-lg-4 col-sm-6 mb-2">
 
                     <div class="course-category-item">
-                        <a href="#">Marketing</a>
+                        <a href="#">التسويق</a>
                     </div>
 
                 </div>
@@ -401,7 +1437,7 @@
                 <div class="col-xl-3 col-lg-4 col-sm-6 mb-2">
 
                     <div class="course-category-item">
-                        <a href="#">Project Management</a>
+                        <a href="#">ادارة المشروعات</a>
                     </div>
 
                 </div>
@@ -409,7 +1445,7 @@
                 <div class="col-xl-3 col-lg-4 col-sm-6 mb-2">
 
                     <div class="course-category-item">
-                        <a href="#">Digital Marketing</a>
+                        <a href="#">التسويق الرقمى</a>
                     </div>
 
                 </div>
@@ -421,6 +1457,462 @@
     </section>
 
     <!--  End of Categories section  -->
+
+    <section id="recommended-courses" class="recommended-courses-section dynamic-align px-xl-5 px-lg-4 p-sm-3">
+
+        <div class="container-fluid">
+
+            <div class="row my-3">
+
+                <div class="col-12 course-group-label">
+                    <h4>أحدث الكورسات</h4>
+                </div>
+
+            </div>
+
+            <div class="row">
+
+                <div class="col-xl-3 col-lg-4 col-sm-6 col-12">
+
+                    <div class="course-card">
+
+                        <div class="course-card-img">
+                            <img src="../assets/img/course-banner.jpg" alt="banner">
+                        </div>
+
+                        <div class="course-card-body">
+
+                            <div class="course-card-title card-title d-flex align-items-center">
+
+                                <a href="#">التسويق الرقمى على اليوتيوب</a>
+
+                            </div>
+
+                            <div class="course-introducer">
+
+                                <i class="fa fa-user-alt"></i>
+                                <a href="#" class="mx-1">أحمد على</a>
+
+                            </div>
+
+                            <div class="course-card-text card-text">
+                                لوريم إيبسوم(Lorem Ipsum) هو ببساطة نص شكلي (بمعنى أن الغاية هي الشكل وليس المحتوى)
+                                ويُستخدم في صناعات المطابع ودور
+                                النشر.
+                            </div>
+
+                            <div class="course-rate-view d-flex justify-content-start align-items-center">
+
+                                <div class="rating-stars">
+
+                                    <div class="star fas fa-star">
+                                        <i class="value-star fas fa-star"></i>
+                                    </div>
+
+                                    <div class="star fas fa-star">
+                                        <i class="value-star fas fa-star"></i>
+                                    </div>
+
+                                    <div class="star fas fa-star">
+                                        <i class="value-star fas fa-star"></i>
+                                    </div>
+
+                                    <div class="star fas fa-star">
+                                        <i class="value-star fas fa-star"></i>
+                                    </div>
+
+                                    <div class="star fas fa-star">
+                                        <i class="value-star fas fa-star"></i>
+                                    </div>
+
+                                </div>
+
+                                <div class="rate-contributors-number">
+                                    <p class="mx-1 mb-0">( 1200 )</p>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="col-xl-3 col-lg-4 col-sm-6 col-12">
+
+                    <div class="course-card">
+
+                        <div class="course-card-img">
+                            <img src="../assets/img/course-banner.jpg" alt="banner">
+                        </div>
+
+                        <div class="course-card-body">
+
+                            <div class="course-card-title card-title d-flex align-items-center">
+
+                                <a href="#">التسويق الرقمى على اليوتيوب</a>
+
+                            </div>
+
+                            <div class="course-introducer">
+
+                                <i class="fa fa-user-alt"></i>
+                                <a href="#" class="mx-1">أحمد على</a>
+
+                            </div>
+
+                            <div class="course-card-text card-text">
+                                لوريم إيبسوم(Lorem Ipsum) هو ببساطة نص شكلي (بمعنى أن الغاية هي الشكل وليس المحتوى)
+                                ويُستخدم في صناعات المطابع ودور
+                                النشر.
+                            </div>
+
+                            <div class="course-rate-view d-flex justify-content-start align-items-center">
+
+                                <div class="rating-stars">
+
+                                    <div class="star fas fa-star">
+                                        <i class="value-star fas fa-star"></i>
+                                    </div>
+
+                                    <div class="star fas fa-star">
+                                        <i class="value-star fas fa-star"></i>
+                                    </div>
+
+                                    <div class="star fas fa-star">
+                                        <i class="value-star fas fa-star"></i>
+                                    </div>
+
+                                    <div class="star fas fa-star">
+                                        <i class="value-star fas fa-star"></i>
+                                    </div>
+
+                                    <div class="star fas fa-star">
+                                        <i class="value-star fas fa-star"></i>
+                                    </div>
+
+                                </div>
+
+                                <div class="rate-contributors-number">
+                                    <p class="mx-1 mb-0">( 1200 )</p>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="col-xl-3 col-lg-4 col-sm-6 col-12">
+
+                    <div class="course-card">
+
+                        <div class="course-card-img">
+                            <img src="../assets/img/course-banner.jpg" alt="banner">
+                        </div>
+
+                        <div class="course-card-body">
+
+                            <div class="course-card-title card-title d-flex align-items-center">
+
+                                <a href="#">التسويق الرقمى على اليوتيوب</a>
+
+                            </div>
+
+                            <div class="course-introducer">
+
+                                <i class="fa fa-user-alt"></i>
+                                <a href="#" class="mx-1">أحمد على</a>
+
+                            </div>
+
+                            <div class="course-card-text card-text">
+                                لوريم إيبسوم(Lorem Ipsum) هو ببساطة نص شكلي (بمعنى أن الغاية هي الشكل وليس المحتوى)
+                                ويُستخدم في صناعات المطابع ودور
+                                النشر.
+                            </div>
+
+                            <div class="course-rate-view d-flex justify-content-start align-items-center">
+
+                                <div class="rating-stars">
+
+                                    <div class="star fas fa-star">
+                                        <i class="value-star fas fa-star"></i>
+                                    </div>
+
+                                    <div class="star fas fa-star">
+                                        <i class="value-star fas fa-star"></i>
+                                    </div>
+
+                                    <div class="star fas fa-star">
+                                        <i class="value-star fas fa-star"></i>
+                                    </div>
+
+                                    <div class="star fas fa-star">
+                                        <i class="value-star fas fa-star"></i>
+                                    </div>
+
+                                    <div class="star fas fa-star">
+                                        <i class="value-star fas fa-star"></i>
+                                    </div>
+
+                                </div>
+
+                                <div class="rate-contributors-number">
+                                    <p class="mx-1 mb-0">( 1200 )</p>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+    <section id="recommended-diplomas" class="recommended-diplomas-section dynamic-align px-xl-5 px-lg-4 p-sm-3">
+
+        <div class="container-fluid">
+
+            <div class="row my-3">
+
+                <div class="col-12 course-group-label">
+                    <h4>أحدث الدبلومات</h4>
+                </div>
+
+            </div>
+
+            <div class="row">
+
+                <div class="col-xl-3 col-md-4 col-sm-6 diploma-card-column">
+
+                    <div class="diploma-card">
+
+                        <div class="diploma-card-img">
+                            <a href="#">
+                                <img src="../assets/img/diploma-banner.jpg" alt="banner">
+                            </a>
+                        </div>
+
+                        <div class="diploma-card-body">
+
+                            <div class="diploma-card-title card-title d-flex align-items-center">
+
+                                <a href="#">دبلومة التسويق الرقمى الالكترونى على اليوتيوب
+                                </a>
+
+                            </div>
+
+                            <div class="diploma-courses-num">
+
+                                <i class="fa fa-clipboard-list"></i>
+                                <a href="#" class="mx-1"><span>7</span> كورسات</a>
+
+                            </div>
+
+                            <div class="diploma-card-text diploma-text">
+                                لوريم إيبسوم(Lorem Ipsum) هو ببساطة نص شكلي (بمعنى أن الغاية هي الشكل وليس المحتوى)
+                                ويُستخدم في صناعات المطابع ودور
+                                النشر.
+                            </div>
+
+                            <div class="diploma-rate-view d-flex justify-content-start align-items-center my-1">
+
+                                <div class="rating-stars">
+
+                                    <div class="star fas fa-star">
+                                        <i class="value-star fas fa-star"></i>
+                                    </div>
+
+                                    <div class="star fas fa-star">
+                                        <i class="value-star fas fa-star"></i>
+                                    </div>
+
+                                    <div class="star fas fa-star">
+                                        <i class="value-star fas fa-star"></i>
+                                    </div>
+
+                                    <div class="star fas fa-star">
+                                        <i class="value-star fas fa-star"></i>
+                                    </div>
+
+                                    <div class="star fas fa-star">
+                                        <i class="value-star fas fa-star" style="width: 95%;"></i>
+                                    </div>
+
+                                </div>
+
+                                <div class="rate-contributors-number">
+                                    <p class="mx-1 mb-0">( 1000 )</p>
+                                </div>
+
+                            </div>
+
+                            <div class="diploma-price dynamic-align">5000 <span class="currency">جنيهاً</span></div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="col-xl-3 col-md-4 col-sm-6 diploma-card-column">
+
+                    <div class="diploma-card">
+
+                        <div class="diploma-card-img">
+                            <a href="#">
+                                <img src="../assets/img/diploma-banner.jpg" alt="banner">
+                            </a>
+                        </div>
+
+                        <div class="diploma-card-body">
+
+                            <div class="diploma-card-title card-title d-flex align-items-center">
+
+                                <a href="#">دبلومة التسويق الرقمى الالكترونى على اليوتيوب
+                                </a>
+
+                            </div>
+
+                            <div class="diploma-courses-num">
+
+                                <i class="fa fa-clipboard-list"></i>
+                                <a href="#" class="mx-1"><span>7</span> كورسات</a>
+
+                            </div>
+
+                            <div class="diploma-card-text diploma-text">
+                                لوريم إيبسوم(Lorem Ipsum) هو ببساطة نص شكلي (بمعنى أن الغاية هي الشكل وليس المحتوى)
+                                ويُستخدم في صناعات المطابع ودور
+                                النشر.
+                            </div>
+
+                            <div class="diploma-rate-view d-flex justify-content-start align-items-center my-1">
+
+                                <div class="rating-stars">
+
+                                    <div class="star fas fa-star">
+                                        <i class="value-star fas fa-star"></i>
+                                    </div>
+
+                                    <div class="star fas fa-star">
+                                        <i class="value-star fas fa-star"></i>
+                                    </div>
+
+                                    <div class="star fas fa-star">
+                                        <i class="value-star fas fa-star"></i>
+                                    </div>
+
+                                    <div class="star fas fa-star">
+                                        <i class="value-star fas fa-star"></i>
+                                    </div>
+
+                                    <div class="star fas fa-star">
+                                        <i class="value-star fas fa-star" style="width: 95%;"></i>
+                                    </div>
+
+                                </div>
+
+                                <div class="rate-contributors-number">
+                                    <p class="mx-1 mb-0">( 1000 )</p>
+                                </div>
+
+                            </div>
+
+                            <div class="diploma-price dynamic-align">5000 <span class="currency">جنيهاً</span></div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="col-xl-3 col-md-4 col-sm-6 diploma-card-column">
+
+                    <div class="diploma-card">
+
+                        <div class="diploma-card-img">
+                            <a href="#">
+                                <img src="../assets/img/diploma-banner.jpg" alt="banner">
+                            </a>
+                        </div>
+
+                        <div class="diploma-card-body">
+
+                            <div class="diploma-card-title card-title d-flex align-items-center">
+
+                                <a href="#">دبلومة التسويق الرقمى الالكترونى على اليوتيوب
+                                </a>
+
+                            </div>
+
+                            <div class="diploma-courses-num">
+
+                                <i class="fa fa-clipboard-list"></i>
+                                <a href="#" class="mx-1"><span>7</span> كورسات</a>
+
+                            </div>
+
+                            <div class="diploma-card-text diploma-text">
+                                لوريم إيبسوم(Lorem Ipsum) هو ببساطة نص شكلي (بمعنى أن الغاية هي الشكل وليس المحتوى)
+                                ويُستخدم في صناعات المطابع ودور
+                                النشر.
+                            </div>
+
+                            <div class="diploma-rate-view d-flex justify-content-start align-items-center my-1">
+
+                                <div class="rating-stars">
+
+                                    <div class="star fas fa-star">
+                                        <i class="value-star fas fa-star"></i>
+                                    </div>
+
+                                    <div class="star fas fa-star">
+                                        <i class="value-star fas fa-star"></i>
+                                    </div>
+
+                                    <div class="star fas fa-star">
+                                        <i class="value-star fas fa-star"></i>
+                                    </div>
+
+                                    <div class="star fas fa-star">
+                                        <i class="value-star fas fa-star"></i>
+                                    </div>
+
+                                    <div class="star fas fa-star">
+                                        <i class="value-star fas fa-star" style="width: 95%;"></i>
+                                    </div>
+
+                                </div>
+
+                                <div class="rate-contributors-number">
+                                    <p class="mx-1 mb-0">( 1000 )</p>
+                                </div>
+
+                            </div>
+
+                            <div class="diploma-price dynamic-align">5000 <span class="currency">جنيهاً</span></div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
 
     <!-- Start of footer section -->
 
@@ -434,17 +1926,17 @@
                     class="col-md-4 col-12 footer-section dynamic-align-xs-center dynamic-align-sm-center dynamic-md-align dynamic-lg-align dynamic-xl-align mb-md-0 mb-5 px-lg-2 px-1">
 
                     <div class="footer-section-title">
-                        About the Academy
+                        عن الأكاديمية
                     </div>
 
                     <div class="footer-section-text">
-                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
-                        ut labore et dolore
-                        magna.
+                        وريم إيبسوم(Lorem Ipsum) هو ببساطة نص شكلي (بمعنى أن الغاية هي الشكل وليس المحتوى) ويُستخدم في
+                        صناعات المطابع ودور
+                        النشر. كان لوريم إيبسوم ولايزال المعيار للنص الشكلي منذ القرن الخامس عشر
                     </div>
 
                     <div class="footer-section-subtitle mt-2 mb-1">
-                        Join Us on Social
+                        تابعنا على السوشيال ميديا
                     </div>
 
                     <div class="footer-section-icons">
@@ -467,18 +1959,21 @@
                     <div class="footer-container">
 
                         <div class="footer-section-title">
-                            Quick Access
+                            وصول سريع
                         </div>
 
                         <div class="footer-section-links">
-                            <a href="#" class="footer-link">Terms & Condition</a>
-                            <a href="#" class="footer-link">Join As Instructor</a>
-                            <a href="#" class="footer-link">Client Talks</a>
-                            <a href="#" class="footer-link">Call Us</a>
-                            <p href="#" class="footer-language-link mb-0">Language : <span
-                                    class="language-toggler">EN</span>
-                                <i class="fa fa-caret-down mx-1"></i>
-                            </p>
+                            <a href="#" class="footer-link">الشروط و الأحكام</a>
+                            <a href="#" class="footer-link">انضم الينا كمحاضر</a>
+                            <a href="#" class="footer-link">تواصل العملاء</a>
+                            <a href="#" class="footer-link">اتصل بنا</a>
+                            <form action="POST">
+                                <label class="mb-0" for="">اللغة :</label>
+                                <select class="footer-lang-select" id="footerLang" name="footerLanguage">
+                                    <option value="en">انجليزية</option>
+                                    <option value="ar">عربية</option>
+                                </select>
+                            </form>
                         </div>
 
                     </div>
@@ -491,7 +1986,7 @@
                     <div class="footer-container">
 
                         <div class="footer-section-title">
-                            Pay With
+                            ادفع باستخدام
                         </div>
 
                         <div class="footer-section-images py-2">
