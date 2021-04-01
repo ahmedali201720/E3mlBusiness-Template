@@ -180,8 +180,7 @@
     margin: auto
 }
 
-#canvas,
-#text {
+#canvas {
     position: absolute;
     display: block;
     top: 0;
@@ -253,6 +252,7 @@
     position: relative;
     padding-left: 40px
 }
+
 .srvcs-sec .srvcs-cont .srvc-card .srvc-title:before {
     content: '•';
     position: absolute;
@@ -273,4 +273,43 @@
 .srvcs-sec .srvcs-cont .srvc-card .srvc-txt {
     font-size: 16px;
     color: #33475b
+}
+
+@media screen and (max-width:765px) {
+    .order-xs-last {
+        order: 2
+    }
+
+    .about-cont .cont-img img {
+        height: auto;
+        width: auto;
+        margin: auto !important;
+        display: block;
+        text-align: center;
+        max-height: 200px;
+    }
+
+    .discover-sec .cont-img {
+        height: 600px;
+    }
+
+    #canvas {
+        position: absolute;
+        display: block;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        max-width: 100%;
+    }
+
+    .srvcs-sec .srvcs-cont {
+        flex-direction: column;
+    }
+
+    .srvcs-sec .srvcs-cont .srvc-desc,
+    .srvcs-sec .srvcs-cont .srvc-card {
+        width: 100% !important;
+        margin: 0 0 2rem 0;
+    }
+
 }
