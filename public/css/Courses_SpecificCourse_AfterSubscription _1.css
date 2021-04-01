@@ -20,6 +20,9 @@
 .main-nav .join-btns .join-lnk {
     display: inline-block;
 }
+#navbarSupportedContent {
+    width: 100%
+}
 .star-ratings-css {
     unicode-bidi: bidi-override;
     color: #c5c5c5;
