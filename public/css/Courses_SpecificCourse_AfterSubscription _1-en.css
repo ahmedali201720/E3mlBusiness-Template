@@ -6,7 +6,14 @@
     direction: ltr;
     text-align: left
 }
-
+.main-nav * {
+    direction: ltr;
+    box-sizing: border-box;
+}
+/* Navbar */
+#navbarSupportedContent {
+    width: 100%
+}
 /* Accordion part */
 .about-details p {
     margin-left: 0;
