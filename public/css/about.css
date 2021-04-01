@@ -52,7 +52,7 @@
 .about-cont .about-title:after {
     content: '';
     position: absolute;
-    bottom: -30px;
+    bottom: -15px;
     left: 0;
     right: 0;
     background-image: url(../../assets/img/About_us/seprator.png);
@@ -137,27 +137,35 @@
     font-size: 16px;
     color: #000;
     padding: 0 50px 30px
-        
 }
+
 /*Discover Section*/
+.discover-sec {
+    position: relative;
+    overflow: hidden
+}
+
 .discover-sec .cont-img {
     height: 190px;
     position: relative
 }
-.discover-sec .discover-bg{
+
+.discover-sec .discover-bg {
     height: 100%;
     width: 100%;
 }
+
 .discover-sec .cont-img:after {
     content: '';
     position: absolute;
     left: 0;
     right: 0;
-    top:0;
+    top: 0;
     bottom: 0;
     background-color: #000;
     opacity: .6
 }
+
 .discover-sec .cont-img .discover-txt {
     position: absolute;
     left: 0;
@@ -171,7 +179,98 @@
     z-index: 1;
     margin: auto
 }
-#particle-canvas {
-  width: 100%;
-  height: 100%;
+
+#canvas,
+#text {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+/* Services section */
+.srvcs-sec {
+    padding: 90px 0;
+    background-color: #eaf0f6;
+}
+
+.srvcs-sec .srvcs-cont {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.srvcs-sec .srvcs-cont .srvc-desc {
+    width: 32%;
+    margin: 0 2% 2rem 0;
+}
+
+.srvcs-sec .srvcs-cont .srvc-desc .desc-title {
+    font-size: 1.8rem;
+    line-height: 1.3125em;
+    margin-bottom: 30px;
+    font-weight: bold;
+    color: #33475b
+}
+
+.srvcs-sec .srvcs-cont .srvc-desc .desc-txt {
+    font-size: 20px;
+    line-height: 1.5em;
+}
+
+.srvcs-sec .srvcs-cont .srvc-card {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    cursor: pointer;
+    transition: box-shadow 0.15s ease-in-out, transform 0.15s ease-in-out;
+    background: #fff;
+    margin-bottom: 1rem;
+    border-radius: .1875rem;
+    transition: 0.3s ease-in-out;
+    position: relative;
+    display: flex;
+    padding: 1rem;
+    box-shadow: 0 0 11px #eaf0f6;
+    width: 100%;
+    width: 31%;
+    padding: 2rem;
+    margin-right: 2%;
+    flex-direction: column;
+}
+
+.srvcs-sec .srvcs-cont .srvc-card:hover {
+    box-shadow: 0px 0px 8px #00000029;
+}
+
+.srvcs-sec .srvcs-cont .srvc-card:nth-of-type(4),
+.srvcs-sec .srvcs-cont .srvc-card:nth-of-type(5) {
+    width: 48%
+}
+
+.srvcs-sec .srvcs-cont .srvc-card .srvc-title {
+    font-size: 18px;
+    color: #33475b;
+    position: relative;
+    padding-left: 40px
+}
+.srvcs-sec .srvcs-cont .srvc-card .srvc-title:before {
+    content: '•';
+    position: absolute;
+    text-align: center;
+    font-size: 54px;
+    left: -2px;
+    line-height: 15px;
+    color: orange;
+    bottom: 0;
+    right: 0;
+    background-color: #fff;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    border: 5px solid #33475b;
+}
+
+.srvcs-sec .srvcs-cont .srvc-card .srvc-txt {
+    font-size: 16px;
+    color: #33475b
 }
