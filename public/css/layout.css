@@ -8,7 +8,7 @@
     position: -webkit-sticky;
     position: sticky;
     top: 0;
-    z-index: 9999999;
+    z-index: 3000;
     -webkit-touch-callout: none;
     -webkit-user-select: none;
     -khtml-user-select: none;
@@ -449,7 +449,7 @@
     max-height: 100vh;
     overflow: auto;
     background-color: black;
-    z-index: 3000;
+    z-index: 3001;
 }
 
 #sidebar * {
