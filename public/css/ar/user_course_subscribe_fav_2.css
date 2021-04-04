@@ -1,0 +1,13 @@
+.fav-pg * {
+    direction: rtl;
+    text-align: right;
+}
+
+.fav-pg .course-card .value-star {
+    right: 0;
+    left: auto
+}
+
+.fav-pg .fav-tabs li {
+    float: right;
+}

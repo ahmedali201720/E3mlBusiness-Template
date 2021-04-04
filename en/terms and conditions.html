@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout | Welcome to news</title>
+    <link rel="stylesheet" type="text/css" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" type="text/css" href="../assets/css/font.css">
+    <link rel="stylesheet" type="text/css" href="../assets/icons/css/all.css">
+    <link rel="stylesheet" type="text/css" href="../public/css/common.css">
+    <link rel="stylesheet" type="text/css" href="../public/css/common.responsive.css">
+    <link rel="stylesheet" type="text/css" href="../public/css/layout.css">
+    <link rel="stylesheet" type="text/css" href="../public/css/layout.responsive.css">
+    <link rel="icon" href="../assets/img/logo.png">
+</head>
+
+<body>
+
+    <!-- Header appears on mid and small screens -->
+
+    <header id="top-header" class="d-lg-none d-block bg-action">
+
+        <div class="container-fluid">
+
+            <div class="row px-3 py-1">
+
+                <div class="col-12 d-flex justify-content-center">
+
+                    <a class="not-member-link" href="#">Are you an Instructor ? <span class="text-white">Join us
+                            now</span></a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <!-- End of top header -->
+
+    <!-- Main Header -->
+
+    <header id="main-header">
+
+        <div class="container-fluid">
+
+            <div class="row top-header-container px-sm-3 px-1 py-2">
+
+                <div id="sidebar-toggler"
+                    class="col-sm-1 col-2 d-lg-none d-flex justify-content-center align-items-center px-1 sidebar-toggler">
+                    <i class="fa fa-bars"></i>
+                </div>
+
+                <div class="col-lg-1 col-md-2 col-sm-2 col-1 px-sm-2 px-0 d-flex justify-content-center">
+
+                    <a href="#" class="main-header-img-container">
+                        <img src="../assets/img/logo.png" alt="logo">
+                    </a>
+
+                </div>
+
+                <div class="col-2 d-sm-none d-flex justify-content-center align-items-center">
+                    <i class="fa fa-search"></i>
+                </div>
+
+                <div
+                    class="col-xl-1 col-lg-2 d-lg-flex d-none justify-content-xl-start justify-content-lg-end align-items-center">
+
+                    <div
+                        class="explore-container explore-container-toggler d-flex justify-content-center align-items-center">
+
+                        <a>Explore <span class="fa fa-caret-down down-icon mx-1"></span></a>
+
+
+                        <div class="custom-dropdown content-dropdown">
+
+                            <div class="content-dropdown-link dynamic-align">
+                                <a href="#">Courses</a>
+                            </div>
+
+                            <div class="content-dropdown-link dynamic-align">
+                                <a href="#">Diplomas</a>
+                            </div>
+
+                            <div class="content-dropdown-link dynamic-align">
+                                <a href="#">Pricing</a>
+                            </div>
+
+                            <div class="content-dropdown-link dynamic-align">
+                                <a href="#">Certificates</a>
+                            </div>
+
+                            <div class="content-dropdown-link dynamic-align">
+                                <a href="#">About Us</a>
+                            </div>
+
+                            <div class="content-dropdown-link dynamic-align">
+                                <a href="#">Contact Us</a>
+                            </div>
+
+                            <div class="content-dropdown-link dynamic-align">
+                                <a href="#">Terms and Conditions</a>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="col-xl-6 col-lg-4 col-md-5 col-sm-5 d-sm-flex d-none align-items-center">
+
+                    <form action="" class="search-form-container">
+
+                        <div class="form-row d-flex align-items-center">
+                            <div class="col-12">
+                                <input type="text" id="main-search-input" class="form-control"
+                                    placeholder="&#xF002;   Search by Name / Category">
+                            </div>
+                        </div>
+
+                    </form>
+
+                </div>
+
+                <div id="no-user-data-container"
+                    class="col-xl-4 col-lg-5 col-md-4 col-sm-4 col-7 no-user-data-container d-none justify-content-sm-around justify-content-end align-items-center">
+
+                    <a class="not-member-link d-lg-flex d-none" href="#">Join As Instructor</a>
+                    <div class="medium-vertical-line d-lg-flex d-none"></div>
+                    <a class="not-member-link mx-sm-0 mx-2" href="#">Login</a>
+                    <a href="#" class="action-link">Sign Up</a>
+
+                </div>
+
+                <div id="user-data-container" class="col-xl-4 col-lg-5 col-md-4 col-sm-4 col-7 user-data-container">
+
+                    <div class="row">
+
+                        <div class="col-6 user-learning d-lg-flex d-none justify-content-end align-items-center">
+
+                            <a class="user-learning-link user-learning-controller" href="#">My Learning
+
+                                <div class="custom-dropdown learning-content-dropdown learning-control-dropdown pb-3">
+
+                                    <!-- User-learning dropdown header -->
+                                    <div
+                                        class="learning-dropdown-header d-flex justify-content-between align-items-center bg-action p-3">
+                                        <div class="wrapper">
+                                            <h6 class="label text-white mx-sm-0 mx-2 mb-0 d-inline-block">
+                                                My Learning
+                                            </h6>
+                                        </div>
+                                        <a href="#" class="see-all-wishlist">
+                                            View All
+                                        </a>
+                                    </div>
+
+                                    <div class="container-fluid">
+                                        <div class="row py-2">
+                                            <div class="col-12 text-center">
+                                                <i class="fa fa-bell"></i>
+                                                you have no courses to display
+                                            </div>
+                                        </div>
+                                        <div class="row border-top py-2">
+                                            <div class="col-12 text-center">
+                                                <a class="regular-link" href="#">Explore Courses</a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="container-fluid">
+                                        <a class="row learning-dropdown-link" href="#">
+                                            <div class="col-3 d-flex justify-content-center align-items-center">
+                                                <img src="../assets/img/course-banner.jpg" class="dropdown-course-img"
+                                                    alt="learn">
+                                            </div>
+                                            <div class="col-9">
+                                                <div class="row">
+                                                    <div class="col-12 learning-dropdown-text">
+                                                        Javascript Bible from zero to Hero Bootcamp 2021 , your guide to
+                                                        script mastery
+                                                    </div>
+                                                    <div class="col-12 learning-dropdown-subtitle">
+                                                        Continue Learning !
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <div class="container-fluid">
+                                        <a class="row learning-dropdown-link" href="#">
+                                            <div class="col-3 d-flex justify-content-center align-items-center">
+                                                <img src="../assets/img/course-banner.jpg" class="dropdown-course-img"
+                                                    alt="learn">
+                                            </div>
+                                            <div class="col-9">
+                                                <div class="row">
+                                                    <div class="col-12 learning-dropdown-text">
+                                                        Javascript Bible from zero to Hero Bootcamp 2021 , your guide to
+                                                        script mastery
+                                                    </div>
+                                                    <div class="col-12 learning-dropdown-subtitle">
+                                                        Continue Learning !
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <div class="container-fluid">
+                                        <a class="row learning-dropdown-link" href="#">
+                                            <div class="col-3 d-flex justify-content-center align-items-center">
+                                                <img src="../assets/img/course-banner.jpg" class="dropdown-course-img"
+                                                    alt="learn">
+                                            </div>
+                                            <div class="col-9">
+                                                <div class="row">
+                                                    <div class="col-12 learning-dropdown-text">
+                                                        Javascript Bible from zero to Hero Bootcamp 2021 , your guide to
+                                                        script mastery
+                                                    </div>
+                                                    <div class="col-12 learning-dropdown-subtitle">
+                                                        Continue Learning !
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <div class="container-fluid">
+                                        <a class="row learning-dropdown-link" href="#">
+                                            <div class="col-3 d-flex justify-content-center align-items-center">
+                                                <img src="../assets/img/course-banner.jpg" class="dropdown-course-img"
+                                                    alt="learn">
+                                            </div>
+                                            <div class="col-9">
+                                                <div class="row">
+                                                    <div class="col-12 learning-dropdown-text">
+                                                        Javascript Bible from zero to Hero Bootcamp 2021 , your guide to
+                                                        script mastery
+                                                    </div>
+                                                    <div class="col-12 learning-dropdown-subtitle">
+                                                        Continue Learning !
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                </div>
+
+                            </a>
+
+                        </div>
+
+                        <div class="col-1 d-lg-flex d-none justify-content-center align-items-center">
+                            <div class="medium-vertical-line"></div>
+                        </div>
+
+                        <div
+                            class="col-lg-3 col-md-7 col-sm-7 col-8 user-related-data-container d-flex justify-content-md-around justify-content-end align-items-center">
+
+                            <a class="wishlist-link bookmark-dropdown-controller">
+
+                                <i class="far fa-bookmark position-relative">
+                                    <div class="alert-dot"></div>
+                                </i>
+
+                                <div class="custom-dropdown wishlist-content-dropdown wishlist-control-dropdown pb-3">
+
+                                    <!-- Wishlist dropdown header -->
+                                    <div
+                                        class="wishlist-dropdown-header d-flex justify-content-between align-items-center bg-action p-3">
+                                        <div class="wrapper">
+                                            <i class="wishlist-sidebar-toggler fa fa-bars d-sm-none d-inline-block"></i>
+                                            <h6 class="label text-white mx-sm-0 mx-2 mb-0 d-inline-block">
+                                                My Wishlist
+                                            </h6>
+                                        </div>
+                                        <a href="#" class="see-all-wishlist">
+                                            View All
+                                        </a>
+                                    </div>
+
+                                    <div class="container-fluid">
+                                        <div class="row py-2">
+                                            <div class="col-12 text-center">
+                                                <i class="fa fa-bell"></i>
+                                                No Item in wishlist to display
+                                            </div>
+                                        </div>
+                                        <div class="row border-top py-2">
+                                            <div class="col-12 text-center">
+                                                <a class="regular-link" href="#">Explore Courses</a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="container-fluid">
+                                        <a class="row wishlist-dropdown-link" href="#">
+                                            <div class="col-3 d-flex justify-content-center align-items-center">
+                                                <img src="../assets/img/course-banner.jpg" class="dropdown-course-img"
+                                                    alt="wishlist">
+                                            </div>
+                                            <div class="col-9">
+                                                <div class="row">
+                                                    <div class="col-12 wishlist-dropdown-text">
+                                                        Javascript Bible from zero to Hero Bootcamp 2021 , your guide to
+                                                        script mastery
+                                                    </div>
+                                                    <div class="col-12 wishlist-dropdown-subtitle">
+                                                        Buy now and start !
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <div class="container-fluid">
+                                        <a class="row wishlist-dropdown-link" href="#">
+                                            <div class="col-3 d-flex justify-content-center align-items-center">
+                                                <img src="../assets/img/course-banner.jpg" class="dropdown-course-img"
+                                                    alt="wishlist">
+                                            </div>
+                                            <div class="col-9">
+                                                <div class="row">
+                                                    <div class="col-12 wishlist-dropdown-text">
+                                                        Javascript Bible from zero to Hero Bootcamp 2021 , your guide to
+                                                        script mastery
+                                                    </div>
+                                                    <div class="col-12 wishlist-dropdown-subtitle">
+                                                        Buy now and start !
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <div class="container-fluid">
+                                        <a class="row wishlist-dropdown-link" href="#">
+                                            <div class="col-3 d-flex justify-content-center align-items-center">
+                                                <img src="../assets/img/course-banner.jpg" class="dropdown-course-img"
+                                                    alt="wishlist">
+                                            </div>
+                                            <div class="col-9">
+                                                <div class="row">
+                                                    <div class="col-12 wishlist-dropdown-text">
+                                                        Javascript Bible from zero to Hero Bootcamp 2021 , your guide to
+                                                        script mastery
+                                                    </div>
+                                                    <div class="col-12 wishlist-dropdown-subtitle">
+                                                        Buy now and start !
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <div class="container-fluid">
+                                        <a class="row wishlist-dropdown-link" href="#">
+                                            <div class="col-3 d-flex justify-content-center align-items-center">
+                                                <img src="../assets/img/course-banner.jpg" class="dropdown-course-img"
+                                                    alt="wishlist">
+                                            </div>
+                                            <div class="col-9">
+                                                <div class="row">
+                                                    <div class="col-12 wishlist-dropdown-text">
+                                                        Javascript Bible from zero to Hero Bootcamp 2021 , your guide to
+                                                        script mastery
+                                                    </div>
+                                                    <div class="col-12 wishlist-dropdown-subtitle">
+                                                        Buy now and start !
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                </div>
+
+                            </a>
+
+                            <a class="separator-link d-block d-sm-none">
+                            </a>
+
+                            <a class="notification-link notification-dropdown-controller" href="#">
+
+                                <i class="far fa-bell position-relative">
+                                    <div class="alert-dot"></div>
+                                </i>
+
+                                <div class="custom-dropdown notification-content-dropdown notfication-control-dropdown">
+
+                                    <!-- Notification dropdown header -->
+                                    <div
+                                        class="notification-dropdown-header d-flex justify-content-between align-items-center bg-action p-3">
+                                        <div class="wrapper">
+                                            <i
+                                                class="notification-sidebar-toggler fa fa-bars d-sm-none d-inline-block"></i>
+                                            <h6 class="label text-white mx-sm-0 mx-2 mb-0 d-inline-block">
+                                                Notifications
+                                            </h6>
+                                        </div>
+                                        <a href="#" class="notification-setting">
+                                            <i class="fa fa-cog"></i>
+                                            Settings
+                                        </a>
+                                    </div>
+
+                                    <div class="container-fluid">
+                                        <div class="row py-4">
+                                            <div class="col-12 text-center">
+                                                <i class="fa fa-bell"></i>
+                                                No Notifications to display
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="container-fluid">
+                                        <a class="row notification-dropdown-link" href="#">
+                                            <div class="col-2 d-flex justify-content-center align-items-center">
+                                                <img src="../assets/img/me.jpg" class="dropdown-img" alt="notification">
+                                            </div>
+                                            <div class="col-10">
+                                                <div class="row">
+                                                    <div class="col-12 notification-dropdown-text">
+                                                        Training 5 or more people?Get your team access to Udemy's top
+                                                        5,000+
+                                                        courses
+                                                    </div>
+                                                    <div class="col-12 notification-dropdown-time">
+                                                        3 days ago
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <div class="container-fluid">
+                                        <a class="row notification-dropdown-link" href="#">
+                                            <div class="col-2 d-flex justify-content-center align-items-center">
+                                                <img src="../assets/img/me.jpg" class="dropdown-img" alt="notification">
+                                            </div>
+                                            <div class="col-10">
+                                                <div class="row">
+                                                    <div class="col-12 notification-dropdown-text">
+                                                        Training 5 or more people?Get your team access to Udemy's top
+                                                        5,000+
+                                                        courses
+                                                    </div>
+                                                    <div class="col-12 notification-dropdown-time">
+                                                        3 days ago
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <div class="container-fluid">
+                                        <a class="row notification-dropdown-link" href="#">
+                                            <div class="col-2 d-flex justify-content-center align-items-center">
+                                                <img src="../assets/img/me.jpg" class="dropdown-img" alt="notification">
+                                            </div>
+                                            <div class="col-10">
+                                                <div class="row">
+                                                    <div class="col-12 notification-dropdown-text">
+                                                        Training 5 or more people?Get your team access to Udemy's top
+                                                        5,000+
+                                                        courses
+                                                    </div>
+                                                    <div class="col-12 notification-dropdown-time">
+                                                        3 days ago
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <div class="container-fluid">
+                                        <a class="row notification-dropdown-link" href="#">
+                                            <div class="col-2 d-flex justify-content-center align-items-center">
+                                                <img src="../assets/img/me.jpg" class="dropdown-img" alt="notification">
+                                            </div>
+                                            <div class="col-10">
+                                                <div class="row">
+                                                    <div class="col-12 notification-dropdown-text">
+                                                        Training 5 or more people?Get your team access to Udemy's top
+                                                        5,000+
+                                                        courses
+                                                    </div>
+                                                    <div class="col-12 notification-dropdown-time">
+                                                        3 days ago
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <!-- Notification dropdown color -->
+                                    <div
+                                        class="notification-dropdown-footer d-flex justify-content-around align-items-center py-3">
+                                        <a href="#" class="mark-all-link">Mark All As Read</a>
+                                        <a href="#" class="btn btn-outline-primary see-all-link">See All</a>
+                                    </div>
+
+                                </div>
+
+                            </a>
+
+                        </div>
+
+                        <div
+                            class="col-lg-2 col-md-5 col-sm-5 col-4 user-avatar-container d-flex justify-content-md-center justify-content-end align-items-center">
+
+                            <a href="#" class="user-profile-img user-profile-control"><img src="../assets/img/me.jpg"
+                                    alt="user">
+
+                                <div class="custom-dropdown user-content-dropdown profile-control-dropdown">
+
+                                    <a href="#" class="d-flex justify-content-start align-items-center px-3 py-3">
+                                        <div class="wrapper">
+                                            <img class="dropdown-img" src="../assets/img/me.jpg" alt="user">
+                                        </div>
+                                        <div class="dropdown-email mx-1">
+                                            Ahmed Ali Mohamed Abu Elala
+                                        </div>
+                                    </a>
+
+                                    <div class="content-dropdown-link dynamic-align">
+                                        <a href="#">My Learning</a>
+                                    </div>
+                                    <div
+                                        class="content-dropdown-link d-flex justify-content-between align-items-center">
+                                        <a href="#">My Bookmarks</a>
+                                        <div class="alert-number bookmark-alert-number">+9</div>
+                                    </div>
+                                    <div
+                                        class="content-dropdown-link d-flex justify-content-between align-items-center">
+                                        <a href="#">Notifications</a>
+                                        <div class="alert-number notification-alert-number">+9</div>
+                                    </div>
+                                    <div class="content-dropdown-link dynamic-align">
+                                        <a href="#">Account Settings</a>
+                                    </div>
+                                    <div class="content-dropdown-link dynamic-align">
+                                        <a href="#">Payment Methods</a>
+                                    </div>
+                                    <div class="content-dropdown-link dynamic-align">
+                                        <a href="#">Help !</a>
+                                    </div>
+                                    <div class="content-dropdown-link dynamic-align">
+                                        <a href="#">Log out</a>
+                                    </div>
+
+                                </div>
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <!-- End of main header -->
+
+    <!-- Start of sidebar Section -->
+
+    <section id="sidebar" class="">
+
+        <div class="container-fluid">
+
+            <div class="row">
+
+                <div class="col-12 in-sidebar-toggler d-flex justify-content-end pt-3">
+                    <a href="#" class="fa fa-bars"></a>
+                </div>
+
+                <div class="col-12 d-flex justify-content-start px-3 pb-2">
+                    <a class="sidebar-profile-link" href="#">
+                        <img src="../assets/img/me.jpg" alt="profile">
+                        <span class="mx-1">Welcome, Ahmed Ali</span>
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="row">
+
+                <div class="col-12 sidebar-link dynamic-align">
+                    <a href="#"><i class="fa fa-home mx-1"></i> Home</a>
+                </div>
+
+                <div class="col-12 sidebar-link dynamic-align">
+                    <a href="#"><i class="fa fa-books mx-1"></i> Diplomas</a>
+                </div>
+
+                <div class="col-12 sidebar-link dynamic-align">
+                    <a href="#"><i class="fa fa-book mx-1"></i> Courses</a>
+                </div>
+
+                <div class="col-12 sidebar-link dynamic-align">
+                    <a href="#"><i class="fa fa-list-alt mx-1"></i> Categories</a>
+                </div>
+
+                <div class="col-12 sidebar-link dynamic-align">
+                    <a href="#"><i class="fa fa-hand-holding-usd mx-1"></i> Sales</a>
+                </div>
+
+                <div class="col-12 sidebar-link dynamic-align">
+                    <a href="#"><i class="far fa-analytics mx-1"></i> Digital Marketing</a>
+                </div>
+
+                <div class="col-12 sidebar-link dynamic-align">
+                    <a href="#"><i class="far fa-analytics mx-1"></i> Marketing</a>
+                </div>
+
+                <div class="col-12 sidebar-link dynamic-align">
+                    <a href="#"><i class="fa fa-users mx-1"></i> Human Resources</a>
+                </div>
+
+                <div class="col-12 sidebar-link dynamic-align">
+                    <a href="#"><i class="fa fa-graduation-cap mx-1"></i> Certificates</a>
+                </div>
+
+                <div class="col-12 sidebar-link dynamic-align">
+                    <a href="#"><i class="fa fa-question-circle mx-1"></i> About Us</a>
+                </div>
+
+                <div class="col-12 sidebar-link dynamic-align">
+                    <a href="#"><i class="fa fa-phone-alt mx-1"></i> Contact Us</a>
+                </div>
+
+                <div class="col-12 sidebar-link dynamic-align">
+                    <a href="#"><i class="fa fa-comment-alt-exclamation mx-1"></i> Terms and Conditions</a>
+                </div>
+
+                <div class="col-12 sidebar-link dynamic-align">
+                    <a href="#"><i class="fa fa-language mx-1"></i> Language</a>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- End of sidebar section -->
+
+    <!-- Dummy Section -->
+
+    <section class="my-5 text-center">
+
+        <h1>E3ml Business Template</h1>
+
+    </section>
+
+    <!--  End of dummy section  -->
+
+    <!-- Start of footer section -->
+
+    <footer id="footer">
+
+        <div class="container-fluid">
+
+            <div class="row px-lg-5 px-md-3 px-2 py-4">
+
+                <div
+                    class="col-md-4 col-12 footer-section dynamic-align-xs-center dynamic-align-sm-center dynamic-md-align dynamic-lg-align dynamic-xl-align mb-md-0 mb-5 px-lg-2 px-1">
+
+                    <div class="footer-section-title">
+                        About the Academy
+                    </div>
+
+                    <div class="footer-section-text">
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
+                        ut labore et dolore
+                        magna.
+                    </div>
+
+                    <div class="footer-section-subtitle mt-2 mb-1">
+                        Join Us on Social
+                    </div>
+
+                    <div class="footer-section-icons">
+                        <a href="#" class="footer-icon-link fab fa-linkedin-in"></a>
+                        <a href="#" class="px-2"></a>
+                        <a href="#" class="footer-icon-link fab fa-twitter"></a>
+                        <a href="#" class="px-2"></a>
+                        <a href="#" class="footer-icon-link fab fa-youtube"></a>
+                        <a href="#" class="px-2"></a>
+                        <a href="#" class="footer-icon-link fab fa-instagram"></a>
+                        <a href="#" class="px-2"></a>
+                        <a href="#" class="footer-icon-link fab fa-facebook-f"></a>
+                    </div>
+
+                </div>
+
+                <div
+                    class="col-md-4 col-12 footer-section dynamic-align-xs-center dynamic-align-sm-center dynamic-md-align dynamic-lg-align dynamic-xl-align mb-md-0 mb-5 px-lg-2 px-1">
+
+                    <div class="footer-container">
+
+                        <div class="footer-section-title">
+                            Quick Access
+                        </div>
+
+                        <div class="footer-section-links">
+                            <a href="#" class="footer-link">Terms & Condition</a>
+                            <a href="#" class="footer-link">Join As Instructor</a>
+                            <a href="#" class="footer-link">Client Talks</a>
+                            <a href="#" class="footer-link">Call Us</a>
+                            <form action="POST">
+                                <label class="mb-0" for="">Language :</label>
+                                <select class="footer-lang-select" id="footerLang" name="footerLanguage">
+                                    <option value="en">EN</option>
+                                    <option value="ar">AR</option>
+                                </select>
+                            </form>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div
+                    class="col-md-4 col-12 footer-section dynamic-align-xs-center dynamic-align-sm-center dynamic-md-align dynamic-lg-align dynamic-xl-align mb-md-0 mb-2 px-lg-2 px-1">
+
+                    <div class="footer-container">
+
+                        <div class="footer-section-title">
+                            Pay With
+                        </div>
+
+                        <div class="footer-section-images py-2">
+
+                            <div>
+                                <img src="../assets/img/visa.png" alt="visa">
+                                <img src="../assets/img/master-card.png" alt="visa">
+                            </div>
+                            <div class="">
+                                <div class="inline-wrap-container bg-white py-2 rounded">
+                                    <img src="../assets/img/mada.png" alt="visa">
+                                </div>
+                                <img src="../assets/img/fawry.png" alt="visa">
+                                <img src="../assets/img/vodafone-cash.png" alt="cash">
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <!--  End of footer section  -->
+
+    <script src="../assets/js/popper/popper.min.js"></script>
+    <script src="../assets/js/jquery/jquery-3.5.1.js"></script>
+    <script src="../assets/js/bootstrap/bootstrap.min.js"></script>
+    <script src="../assets/icons/js/font-kit.js"></script>
+    <script src="../public/js/ui.js"></script>
+    <script src="../public/js/home.js"></script>
+</body>
+
+</html>

@@ -171,6 +171,55 @@
     margin: 70px 0 32px 0;
 }
 
+.profile-pg .f-height {
+    height: 100%
+}
+
+.profile-pg .profiletab-content .cert-img {
+    width: 100%
+}
+
+.profile-pg .profiletab-content .card {
+    border: none;
+    float: left;
+    margin-right: 7px;
+}
+
+.profile-pg .profiletab-content .card-body {
+    padding: 0
+}
+
+.profile-pg .profiletab-content .card-title {
+    font-size: 16px;
+    color: #000;
+    margin: 10px 0 15px
+}
+
+.profile-pg .profiletab-content .card-title span {
+    font-size: 12px;
+    color: #8a8a8e;
+}
+
+.profile-pg .profiletab-content .card-link {
+    font-size: 14px;
+    color: #4291e0;
+    margin-top: 5px
+}
+
+.profile-pg .profiletab-content.sub-tab .cert-img {
+    height: 107px;
+    object-fit: cover
+}
+
+.profile-pg .profiletab-content.sub-tab .card-link {
+    font-size: 14px;
+    color: #00d66c;
+    text-decoration: underline
+}
+
+.profile-pg .profiletab-content.sub-tab .card-link.cncl-lnk {
+    color: #ff4848;
+}
 @media only screen and (max-width:768px) {
     .profile-pg .tabs-title:last-of-type {
         margin: 20px 0 10px 0;
