@@ -26,7 +26,6 @@
     margin: 4px auto 9px;
 }
 
-
 .profile-pg .box select {
     /* for Firefox */
     -moz-appearance: none;
@@ -35,10 +34,10 @@
 }
 
 /* For IE10 */
+
 .profile-pg .box select::-ms-expand {
     display: none;
 }
-
 
 .profile-pg .box select option {
     padding: 0;
@@ -61,7 +60,14 @@
 .profile-pg .cont-img {
     display: flex;
     flex-direction: column;
+}
+
+.profile-pg:lang(en) .cont-img {
     margin-right: 37px
+}
+
+.profile-pg:lang(ar) .cont-img {
+    margin-left: 37px
 }
 
 .profile-pg .cont-img .add-img {
@@ -128,19 +134,24 @@
 }
 
 .profile-pg .nav-pills .nav-link:after {
-    content: "\f105";
-    float: left;
     display: block;
     position: absolute;
-    left: auto;
-    right: 0;
     top: 18%;
     color: #333;
-    font-family: "FontAwesome"
+    font-family: "FontAwesome";
 }
 
-.profile-pg .nav-pills .nav-link.active,
-.profile-pg .nav-pills .show > .nav-link {
+.profile-pg:lang(en) .nav-pills .nav-link:after {
+    content: "\f105";
+    right: 0;
+}
+
+.profile-pg:lang(ar) .nav-pills .nav-link:after {
+    content: "\f104";
+    left: 0;
+}
+
+.profile-pg .nav-pills .nav-link.active, .profile-pg .nav-pills .show>.nav-link {
     font-weight: bold;
     line-height: 1.44;
     color: #0b1005;
@@ -157,53 +168,50 @@
 
 .profile-pg .tabs-title:last-of-type {
     font-size: 24px;
-    margin: 98px 0 32px 0;
+    margin: 70px 0 32px 0;
+}
+
+@media only screen and (max-width:768px) {
+    .profile-pg .tabs-title:last-of-type {
+        margin: 20px 0 10px 0;
+    }
 }
 
 @media screen and (max-width: 765px) {
     .profile-pg .profiletab-content {
         padding: 27px 30px;
     }
-
     .profile-pg .tab-title {
         margin: 15px auto 30px;
         display: block;
         text-align: center;
     }
-
     .profile-pg .cont-img {
         display: block;
         margin-right: 0;
     }
-
     .profile-pg .profiletab-content .media {
         display: block
     }
-
     .profile-pg .profile-img {
         display: block;
         margin: auto;
     }
-
     .profile-pg .cont-img .add-img {
         display: block;
     }
-
     .profile-pg .box {
         display: block;
         margin: auto;
         text-align: center;
     }
-
     .profile-pg .save-btn {
         width: 100%;
         margin: 15px auto 10px;
         display: inline-block;
         text-align: center
     }
-
     .profile-pg .save-btn:first-of-type {
         margin: 30px auto 0;
     }
-
 }
